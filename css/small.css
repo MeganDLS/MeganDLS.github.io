@@ -43,7 +43,6 @@ footer {
 
 /* Picture of me*/
 header img {
-    float: right;
     width: auto;
     height: 12rem;
     border-radius: .3rem;
