@@ -5,4 +5,20 @@
         column-gap: 2em;
         text-align: right;
     }
+
+    header,
+main,
+footer {
+    max-width: 55%;
+    margin: 0 auto;
+    color: #000204;
+}
+
+
+footer {
+    font-size: .95rem;
+    text-align: center;
+    line-height: .5rem;
+}
+
 }
