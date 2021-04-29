@@ -67,6 +67,9 @@ ul {
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 2em;
 }
+#maintitle {
+    font-size: 4rem;
+}
 
 /* unvisited link */
 a:link {
