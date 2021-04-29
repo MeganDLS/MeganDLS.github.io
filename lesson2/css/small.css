@@ -4,6 +4,7 @@ body {
     background-color: #dcdeff;
     margin-top: 4rem;
 }
+
 footer {
     font-size: .95rem;
     text-align: center;
@@ -66,9 +67,10 @@ ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 2em;
+    text-align: right;
 }
 #maintitle {
-    font-size: 4rem;
+    font-size: 3.5rem;
 }
 
 /* unvisited link */
