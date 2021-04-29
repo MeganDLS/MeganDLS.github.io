@@ -4,25 +4,24 @@ body {
     background-color: #dcdeff;
     margin-top: 4rem;
 }
-
 footer {
     font-size: .95rem;
     text-align: center;
-    line-height: .3rem;
+    line-height: .5rem;
 }
-
 /* Assignment title */
-h1, h3 {
-    margin-left: 1.5rem;
+h1,
+h3 {
     color: #dcdeff;
+    text-align: center;
 }
 
 /* */
 h2 {
     border-bottom-style: dotted;
     border-width: .15rem;
-    margin-left: 1.5rem;
-}
+    text-align: center;
+    }
 
 header {
     font-family: 'Lobster', cursive;
@@ -45,15 +44,30 @@ footer {
     color: #000204;
 }
 
+img {
+    height: auto;
+    width: 18rem;
+    border: 1rem solid #003366;
+    
+}
+
+ul {
+    list-style-type: none;
+}
+
 /*Final line of the footer, including modified dynamically*/
 #updated {
     color: #dcdeff;
+    font-size: .95rem;
+    line-height: .2rem;
 }
 
 #examplescontainer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2em;
 }
+
 /* unvisited link */
 a:link {
     color: #000204;
