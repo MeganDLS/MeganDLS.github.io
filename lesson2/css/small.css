@@ -1,2 +1,62 @@
-font-family: 'Krona One', sans-serif;
-font-family: 'Lobster', cursive;
+body {
+    font-family: 'Krona One', arial, sans-serif;
+    font-size: 17px;
+    background-color: #dcdeff;
+    margin-top: 4rem;
+}
+
+header {
+    font-family: 'Lobster', cursive;
+}
+
+footer {
+    font-size: .95rem;
+    text-align: center;
+    line-height: .3rem;
+}
+
+/* Assignment title */
+h1 {
+    margin-left: 1.5rem;
+    color: #dcdeff;
+}
+
+/* */
+h2 {
+    border-bottom-style: dotted;
+    border-width: .15rem;
+    margin-left: 1.5rem;
+}
+
+header,
+footer {
+    border: 2px solid #dcdeff;
+    padding: 1rem;
+    background-color: #003366;
+    border-radius: .5rem;
+    color: #000204;
+}
+
+header,
+main,
+footer {
+    max-width: 55%;
+    margin: 0 auto;
+    color: #000204;
+}
+
+/*Final line of the footer, including modified dynamically*/
+#updated {
+    color: #dcdeff;
+
+}
+
+/* unvisited link */
+a:link {
+    color: #000204;
+}
+
+/* visited link */
+a:visited {
+    color: #188bff;
+}
