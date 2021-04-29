@@ -1,3 +1,19 @@
-@media only screen and (min-width: 32.5em) {
+@media only screen and (min-width: 32em) {
 
+    #examplescontainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2em;
+    }
+
+    #repetition {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        text-align: center;
+    }
+
+    #npr {
+        height: auto;
+        width: 30rem;
+    }
 }
