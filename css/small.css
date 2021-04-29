@@ -1,5 +1,5 @@
 body {
-    font-family: Verdana, Geneva, sans-serif;
+    font-family: 'Krona One', arial, sans-serif;
     font-size: 17px;
     background-color: #dcdeff;
     margin-top: 4rem;
@@ -15,6 +15,7 @@ footer {
 h1 {
     margin-left: 1.5rem;
     color: #dcdeff;
+    font-family: 'Lobster', cursive;
 }
 
 /* Title of the Webpage*/

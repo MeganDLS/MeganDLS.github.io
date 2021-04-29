@@ -16,7 +16,7 @@ footer {
 }
 
 /* Assignment title */
-h1 {
+h1, h3 {
     margin-left: 1.5rem;
     color: #dcdeff;
 }
