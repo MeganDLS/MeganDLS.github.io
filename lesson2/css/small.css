@@ -14,7 +14,7 @@ footer {
 /* Assignment title */
 h1,
 h3 {
-    color: #dcdeff; 
+    color: #dcdeff;
     text-align: center;
 }
 
@@ -41,7 +41,7 @@ footer {
 header,
 main,
 footer {
-    max-width: 55%;
+    max-width: 100%;
     margin: 0 auto;
     color: #000204;
 }

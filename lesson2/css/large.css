@@ -6,19 +6,23 @@
         text-align: right;
     }
 
+    #repetition {
+    grid-column: 3 / 4;
+        text-align: center;
+    }
+
     header,
-main,
-footer {
-    max-width: 55%;
-    margin: 0 auto;
-    color: #000204;
-}
+    main,
+    footer {
+        max-width: 55%;
+        margin: 0 auto;
+        color: #000204;
+    }
 
-
-footer {
-    font-size: .95rem;
-    text-align: center;
-    line-height: .5rem;
-}
+    footer {
+        font-size: .95rem;
+        text-align: center;
+        line-height: .5rem;
+    }
 
 }
