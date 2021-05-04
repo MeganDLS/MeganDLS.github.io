@@ -38,7 +38,7 @@ main,
 footer {
     max-width: 55%;
     margin: 0 auto;
-    color: #dcdeff;
+    
 }
 
 /* Picture of me*/
@@ -47,6 +47,9 @@ header img {
     height: 12rem;
     border-radius: .3rem;
 
+}
+main{
+    color: black;
 }
 
 /*Final line of the footer, including modified dynamically*/
