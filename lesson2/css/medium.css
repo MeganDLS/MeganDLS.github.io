@@ -11,7 +11,7 @@
         text-align: center;
     }
 
-    #npr {
+    #npr, #libby, #natgeo {
         height: auto;
         width: 30rem;
     }
