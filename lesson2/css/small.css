@@ -42,7 +42,7 @@ main,
 footer {
     max-width: 100%;
     margin: 0 auto;
-    color: #000204;
+    color: #dcdeff;
 }
 
 img {
@@ -74,7 +74,7 @@ ul {
 
 /* unvisited link */
 a:link {
-    color: #000204;
+    color: #188bff;
 }
 
 /* visited link */
