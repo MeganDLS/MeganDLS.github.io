@@ -30,7 +30,7 @@ footer {
     padding: 1rem;
     background-color: #003366;
     border-radius: .5rem;
-    color: #000204;
+    color: #dcdeff;
 }
 
 header,
@@ -38,7 +38,7 @@ main,
 footer {
     max-width: 55%;
     margin: 0 auto;
-    color: #000204;
+    color: #dcdeff;
 }
 
 /* Picture of me*/
@@ -57,7 +57,7 @@ header img {
 
 /* unvisited link */
 a:link {
-    color: #000204;
+    color: #188bff;
 }
 
 /* visited link */
