@@ -1,20 +1,57 @@
 * {
     padding: 0;
+    font: 16px;
+}
 
+:root {
+    --primary-color: #93B49A;
+    /*light green*/
+
+
+}
+
+#minion {
+    background-color: #F4E04D;
+}
+
+#corn {
+    background-color: #F2ED6F;
+}
+
+#yellow {
+    background-color: #CEE397;
+}
+
+#morning {
+    background-color: #8DB1AB;
+}
+
+#blue {
+    background-color: #587792;
 }
 
 table {
     border-collapse: collapse;
-    width: 90%;
-}
-td, th {
-    text-align: left;
-    padding: 5rem;
+    width: 100%;
 }
 
-tr:nth-child(even) {
+th {
     background-color: #dddddd;
 }
+
+td,
+th {
+    text-align: left;
+    padding: .5rem;
+}
+
+
+table img {
+    width: auto;
+    height: 10rem;
+}
+
 body {
-color: #457B9D;
+    font: black;
+    margin: 4rem;
 }
