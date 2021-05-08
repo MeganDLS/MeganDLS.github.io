@@ -1,6 +1,6 @@
 @media only screen and (min-width: 80em) {
     nav ul li {
-        flex: 1;
-        list-style: none;
-    }
+        flex: 3;
+      }
+
 }

@@ -56,25 +56,28 @@ body {
     font: black;
     margin: 4rem;
 }
+
 nav ul {
     display: flex;
+    flex-direction: column;
+    list-style-type: none; 
 }
 
-nav ul li {
-    flex: 3;
-    list-style: none;
+nav ul li a {
+    display: block;
 }
+
 h1 {
     color: #F4E04D;
     font-family: "Montserrat", Arial, serif;
 }
 header,
-footer {
+footer { 
+    text-align: center;
     border: 2px solid #CEE397;
     padding: 1rem;
     background-color: #587792;
     border-radius: .5rem;
-    text-align: center;
     color: #CEE397;
 }
 a {

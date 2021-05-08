@@ -1,6 +1,6 @@
 @media only screen and (min-width: 32em) {
-    nav ul li {
-        flex: 4;
-        list-style: none;
+    nav ul {
+        flex-direction: row;
+        justify-content: space-between;
     }
 }
