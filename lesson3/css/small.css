@@ -66,6 +66,7 @@ nav ul li {
 }
 h1 {
     color: #F4E04D;
+    font-family: Montserrat, Arial, serif;
 }
 header,
 footer {
@@ -74,7 +75,8 @@ footer {
     background-color: #587792;
     border-radius: .5rem;
     text-align: center;
+    color: #CEE397;
 }
 a {
-    color: black;
+    color: #F2ED6F;
 }
