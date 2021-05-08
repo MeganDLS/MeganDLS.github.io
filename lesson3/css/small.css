@@ -58,5 +58,23 @@ body {
 }
 nav ul {
     display: flex;
-    }
-    nav ul li {flex 1 1 100%}
+}
+
+nav ul li {
+    flex: 3;
+    list-style: none;
+}
+h1 {
+    color: #F4E04D;
+}
+header,
+footer {
+    border: 2px solid #CEE397;
+    padding: 1rem;
+    background-color: #587792;
+    border-radius: .5rem;
+    text-align: center;
+}
+a {
+    color: black;
+}
