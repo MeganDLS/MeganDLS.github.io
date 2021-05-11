@@ -13,7 +13,6 @@ footer {
 /* First and Last name title */
 h1 {
     margin-left: 1.5rem;
-    color: #dcdeff;
     font-family: 'Lobster', cursive;
 }
 
@@ -28,9 +27,9 @@ header,
 footer {
     border: 2px solid #dcdeff;
     padding: 1rem;
-    background-color: #003366;
+    background-color: #fffddc;
     border-radius: .5rem;
-    color: #dcdeff;
+    color: #000204;
 }
 
 header,
@@ -54,16 +53,16 @@ main{
 
 /*Final line of the footer, including modified dynamically*/
 #updated {
-    color: #dcdeff;
+    color: #000204;
 
 }
 
 /* unvisited link */
 a:link {
-    color: #188bff;
+    color:#000204;
 }
 
 /* visited link */
 a:visited {
-    color: #188bff;
+    color: #000204;
 }
