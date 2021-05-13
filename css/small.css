@@ -1,7 +1,7 @@
 body {
     font-family: 'Krona One', arial, sans-serif;
     font-size: 17px;
-    background-color: #dcdeff;
+    background-color: #fffddc;
     margin-top: 4rem;
 }
 
@@ -13,7 +13,8 @@ footer {
 /* First and Last name title */
 h1 {
     margin-left: 1.5rem;
-    font-family: 'Lobster', cursive;
+    font-family: 'Lobster', Arial, cursive;
+    font-size: 3rem;
 }
 
 /* Title of the Webpage*/
@@ -25,11 +26,11 @@ h2 {
 
 header,
 footer {
-    border: 2px solid #dcdeff;
+    border: 2px solid bf92c9;
     padding: 1rem;
-    background-color: #fffddc;
+    background-color: #333c15;
     border-radius: .5rem;
-    color: #000204;
+    color: #fffddc;
 }
 
 header,
@@ -44,25 +45,37 @@ footer {
 header img {
     width: auto;
     height: 12rem;
+    border: 2px solid #4B2951;
     border-radius: .3rem;
 
 }
+
+li {
+    margin: 1.5rem;
+}
 main{
-    color: #000204;
+    color: #333c15;
+    padding: 1rem;
 }
 
 /*Final line of the footer, including modified dynamically*/
 #updated {
-    color: #000204;
+    color: #fffddc;
 
+}
+footer a:link {
+    color: #c7a0cf;
+}
+footer a:visited {
+    color: #c7a0cf;
 }
 
 /* unvisited link */
 a:link {
-    color:#000204;
+    color:#4B2951;
 }
 
 /* visited link */
 a:visited {
-    color: #000204;
+    color: #625559;
 }

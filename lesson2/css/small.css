@@ -76,11 +76,22 @@ ul {
 }
 
 /* unvisited link */
+footer a:link {
+    color: #fffddc;
+}
+
+/* visited link */
+footer a:visited {
+    color: #fffddc;
+}
+
+
+/* unvisited link */
 a:link {
-    color: #188bff;
+    color: #4B2951;
 }
 
 /* visited link */
 a:visited {
-    color: #188bff;
+    color: #625559;
 }
