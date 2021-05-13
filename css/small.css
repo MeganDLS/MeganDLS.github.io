@@ -38,7 +38,7 @@ main,
 footer {
     max-width: 55%;
     margin: 0 auto;
-    
+
 }
 
 /* Picture of me*/
@@ -53,7 +53,8 @@ header img {
 li {
     margin: 1.5rem;
 }
-main{
+
+main {
     color: #333c15;
     padding: 1rem;
 }
@@ -63,16 +64,18 @@ main{
     color: #fffddc;
 
 }
+
 footer a:link {
     color: #c7a0cf;
 }
+
 footer a:visited {
     color: #c7a0cf;
 }
 
 /* unvisited link */
 a:link {
-    color:#4B2951;
+    color: #4B2951;
 }
 
 /* visited link */

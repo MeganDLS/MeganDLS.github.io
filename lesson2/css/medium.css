@@ -1,18 +1,7 @@
-@media only screen and (min-width: 32em) {
+@media only screen and (min-width: 35em) {
 
     #examplescontainer {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 2em;
-    }
-
-    #repetition {
-        grid-column: 1 / 3;
-        text-align: center;
-    }
-
-    #npr, #libby, #natgeo {
-        height: auto;
-        width: 30rem;
+        display: flex;
+        justify-content: space-around;
     }
 }
