@@ -51,8 +51,7 @@ footer {
 img {
     border: .8rem solid #003366;
     border-radius: .3rem;
-    width: 8rem;
-    height: auto;
+    width: 20rem;
 }
 
 main {
@@ -65,6 +64,7 @@ ul {
 
 #examplescontainer {
     display: flex;
+    flex-direction: column-reverse;
 }
 
 /*Final line of the footer, including modified dynamically*/
