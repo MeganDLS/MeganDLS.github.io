@@ -1,19 +1,19 @@
-@media only screen and (min-width: 32.5em) {
-.navigation {
-    display: flex;
-}
+@media only screen and (min-width: 35em) {
 
-.navigation li:first-child {
-    display: none;
-}
+    nav button {display: none;}
 
-.navigation li {
-    display: block;
-    flex: 1 1 100%;
+    nav ul.hide {
+        display: block;
+    }
+nav ul {margin-left: 2%}
+nav ul li {
+    float: left;
 }
-.navigation li a {
-    color: yellow;
-}
+nav ul li a{
+    border: none;
+    border-right: 1px solid rgba(0,0,0,0.3);
+padding: .8rem 1rem;
 
+}
 
 }

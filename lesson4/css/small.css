@@ -1,35 +1,77 @@
+* {
+    padding: 0;
+    font: 16px;
+    font-family: "Raleway", Arial, sans-serif;
+}
+
+body {
+    color: black;
+    margin: 4rem;
+}
+
+/* Logo*/
+header img {
+    width: auto;
+    height: 12rem;
+    border: 2px solid #1D3557;
+    border-radius: .3rem;
+    float: left;
+    height: 9rem;
+}
+h1 {
+    color: #F4E04D;
+    font-family: "Montserrat", Arial, serif;
+    font-size:2.5rem;
+}
+header,
+footer { 
+    text-align: center;
+    border: 2px solid #CEE397;
+    padding: 1rem;
+    background-color: #1D3557;
+    border-radius: .5rem;
+    color: #CEE397;
+}
+a {
+    color: #F2ED6F;
+}
+
+/* hamburger button */
 nav {
-margin: o auto;
+margin: 0 auto;
 max-width: 760px;
 background-color: #000;
 }
-
-.navigation {
-    list-style: none;
-    text-align: center;
+nav ul {
+    list-style-type: none;
     padding: 0;
+    margin: 0;
 }
-
-.navigation li:first-child {
+nav button {
+    margin: .2rem 2%;
+background-color: transparent;
+font-size: 1.6rem;
+color: white;
+}
+nav ul li a {
     display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color:yellow;
+    border-top: solid rgba(0,0,0, .5);
 }
-.navigation li {
-display: none;
+nav ul li .active a {
+    background-color: rgba(0,0,0,.2); color: #fff;
 }
-
-.navigation a {
-display: block;
-color: #fff;
-padding: .75rem;
-text-align: center;
-text-decoration: none;
+nav ul li a:hover {
+    background-color:thistle;
 }
-.navigation a:hover {
-    color: #000;
-    background-color: #fff;
-    font-weight: 700;
+/* menu will hide or appear when you click the button */
+nav ul.hide  {
+    display: none;
 }
-.responsive li {
-display: block;
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
 }
-

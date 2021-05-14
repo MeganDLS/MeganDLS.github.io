@@ -1,5 +1,8 @@
+let d = new Date();
+document.querySelector('#copyrightyear').textContent = d.getFullYear();
+
 //select the element to manipulate
-const datefield = document.querySelector("date");
+const datefield = document.querySelector("#updated");
 
 //current date with that object
 const now = new Date();
@@ -7,9 +10,10 @@ const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
 
 datefield.innerHTML = `<em>${fulldate}</em>`;
 
-//document.querySelector('#copyrightyear').textContent = d.getFullYear();
-//document.querySelector('#modified').textContent = document.lastModified;
-
 function toggleMenu() {
-  document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
+  console.log(document.getElementById("navigation").classList);
+  document.getElementById("navigation").classList.toggle("hide");
+  //document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
+
+  // document.getElementById("primaryNav").classList.toggle("hide");
 }
