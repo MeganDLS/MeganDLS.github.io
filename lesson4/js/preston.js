@@ -13,13 +13,3 @@ datefield.innerHTML = `<em>${fulldate}</em>`;
 function toggleMenu() {
   document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
 }
-
-
-
-
-//const d = new Date(2021, 4, 12);
-//document.querySelector('#copyrightyear').textContent = d.getFullYear();
-//document.querySelector('#modified').textContent = document.lastModified;
-
-// const d = new Date();
-// document.querySelector('#currentyear').textContent = d.toDateString();
