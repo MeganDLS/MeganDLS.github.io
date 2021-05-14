@@ -63,8 +63,7 @@ ul {
 }
 
 #examplescontainer {
-    display: flex;
-    flex-direction: column-reverse;
+    display: grid;
 }
 
 /*Final line of the footer, including modified dynamically*/

@@ -1,12 +1,8 @@
 @media only screen and (min-width: 32.5em) {
-    #examplescontainer {
-        flex-direction: row;
-        width: 700px;
-    }
-    #examplescontainer div{
-    width: 50%;
 
-    }
+  #hierarchy {
+      grid-column: 2 / 3;
+  }
 
 
 }
