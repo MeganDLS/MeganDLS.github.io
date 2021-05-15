@@ -1,19 +1,36 @@
+/* also 560px if font is 16px */
 @media only screen and (min-width: 35em) {
+nav {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#93b49a+1,cee397+100 */
+background: #93b49a; /* Old browsers */
+background: -moz-linear-gradient(top,  #93b49a 1%, #cee397 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #93b49a 1%,#cee397 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #93b49a 1%,#cee397 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#93b49a', endColorstr='#cee397',GradientType=0 ); /* IE6-9 */
 
-    nav button {display: none;}
+}
+
+    nav button {
+        display: none;
+    }
+
+    nav ul li {
+        float: left;
+    }
 
     nav ul.hide {
         display: block;
     }
-nav ul {margin-left: 2%}
-nav ul li {
-    float: left;
-}
-nav ul li a{
-    border: none;
-    border-right: 1px solid rgba(0,0,0,0.3);
-padding: .8rem 1rem;
 
-}
+    nav ul {
+        margin-left: 2%
+    }
+
+    nav ul li a {
+        border: none;
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+        padding: .8rem 1rem;
+
+    }
 
 }

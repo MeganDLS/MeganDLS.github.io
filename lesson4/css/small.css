@@ -75,16 +75,13 @@ nav ul li a:hover {
     background-color: #CEE397;
 }
 
-nav ul li .guide a {
-    background-color: rgba(0, 0, 0, .2);
-    color: #F2ED6F;
-}
 
 /* menu will hide or appear when you click the button */
 nav ul.hide {
     display: none;
 }
 
+/* avoid unwanted collapsing of nav */
 .clearfix:after {
     content: "";
     display: table;
