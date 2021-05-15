@@ -18,13 +18,15 @@ header img {
     float: left;
     height: 9rem;
 }
+
 h1 {
     color: #F4E04D;
     font-family: "Montserrat", Arial, serif;
-    font-size:2.5rem;
+    font-size: 2.5rem;
 }
+
 header,
-footer { 
+footer {
     text-align: center;
     border: 2px solid #CEE397;
     padding: 1rem;
@@ -32,44 +34,57 @@ footer {
     border-radius: .5rem;
     color: #CEE397;
 }
+
 a {
     color: #F2ED6F;
 }
 
 /* hamburger button */
 nav {
-margin: 0 auto;
-max-width: 760px;
-background-color: #000;
+    margin: 0 auto;
+    max-width: 760px;
+    background-color: #93B49A;
+    border-radius: .3rem;
 }
+
 nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
+
 nav button {
-    margin: .2rem 2%;
-background-color: transparent;
-font-size: 1.6rem;
-color: white;
+    margin: .15rem 2%;
+    background-color: transparent;
+    font-size: 1.6rem;
+    color: white;
 }
-nav ul li a {
+
+nav ul li a{
     display: block;
     padding: .8rem 2%;
+    /* removes underline for links */
     text-decoration: none;
-    color:yellow;
-    border-top: solid rgba(0,0,0, .5);
+    color: #1D3557;
+    border-top: 1px solid;
 }
-nav ul li .active a {
-    background-color: rgba(0,0,0,.2); color: #fff;
-}
+
+
+
 nav ul li a:hover {
-    background-color:thistle;
+    background-color: #CEE397;
 }
+
+nav ul li .guide a {
+    background-color: rgba(0, 0, 0, .2);
+    color: #F2ED6F;
+}
+
 /* menu will hide or appear when you click the button */
-nav ul.hide  {
+nav ul.hide {
     display: none;
 }
+
 .clearfix:after {
     content: "";
     display: table;
