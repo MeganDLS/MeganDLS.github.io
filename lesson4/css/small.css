@@ -5,7 +5,7 @@
 }
 
 body {
-    color: black;
+  
     margin: 4rem;
 }
 
@@ -33,19 +33,19 @@ footer {
     background-color: #1D3557;
     border-radius: .5rem;
     color: #8DB1AB;
-   }
+}
 
 a {
     color: #F2ED6F;
 }
 
 #motto {
-    color:#8DB1AB;
+    color: #8DB1AB;
 }
+
 /* hamburger button */
 nav {
     margin: 0 auto;
-    max-width: 760px;
     background-color: #F2ED6F;
     border-radius: .3rem;
 }
@@ -63,7 +63,7 @@ nav button {
     color: #1D3557;
 }
 
-nav ul li a{
+nav ul li a {
     display: block;
     padding: .8rem 2%;
     /* removes underline for links */

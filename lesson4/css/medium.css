@@ -1,6 +1,5 @@
-/* also 560px if font is 16px */
+/* 32em also 560px if font is 16px */
 @media only screen and (min-width: 35em) {
-
 
     nav button {
         display: none;
