@@ -26,48 +26,36 @@
         <h1> Tut, tut, it looks like rain</h1>
         <h2 id="motto"> Get connected with your community.</h2>
     </header>
-    <nav class="clearfix">
-        <!-- event listener -->
-        <button onclick="toggleMenu()">&#9776;</button>
-        <!-- default will be hidden until user clicks button-->
-        <ul id="navigation" class="hide"> 
-            <!-- emoji for hamburger menu &#9776; -->
 
-            <li><a href="#" >Menu</a>
 
-            </li>
-            <li><a href="/lesson4/lesson-4.html" >Home</a>
-
-            </li>
-            <li><a href="/lesson4/preston.html">Preston</a>
-            </li>
-            <li><a href="/lesson4/soda-springs.html">Soda Springs</a>
-            </li>
-            <li><a href="/lesson4/fish-haven.html">Fish Haven</a>
-            </li>
-            <li><a href="/lesson4/storm-center.html">Storm Center</a>
-            </li>
-            <li><a href="/lesson4/gallery.html">Gallery</a>
-            </li>
-
+    <nav>
+        <!-- default will be hidden, display none, until user clicks button-->
+        <ul class="navigation">
+            <!-- emoji for hamburger menu &#9776; query selector is better choice than onclick-->
+            <li><a href="#" class="hamburger">&#9776; Menu</a></li>
+            <li><a href="/lesson4/lesson-4.html">Home</a></li>
+            <li><a href="/lesson4/preston.html">Preston</a></li>
+            <li><a href="/lesson4/soda-springs.html">Soda Srings</a></li>
+            <li><a href="/lesson4/fish-haven.html">Fish Haven</a></li>
+            <li><a href="/lesson4/storm-center.html">Storm Center</a></li>
+            <li><a href="/lesson4/gallery.html">Gallery</a></li>
         </ul>
     </nav>
-<!-- home about service products feedback history contact menu items?-->
+
+    <!-- home about service products feedback history contact menu items?-->
     <main>
         <p>Hero Image</p>
         <h2>Weather Summary</h2>
         <p>This is where the main page stuff will go.</p>
         <h2>Five Day Forecast</h2>
         <p>Stuff</p>
-        
     </main>
     <footer>
         <p id="copyright"> &copy; <span id="copyrightyear"></span> | Megan De Le&oacute;n | Utah | <a
                 href="https://www.byui.edu/">BYUI Online Learning</a>
         </p>
         <p id="updated"> Last Updated: </p>
-            </footer>
-    
+    </footer>
     <script src="js/preston.js"></script>
 </body>
 

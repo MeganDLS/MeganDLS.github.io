@@ -38,54 +38,49 @@ a {
     color: #F2ED6F;
 }
 
-#motto {
-    color: #8DB1AB;
-}
-
-/* hamburger button */
 nav {
     margin: 0 auto;
     background-color: #F2ED6F;
     border-radius: .3rem;
+    max-width: 760px;
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
     margin: 0;
 }
 
-nav button {
+/* hamburger button */
+.navigation {
     margin: .15rem 2%;
     background-color: transparent;
     font-size: 1.6rem;
     color: #1D3557;
+    list-style: none;
+    padding: 0;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+.navigation li {
+    display: none;
 }
 
 nav ul li a {
-    display: block;
     padding: .8rem 2%;
+    
     /* removes underline for links */
     text-decoration: none;
     color: #1D3557;
-    border-top: 1px solid;
+    /* border-top: 1px solid; */
 }
-
-
 
 nav ul li a:hover {
     background-color: #8DB1AB;
 }
 
-
-/* menu will hide or appear when you click the button */
-nav ul.hide {
-    display: none;
-}
-
-/* avoid unwanted collapsing of nav */
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-}
+.hide li {
+    display: block;
+    }
