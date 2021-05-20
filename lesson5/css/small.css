@@ -23,30 +23,6 @@ main {
 	grid-template-columns: 1;
 }
 
-input,
-button {
-	padding: 0.5rem;
-}
-
-label {
-	font-size: 0.8rem;
-}
-
-.list {
-	margin: 1rem;
-	border: 1px solid #bbb;
-}
-ul {
-	margin: 1rem;
-	list-style: none;
-}
-
-li {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	margin-bottom: .5rem;
-}
 
 /* Logo*/
 header img {
