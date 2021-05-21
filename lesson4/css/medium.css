@@ -1,7 +1,8 @@
-/* 32em also 560px if font is 16px */
-@media only screen and (min-width: 32.5em) {
+/* 32em also 556px if font is 16px */
+@media only screen and (min-width: 768px) {
 .navigation {
     display: flex;
+    font-size: 1.2rem;
 }
 .navigation li {
     display: block;

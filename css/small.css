@@ -1,3 +1,13 @@
+/* unvisited link */
+a:link {
+    color: #4B2951;
+}
+
+/* visited link */
+a:visited {
+    color: #625559;
+}
+
 body {
     font-family: 'Krona One', arial, sans-serif;
     font-size: 17px;
@@ -8,6 +18,14 @@ body {
 footer {
     font-size: .95rem;
     text-align: center;
+}
+
+footer a:link {
+    color: #c7a0cf;
+}
+
+footer a:visited {
+    color: #c7a0cf;
 }
 
 /* First and Last name title */
@@ -33,20 +51,20 @@ footer {
     color: #fffddc;
 }
 
-header,
-main,
-footer {
-    max-width: 55%;
-    margin: 0 auto;
-
-}
-
 /* Picture of me*/
 header img {
     width: auto;
     height: 12rem;
     border: 2px solid #4B2951;
     border-radius: .3rem;
+}
+
+header,
+main,
+footer {
+    max-width: 55%;
+    margin: 0 auto;
+
 }
 
 li {
@@ -62,22 +80,4 @@ main {
 #updated {
     color: #fffddc;
 
-}
-
-footer a:link {
-    color: #c7a0cf;
-}
-
-footer a:visited {
-    color: #c7a0cf;
-}
-
-/* unvisited link */
-a:link {
-    color: #4B2951;
-}
-
-/* visited link */
-a:visited {
-    color: #625559;
 }

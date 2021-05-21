@@ -24,6 +24,17 @@ h1 {
     font-size: 2.5rem;
 }
 
+.block {
+background-color: #D3D3D3;
+font-size: 1.5rem;
+font-family: "Raleway", Arial, sans-serif;
+border-style: solid;
+border-radius: .4rem;
+padding: .5rem;
+margin: .2rem;
+
+}
+
 header,
 footer {
     text-align: center;
@@ -42,7 +53,8 @@ nav {
     margin: 0 auto;
     background-color: #F2ED6F;
     border-radius: .3rem;
-    max-width: 760px;
+    width: 100%;
+
 }
 
 nav ul {

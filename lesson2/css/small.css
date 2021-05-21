@@ -1,25 +1,5 @@
-body {
-    font-family: 'Krona One', arial, sans-serif;
-    font-size: 17px;
-    background-color: #dcdeff;
-    margin: 3rem;
-}
-
-
-footer {
-    font-size: .95rem;
-    text-align: center;
-}
-
 h1 {
     font-size: 3rem;
-}
-
-/* Assignment title */
-h1,
-h3 {
-    color: #dcdeff;
-    text-align: center;
 }
 
 /* White Space, Visual Hierarchy, Repetition*/
@@ -30,8 +10,27 @@ h2 {
     color: black;
 }
 
+/* Assignment title */
+h1,
+h3 {
+    color: #dcdeff;
+    text-align: center;
+}
+
+body {
+    font-family: 'Krona One', arial, sans-serif;
+    font-size: 17px;
+    background-color: #dcdeff;
+    margin: 3rem;
+}
+
 header {
     font-family: 'Lobster', sans-serif, cursive;
+}
+
+footer {
+    font-size: .95rem;
+    text-align: center;
 }
 
 header,
@@ -81,7 +80,6 @@ footer a:link {
 footer a:visited {
     color: #fffddc;
 }
-
 
 /* unvisited link */
 a:link {
