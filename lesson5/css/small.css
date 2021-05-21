@@ -1,15 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
-* {
-	margin: 0;
-	padding: 0;
-}
+
 body {
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	font-size: 18px;
+	font-size: 16px;
 	font-family: Acme, Arial, sans-serif;
     margin: 4rem;
 }
@@ -19,20 +11,30 @@ main {
 	border: 1px solid #999;
 	padding: 0.5rem;
 	background-color: #bed;
-	display: grid;
-	grid-template-columns: 1;
 }
 
-
-/* Logo*/
-header img {
-    width: auto;
-    height: 12rem;
-    border: 2px solid #1D3557;
-    border-radius: .3rem;
-    float: left;
-    height: 9rem;
+.herodiv {
+    position: relative;
+    
 }
+#sky {
+    height: 300px;
+    justify-content: center;
+
+}
+
+.banner {
+    display: none;
+}
+.stats {
+    position: absolute;
+    align-items: center;
+    opacity: .9;
+    top: 250px;
+    left: 100px;
+    box-shadow: 0 0 30px #111;
+    background: radial-gradient(#eee, #4567aa)
+    }
 
 h1 {
     color: #F4E04D;
@@ -40,6 +42,9 @@ h1 {
     font-size: 2.5rem;
 }
 
+h2 {
+    justify-content: center;
+}
 header,
 footer {
     text-align: center;
@@ -52,4 +57,42 @@ footer {
 
 a {
     color: #F2ED6F;
+}
+
+/* Weather Forecast */
+
+.forecast {
+display: flex;
+flex-flow: row wrap;
+}
+.day {
+    flex: 1 1 auto;
+}
+
+.day, .column-col, .grid-col {
+	border-bottom: 1px solid #333;
+	border-left: 1px solid #333;
+	text-align: center;
+}
+.day:hover, td:hover, .column-col:hover, .grid-col:hover {
+	opacity: 0.75;
+	background-color: black;
+	color: white;
+}
+.forecast, .column, .grid {
+	border-right: 1px solid #333;
+}
+
+.title {
+	display: block;
+	padding: 5px;
+	border-bottom: 1px solid #333;
+	text-align: center;
+}
+
+.data {
+	display: block;
+	padding: 0 5px 5px;
+	font-size: 0.8rem;
+	text-align: center;
 }

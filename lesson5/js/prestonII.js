@@ -1,28 +1,27 @@
+// Date displayed in the footer Thursday, May 10, 2021
 let d = new Date();
 document.querySelector('#copyrightyear').textContent = d.getFullYear();
-document.querySelector('#modified').textContent = document.lastModified;
 
-const addedItem = document.querySelector('#newChapter');
-const button = document.querySelector('button');
-const output = document.querySelector('.list');
+//select the element to manipulate
+const datefield = document.querySelector("#updated");
 
-button.addEventListener('click', function() {
-    let myChapter = input.value;
-    input.value = '';
+//current date with that object
+const now = new Date();
+const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(now);
 
-    const listChapters = document.createElement('li');
-    const listText = document.createElement('span');
-    const listBtn = document.createElement('button');
+datefield.innerHTML = `<em>${fulldate}</em>`;
 
-    listChapters.appendChild(listText);
-    listText.textContent = myChapter;
-    listChapter.appendChild(listBtn);
-    listBtn.textContent = 'Delete';
-    list.appendChild(listItem);
 
-    listBtn.onclick = function(e) {
-    list.removeChild(listItem);
-    }
 
-    input.focus();
-      })
+// Hamburger
+
+
+//If the menu is shown and then the window is resized, avoid problems by
+  // the 760 or the 32.5em
+  window.onresize = () => {if (window.innerWidth > 760) navigation.classList.remove('hide')};
+
+
+//getDay() and display: block; query selector all is an option.
+if (d.getDay() == 5) {
+    document.querySelector('.banner');
+}

@@ -6,21 +6,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="DOM Manipulation. Web Development at BYU Idaho, WDD230-01">
-    <title>Preston Town Two</title>
+    <title>Home Page Updated</title>
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Lobster&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&family=Raleway:wght@300;400&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/small.css" />
-    <link rel="stylesheet" href="css/medium.css" />
+   <!-- defer waits for the document to load, read up on async -->
+	<script defer src="js/prestonII.js"></script>
 </head>
 
 <body>
-    <header>
-        <h1> Preston Town Two</h1>
+    
+<div class=banner> 🥞 Pancakes on Saturday Morning</div>
+<header>
+    <img id="logo" src="images/umbrellalogo.jpg" alt="a blue umbrella" />
+        <h1> Tut, tut, it looks like rain</h1>
+        <h2 id="motto"> Get connected with your community</h2> 
 </header>
 
+
 <main>
-	
+<div>
+<img id="sky" src="images/1600wbanner.jpg" alt="trees and the sky">
+<div class="stats">
+<h3>Weather Summary</h3>
+<div class="weatherdetails">
+<p class="label"> Currently: </p>
+<p class ="value">Sunny</p>
+<p class="label"> High: </p>
+<p class ="value">75 &deg; F</p>
+<p class="label"> Wind Chill: </p>
+<p class ="value">Sunny</p>
+<p class="label"> Humidity: </p>
+<p class ="value">%</p>
+<p class="label"> Wind Speed: </p>
+<p class ="value">mph</p>
+</div>
+</div>
+</div>
+
+<h2>Five Day Weather Forecast</h2>
+<div class="forecast">
+	<div class="day">
+		<span class="title">1</span>
+		<img src="https://placekitten.com/50/50" alt="kitten!">
+		<span class="data">Kitten 1</span>
+	</div>
+	<div class="day">
+		<span class="title">2</span>
+		<img src="https://placekitten.com/50/50" alt="kitten!">
+		<span class="data">Kitten 2</span>
+	</div>
+	<div class="day">
+		<span class="title">3</span>
+		<img src="https://placekitten.com/50/50" alt="kitten!">
+		<span class="data">Kitten 3</span>
+	</div>
+	<div class="day">
+		<span class="title">4</span>
+		<img src="https://placekitten.com/50/50" alt="kitten!">
+		<span class="data">Kitten 4</span>
+	</div>
+	<div class="day">
+		<span class="title">5</span>
+		<img src="https://placekitten.com/50/50" alt="kitten!">
+		<span class="data">Kitten 5</span>
+	</div>
+ </div>
+
+ <div class="article">
+<h2>Fun Article </h2>
+    <p></p>
+
+ </div>
+
+
 </main>
 <footer>
     <p id="copyright"> &copy; <span id="copyrightyear"></span> | Megan De Le&oacute;n | Utah | <a
@@ -28,7 +90,6 @@
 </p>
 <p id="updated"> Last Updated: <span id="modified"></span></p>
 </footer>
-<script src="js/prestonII.js"></script>
 </body>
 
 </html>
