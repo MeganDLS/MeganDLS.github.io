@@ -208,3 +208,23 @@ td:hover,
     box-shadow: 0 0 30px #111;
     border-radius: .4rem;
 }
+
+/* Contact */
+
+#contact {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding-right: 6rem;
+    padding-top: 2rem;
+}
+#contact, h2 {
+padding-left: 0;
+}
+
+.social {
+    background-color: #8DB1AB;
+    border-radius: .4rem;
+}
+.map {
+    padding-left: 8rem;
+}
