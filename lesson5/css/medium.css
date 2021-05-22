@@ -1,0 +1,20 @@
+/* 32em also 556px if font is 16px */
+@media only screen and (min-width: 768px) {
+    .navigation {
+        display: flex;
+        font-size: 1.2rem;
+    }
+    .navigation li {
+        display: block;
+        flex: 1 1 auto;
+    }
+    .navigation a {
+        text-align: center;
+    }
+    
+    .navigation li:first-child {
+        display: none;
+    }
+    
+    
+    }

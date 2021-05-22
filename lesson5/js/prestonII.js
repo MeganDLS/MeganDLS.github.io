@@ -6,22 +6,24 @@ document.querySelector('#copyrightyear').textContent = d.getFullYear();
 const datefield = document.querySelector("#updated");
 
 //current date with that object
-const now = new Date();
-const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(now);
+//const now = new Date();
+const fulldate = new Intl.DateTimeFormat("en-US", {
+  dateStyle: "full"
+}).format(d);
 
 datefield.innerHTML = `<em>${fulldate}</em>`;
-
-
 
 // Hamburger
 
 
 //If the menu is shown and then the window is resized, avoid problems by
-  // the 760 or the 32.5em
-  window.onresize = () => {if (window.innerWidth > 760) navigation.classList.remove('hide')};
+// the 760 or the 32.5em
+window.onresize = () => {
+  if (window.innerWidth > 760) navigation.classList.remove('hide')
+};
 
 
 //getDay() and display: block; query selector all is an option.
 if (d.getDay() == 5) {
-    document.querySelector('.banner');
+  document.querySelector('.banner');
 }

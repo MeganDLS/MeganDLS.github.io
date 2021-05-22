@@ -1,50 +1,131 @@
-
+* {
+    padding: 0;
+    font-size: 16px;
+    font-family: "Montserrat", Arial, sans-serif;
+}
 
 body {
-	font-size: 16px;
-	font-family: Acme, Arial, sans-serif;
     margin: 4rem;
 }
 
 main {
-	margin: 0.5rem;
-	border: 1px solid #999;
-	padding: 0.5rem;
-	background-color: #bed;
+    margin: 0.5rem;
+    border: 1px solid #999;
+    padding: 0.5rem;
+    background-color: #bed;
 }
 
-.herodiv {
-    position: relative;
-    
+/* Logo*/
+header img {
+    width: auto;
+    height: 12rem;
+    border: 2px solid #1D3557;
+    border-radius: .3rem;
+    float: left;
+    height: 8rem;
 }
-#sky {
-    height: 300px;
-    justify-content: center;
 
+/* Navigation Bar */
+nav {
+    margin: 0 auto;
+    background-color: #F2ED6F;
+    border-radius: .3rem;
+    width: 100%;
 }
 
-.banner {
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* hamburger button */
+.navigation {
+    margin: .15rem 2%;
+    background-color: transparent;
+    font-size: 1.6rem;
+    color: #1D3557;
+    list-style: none;
+    padding: 0;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
     display: none;
 }
+
+nav ul li a {
+    padding: .8rem 2%;
+
+    /* removes underline for links */
+    text-decoration: none;
+    color: #1D3557;
+    /* border-top: 1px solid; */
+}
+
+nav ul li a:hover {
+    background-color: #8DB1AB;
+}
+
+.hide li {
+    display: block;
+}
+
+/* hero image */
+.herodiv {
+    position: relative;
+}
+
+#sky {
+    width: 100%;
+    height: auto;
+}
+
+.popup {
+    display: none;
+}
+
 .stats {
     position: absolute;
     align-items: center;
     opacity: .9;
-    top: 250px;
-    left: 100px;
+    top: 350px;
+    left: 175px;
     box-shadow: 0 0 30px #111;
-    background: radial-gradient(#eee, #4567aa)
-    }
+    background: radial-gradient(#8DB1AB, #1D3557);
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+.weatherdetails {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: "Raleway", Arial, serif;
+    
+}
+
+.label {
+    text-decoration: underline;
+}
+
+.value {
+    font-style: italic;
+}
 
 h1 {
     color: #F4E04D;
-    font-family: "Acme", Arial, sans-serif;
     font-size: 2.5rem;
 }
 
 h2 {
-    justify-content: center;
+    font-family: "Raleway", Arial, sans-serif;
+    font-size: 1.5rem;
 }
+
 header,
 footer {
     text-align: center;
@@ -59,40 +140,70 @@ a {
     color: #F2ED6F;
 }
 
+.block {
+    border-style: solid;
+    border-radius: .4rem;
+    padding: .5rem;
+    margin: .2rem;
+}
+
+
 /* Weather Forecast */
 
 .forecast {
-display: flex;
-flex-flow: row wrap;
+    display: flex;
+    flex-flow: row wrap;
 }
+
 .day {
     flex: 1 1 auto;
 }
 
-.day, .column-col, .grid-col {
-	border-bottom: 1px solid #333;
-	border-left: 1px solid #333;
-	text-align: center;
-}
-.day:hover, td:hover, .column-col:hover, .grid-col:hover {
-	opacity: 0.75;
-	background-color: black;
-	color: white;
-}
-.forecast, .column, .grid {
-	border-right: 1px solid #333;
+.day,
+.column-col,
+.grid-col {
+    border-bottom: 1px solid #333;
+    border-left: 1px solid #333;
+    text-align: center;
 }
 
+.day:hover,
+td:hover,
+.column-col:hover,
+.grid-col:hover {
+    opacity: 0.75;
+    background-color: black;
+    color: white;
+}
+
+.forecast,
+.column,
+.grid {
+    border-right: 1px solid #333;
+}
+
+.forecast, img {
+    border-radius: .6rem;
+}
 .title {
-	display: block;
-	padding: 5px;
-	border-bottom: 1px solid #333;
-	text-align: center;
+    display: block;
+    padding: 5px;
+    border-bottom: 1px solid #333;
+    text-align: center;
 }
 
 .data {
-	display: block;
-	padding: 0 5px 5px;
-	font-size: 0.8rem;
-	text-align: center;
+    display: block;
+    padding: 0 5px 5px;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+/* Article */
+#articleimg {
+    width: auto;
+    height: 12rem;
+    float: right;
+    box-shadow: 0 0 30px #111;
+    border-radius: .4rem;
 }
