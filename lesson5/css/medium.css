@@ -15,6 +15,12 @@
     .navigation li:first-child {
         display: none;
     }
-    
-    
+
+    nav ul li a {
+        padding: .8rem 2%;
+        /* removes underline for links */
+        text-decoration: none;
+        color: #1D3557;
+        /* border-top: 1px solid; */
+    }
     }

@@ -29,8 +29,7 @@ window.onresize = () => {
   if (window.innerWidth > 760) navigation.classList.remove('hide')
 };
 
-
-//getDay() and display: block; query selector all is an option.
+//getDay() and display: block; 5 would be for friday. Query selector all is an option.
 if (d.getDay() == 5) {
-  document.querySelector('.banner');
+  document.querySelector('.popup').style.display='block';
 }
