@@ -23,4 +23,8 @@
         color: #1D3557;
         /* border-top: 1px solid; */
     }
+
+    .stats {
+        display:none;
+    }
     }
