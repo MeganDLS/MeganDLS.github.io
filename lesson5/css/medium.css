@@ -1,7 +1,7 @@
 /* 32em also 556px if font is 16px */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 770px) {
     body {
-        margin: 4rem;
+        margin: 3rem;
         
     }
     
@@ -45,19 +45,17 @@
         text-align: center;
     }
 
-
-
     .stats {
         display: block;
         position: absolute;
     }
 
     .label {
-        margin: .5rem;
+        margin: .2rem;
     }
 
     .value {
-        margin: .5rem;
+        margin: .2rem;
     }
 
     /* article */

@@ -69,12 +69,8 @@ header img {
 padding-left: 0;
 }
 
-.social {
-    background-color: #8DB1AB;
-    border-radius: .4rem;
-}
 .map {
-    padding-left: 5rem;
+    padding-left: 2rem;
 }
 
 .bottom {
