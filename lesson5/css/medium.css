@@ -1,5 +1,11 @@
 /* 32em also 556px if font is 16px */
 @media only screen and (min-width: 768px) {
+    body {
+        margin: 4rem;
+        
+    }
+    
+    
     .navigation {
         display: flex;
         font-size: 1.2rem;
@@ -26,8 +32,23 @@
         /* border-top: 1px solid; */
     }
 
+
+    /* weather forecast */
+    div.day:first-child {
+        border-left: none;
+    }
+    .day,
+    .column-col,
+    .grid-col {
+        border-right: 1px solid #333;
+        border-bottom: 1px solid #333;
+        text-align: center;
+    }
+
+
+
     .stats {
-        display: none;
+        display: block;
         position: absolute;
     }
 
@@ -37,5 +58,17 @@
 
     .value {
         margin: .5rem;
+    }
+
+    /* article */
+    #articleimg {
+        width: auto;
+        height: 15rem;
+        float: right;
+        box-shadow: 0 0 20px #111;
+        border-radius: .4rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        
     }
 }
