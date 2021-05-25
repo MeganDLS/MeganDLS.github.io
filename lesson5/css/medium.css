@@ -4,14 +4,16 @@
         display: flex;
         font-size: 1.2rem;
     }
+
     .navigation li {
         display: block;
         flex: 1 1 auto;
     }
+
     .navigation a {
         text-align: center;
     }
-    
+
     .navigation li:first-child {
         display: none;
     }
@@ -25,6 +27,15 @@
     }
 
     .stats {
-        display:none;
+        display: none;
+        position: absolute;
     }
+
+    .label {
+        margin: .5rem;
     }
+
+    .value {
+        margin: .5rem;
+    }
+}

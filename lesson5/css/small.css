@@ -111,7 +111,6 @@ nav ul li a:hover {
 }
 
 .stats {
-    position: absolute;
     align-items: center;
     opacity: .9;
     top: 72px;
@@ -120,7 +119,7 @@ nav ul li a:hover {
     background: radial-gradient(#8DB1AB, #1D3557);
     padding: 1rem;
     border-radius: .5rem;
-    display: none;
+    display: block;
 }
 
 .weatherdetails {
@@ -182,6 +181,10 @@ a {
     display: flex;
     flex-flow: row wrap;
     background-color: #8DB1AB;
+}
+
+.forecast:first-child {
+    border-left: none;
 }
 
 .day {

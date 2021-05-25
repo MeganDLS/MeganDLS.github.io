@@ -7,4 +7,13 @@
     .stats {
         display: block;
     }
+
+    .label {
+        margin: 1rem;
+    }
+
+    .value {
+        margin: 1rem;
+    }
+
 }
