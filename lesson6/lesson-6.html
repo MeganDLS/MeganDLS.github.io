@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 
 <head>
 	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+	<title>Tut Tut it Looks Like Rain, windchill and images</title>
 	<meta name="description" content="Lesson 6, resized images. Web Development at BYU Idaho, WDD230-01">
-	<title>Tut Tut it Looks Like Rain, Adding images</title>
+	<link rel="shortcut icon" type="image/png" href="favicon.ico">
 
-	<link rel="shortcut icon" href="favicon.ico">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-	<link
+	<!-- <link 
 		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&family=Raleway:wght@300;400&display=swap"
-		rel="stylesheet">
+		rel="stylesheet"> 
+-->
+
 	<link rel="stylesheet" href="css/small.css" />
 	<link rel="stylesheet" href="css/medium.css" />
 	<link rel="stylesheet" href="css/large.css" />
@@ -27,14 +29,7 @@
 	<div class=popup> 🥞 Pancakes on Saturday Morning</div>
 
 	<header>
-		<picture>
-			<source srcset="images/logo2.png" media="(min-width: 500px) and (max-width: 799px)">
-			<source srcset="images/logo3.png" media="(min-width: 800px)">
-			
-			<!-- ", images/logo2.png, images/logo3.png> -->
-			<img src="images/logo1" alt="A green field with sunshine peeking through the clouds of a blue sky">
-		</picture>
-		<!-- <img id="logo" src="images/umbrellalogo.jpg" alt="a blue umbrella" /> -->
+		<img id="logo" src="images/umbrellalogo.jpg" alt="a blue umbrella" />
 		<h1> Tut, tut, <br> it looks like rain</h1>
 		<h2 id="motto"> Get connected with your community</h2>
 	</header>
@@ -56,7 +51,22 @@
 	<main>
 
 		<div class="overlay">
-			<img id="sky" src="images/panoimage.svg" alt="trees and the sky">
+			<!--<figure id="sky">
+<img src="images/sunshine.jpeg" alt="A green field with sunshine peeking through the clouds of a blue sky" sizes=50vw"
+srcset="images/logo1.png 200w, images/logo2.png 500w,images/logo3.png 800w"
+			</figure> -->
+
+
+			<picture id="sky">
+				<source media="(min-width: 500px) and (max-width: 799px)" srcset="images/medsunshine.jpg">
+				<source srcset="images/largesunshine.jpg" media="(min-width: 800px)">
+				<img src="images/smallsunshine.jpg" alt="A green field with sunshine peeking through the clouds of a blue sky">
+			</picture>
+
+<!--images/panoimage.svg-->
+			<!-- <img id="sky" src="images/panoimage.svg" alt="A green field with sunshine peeking through the clouds of a blue sky" sizes=50vw"> -->
+
+
 			<section class="stats">
 				<h3>Weather Summary</h3>
 				<div class="weatherdetails">
@@ -174,6 +184,13 @@
 			<p id="updated"><span id="modified"></span></p>
 		</div>
 	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+	<script>
+		WebFont.load({google: {families: ["Montserrat", "Raleway"]}});
+	</script>
+	 <script src="js/getdate.js"></script>
+	 <script src="js/prestonIII.js"></script>
+	 <script src="js/windchill.js"></script>
 </body>
 
 </html>

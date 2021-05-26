@@ -86,10 +86,7 @@ nav ul li a:hover {
     position: relative;
 }
 
-#sky {
-    width: 100%;
-    height: auto;
-}
+
 
 .popup {
     display: none;
