@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="DOM Manipulation. Web Development at BYU Idaho, WDD230-01">
+	<title>Tut Tut it Looks Like Rain, Updated</title>
+
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&family=Raleway:wght@300;400&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="css/small.css" />
+	<link rel="stylesheet" href="css/medium.css" />
+	<link rel="stylesheet" href="css/large.css" />
+
+	<!-- defer waits for the document to load, TODO read up on async -->
+	<script defer src="js/prestonII.js"></script>
+</head>
+
+<body>
+
+	<div class=popup> 🥞 Pancakes on Saturday Morning</div>
+
+	<header>
+		<img id="logo" src="images/umbrellalogo.jpg" alt="a blue umbrella" />
+		<h1> Tut, tut, <br> it looks like rain</h1>
+		<h2 id="motto"> Get connected with your community</h2>
+	</header>
+
+	<nav>
+		<!-- default will be hidden, display none, until user clicks button-->
+		<ul class="navigation">
+			<!-- emoji for hamburger menu &#9776; query selector is better choice than onclick-->
+			<li><a href="#" class="hamburger">&#9776; Menu</a></li>
+			<li><a href="/lesson4/lesson-4.html">Home</a></li>
+			<li><a href="/lesson4/preston.html">Preston</a></li>
+			<li><a href="/lesson4/soda-springs.html">Soda Srings</a></li>
+			<li><a href="/lesson4/fish-haven.html">Fish Haven</a></li>
+			<li><a href="/lesson4/storm-center.html">Storm Center</a></li>
+			<li><a href="/lesson4/gallery.html">Gallery</a></li>
+		</ul>
+	</nav>
+	<h2 id="pagetitle">Preston Idaho</h2>
+	<main>
+		
+		<div class="overlay">
+			<img id="sky" src="images/panoimage.svg" alt="trees and the sky">
+			<section class="stats">
+				<h3>Weather Summary</h3>
+				<div class="weatherdetails">
+					<p class="label">Currently: </p>
+					<p class="value">Sunny</p>
+					<p class="label">High: </p>
+					<p class="value">75 &deg; F</p>
+					<p class="label">Wind Chill: </p>
+					<p class="value">Sunny</p>
+					<p class="label">Humidity: </p>
+					<p class="value"> %</p>
+					<p class="label">Wind Speed: </p>
+					<p class="value"> mph</p>
+				</div>
+			</section>
+		</div>
+
+		<h2>Five Day Weather Forecast</h2>
+		<div class="forecast block">
+
+			<div class="day">
+				<span class="title">Monday</span>
+				<img src="images/partlycloudy50.jpg" alt="kitten!">
+				<span class="data">Partly Cloudy</span>
+			</div>
+			<div class="day">
+				<span class="title">Tuesday</span>
+				<img src="images/rainy50.jpg" alt="kitten!">
+				<span class="data">Rainy</span>
+			</div>
+			<div class="day">
+				<span class="title">Wednesday</span>
+				<img src="images/sunny50.jpg" alt="kitten!">
+				<span class="data">Sunny</span>
+			</div>
+			<div class="day">
+				<span class="title">Thursday</span>
+				<img src="images/partlycloudy50.jpg" alt="kitten!">
+				<span class="data">Cloudy</span>
+			</div>
+			<div class="day">
+				<span class="title">Friday</span>
+				<img src="images/snow50.jpg" alt="kitten!">
+				<span class="data">Snowy</span>
+			</div>
+		</div>
+
+		
+		<div class="block">
+			<h2>Fun Article </h2>
+			<img id="articleimg" src="images/thumbfamilypicture.svg"
+				alt="a dad a mom two girls and two boys standing on hilltop">
+			<p>
+				&emsp; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+				labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+				laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+				voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+				cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				<br><br>
+				&emsp; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+				labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+				laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+				voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+				cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+				labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+				<br>ullamco
+				laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+				voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+				cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				<br><br>
+				&emsp; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+				labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+				laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+				voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+				cupidatat non proident. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+				incididunt ut
+				labore et dolore magna aliqua.
+			</p>
+		</div>
+
+
+
+	</main>
+	<footer>
+		<div id="contact" class="block">
+			<img class="map" src="images/400hmap.JPG" alt="a map of our location" />
+			<div class="contact">
+				<h2>Contact Information</h2>
+				<p>
+					Tut Tut, LLC<br><br>
+					📪 Address: &ensp; 1st and 3rd, Preston, ID <br>
+					💻 E-mail: &emsp; &ensp;tuttut@pooh.com<br>
+					📞 Phone: &ensp; &ensp; 385-212-8520 <br>
+				</p>
+
+				<div class="social">
+					<a href="https://twitter.com/?lang=en"><img src="images/iconfinder_twitter_1164528.png"
+							alt="Twitter Icon" /></a>
+
+					<a href="https://www.instagram.com/"><img src="images/iconfinder_instagram_1164531.png"
+							alt="Instagram Icon" /></a>
+
+					<a href="https://www.facebook.com"><img src="images/iconfinder_facebook_1164534.png"
+							alt="Facebook Icon" /></a>
+				</div>
+
+				
+			</div>
+		</div>
+		<div class="bottom">
+			<p id="copyright"> &copy; <span id="copyrightyear"></span> | Megan De Le&oacute;n | Utah | <a
+				href="https://www.byui.edu/">BYUI Online Learning</a>
+		</p>
+		<p id="updated"><span id="modified"></span></p>
+		</div>
+		</footer>
+</body>
+
+</html>
