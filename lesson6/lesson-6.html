@@ -57,10 +57,10 @@ srcset="images/logo1.png 200w, images/logo2.png 500w,images/logo3.png 800w"
 			</figure> -->
 
 
-			<picture id="sky">
-				<source media="(min-width: 500px) and (max-width: 799px)" srcset="images/medsunshine.jpg">
-				<source srcset="images/largesunshine.jpg" media="(min-width: 800px)">
-				<img src="images/smallsunshine.jpg" alt="A green field with sunshine peeking through the clouds of a blue sky">
+			<picture>
+				<source media="(min-width: 500px) and (max-width: 799px)" srcset="images/medsunshine.jpeg">
+				<source srcset="images/lrgsunshine.jpeg" media="(min-width: 800px)">
+				<img class="hero" src="images/smlsunshine.jpeg" alt="A green field with sunshine peeking through the clouds of a blue sky" width="1300" height="500">
 			</picture>
 
 <!--images/panoimage.svg-->
@@ -71,15 +71,15 @@ srcset="images/logo1.png 200w, images/logo2.png 500w,images/logo3.png 800w"
 				<h3>Weather Summary</h3>
 				<div class="weatherdetails">
 					<p class="label">Currently: </p>
-					<p class="value">Sunny</p>
-					<p class="label">High: </p>
-					<p class="value">75 &deg; F</p>
+					<p class="value"> 38&deg;F<br/>Sunny</p>
+					<p class="label">Temperature: </p>
+					<p class="value"><span id="hightemp">75</span> &deg; F</p>
 					<p class="label">Wind Chill: </p>
-					<p class="value">Sunny</p>
+					<p class="value"><span id="windchill"></span>&deg;F</p>
 					<p class="label">Humidity: </p>
-					<p class="value"> %</p>
+					<p class="value"> 23%</p>
 					<p class="label">Wind Speed: </p>
-					<p class="value"> mph</p>
+					<p class="value"> 6 mph</p>
 				</div>
 			</section>
 		</div>

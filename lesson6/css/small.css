@@ -85,8 +85,10 @@ nav ul li a:hover {
     margin: 10px auto;
     position: relative;
 }
-
-
+.hero {
+    width: 100%;
+    height: auto;
+}
 
 .popup {
     display: none;
