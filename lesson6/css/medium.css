@@ -1,11 +1,5 @@
 /* 32em also 556px if font is 16px */
 @media only screen and (min-width: 770px) {
-    body {
-        margin: 3rem;
-        
-    }
-    
-    
     .navigation {
         display: flex;
         font-size: 1.2rem;
