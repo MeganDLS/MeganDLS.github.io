@@ -3,7 +3,7 @@
     padding: 0;
     font-size: 16px;
     font-family: "Montserrat", Arial, sans-serif;
-    }
+}
 
 body {
     margin: 1rem;
@@ -12,7 +12,6 @@ body {
 
 .block {
     border-style: solid;
-    border-radius: .4rem;
     padding: .5rem;
 }
 
@@ -24,10 +23,12 @@ h2 {
     font-family: "Raleway", Arial, sans-serif;
     font-size: 1.2rem;
     color: #1D3557;
+    text-align: center;
 }
 
 h3 {
     text-align: center;
+    padding-top: 1rem;
 }
 
 #motto {
@@ -39,7 +40,6 @@ header,
 footer {
     border: 2px solid #CEE397;
     background-color: #1D3557;
-    border-radius: .5rem;
     color: #8DB1AB;
 }
 
@@ -51,7 +51,6 @@ a {
 header img {
     height: 8rem;
     border: 2px solid #1D3557;
-    border-radius: .3rem;
     float: left;
     padding-top: .5rem;
 }
@@ -60,7 +59,6 @@ header img {
 nav {
     margin: 0 auto;
     background-color: #F2ED6F;
-    border-radius: .3rem;
     width: 100%;
 }
 
@@ -107,17 +105,14 @@ nav ul li a:hover {
 /*Title Preston, Idaho*/
 #pagetitle {
     color: #1D3557;
-    font-style: italic;
-    font-size: 2.5rem;
 }
 
 /*Friday Pancake Banner*/
 .popup {
     display: none;
-    padding: 1.5rem;
-    font-size: 2.2rem;
+    padding: .5rem;
+    font-size: 1.3rem;
     background-color: #8DB1AB;
-    border-radius: .5rem;
     text-align: center;
     font-family: "Montserrat", Arial, sans-serif;
 }
@@ -132,25 +127,24 @@ nav ul li a:hover {
 .hero {
     width: 100%;
     height: auto;
+    margin: 0;
+    margin-bottom: .5rem;
 }
 
 /*Weather Summary*/
 .stats {
-    box-shadow: 0 0 20px #1D3557;
-    background:#F2ED6F;
-    padding: .5rem;
-    border-radius: .5rem;
+    box-shadow: 0 0 10px #1D3557;
+    background: #F2ED6F;
 }
 
 .weatherdetails {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-
 .label {
-    text-decoration: underline;
+    font-weight: bold;
+    padding-left: 3rem;
 }
-
 .value {
     font-style: italic;
 }
@@ -185,7 +179,6 @@ td:hover,
 
 .forecast,
 img {
-    border-radius: .6rem;
     margin: .5rem;
 }
 
@@ -208,13 +201,12 @@ img {
     width: auto;
     height: 8rem;
     box-shadow: 0 0 20px #111;
-    border-radius: .4rem;
-    margin-left: 1.4rem;
+    margin-left: 4rem;
 }
 
 #newsarticle {
-font-size: 1rem;
-color: black;
+    font-size: 1rem;
+    color: black;
 }
 
 /***Contact***/

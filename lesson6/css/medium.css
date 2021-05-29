@@ -1,64 +1,114 @@
     @media only screen and (min-width: 760px) {
+        .block {
+            border-radius: .4rem;
+        }
+
+
+        header,
+        footer {
+            border-radius: .5rem;
+        }
+
         /***Header***/
-         .navigation {
-             display: flex;
-             font-size: 1.2rem;
-         }
-     
-         .navigation li {
-             display: block;
-             flex: 1 1 auto;
-         }
-     
-         .navigation a {
-             text-align: center;
-         }
-     
-         .navigation li:first-child {
-             display: none;
-         }
-     
-         nav ul li a {
-             padding: .8rem 2%;
-             /* removes underline for links */
-             text-decoration: none;
-             color: #1D3557;
-             /* border-top: 1px solid; */
-         }
-     
-       /***Weather Forecast Table***/
-         div.days:first-child {
-             border-left: none;
-         }
-         .days,
-         .column-col,
-         .grid-col {
-             border-right: 1px solid #333;
-             border-bottom: 1px solid #333;
-             text-align: center;
-         }
-     
-         .forecast {
-             text-align: center;
-             margin: 1rem;
-         }
-     
-         .label {
-             margin: .2rem;
-         }
-     
-         .value {
-             margin: .2rem;
-         }
-     
-     /***Article***/
-         #articleimg {
-             height: 15rem;
-             float: right;
-             box-shadow: 0 0 20px #111;
-             border-radius: .4rem;
-             margin-right: 1rem;
-             margin-left: 1rem;
-             
-         }
-     }
+        header img {
+            border-radius: .3rem;
+        }
+
+        nav {
+            border-radius: .3rem;
+        }
+
+        .navigation {
+            display: flex;
+            font-size: 1.2rem;
+        }
+
+        .navigation li {
+            display: block;
+            flex: 1 1 auto;
+        }
+
+        .navigation a {
+            text-align: center;
+        }
+
+        .navigation li:first-child {
+            display: none;
+        }
+
+        nav ul li a {
+            padding: .8rem 2%;
+            /* removes underline for links */
+            text-decoration: none;
+            color: #1D3557;
+            /* border-top: 1px solid; */
+        }
+
+        /*Title Preston, Idaho*/
+        #pagetitle {
+            color: #1D3557;
+            font-style: italic;
+            font-size: 2.5rem;
+        }
+
+        /*Friday Pancake Banner*/
+        .popup {
+            border-radius: .5rem;
+            margin: .2rem;
+            padding: 1.5rem;
+            font-size: 2.2rem;
+        }
+
+        /*Weather Summary*/
+        .stats {
+            border-radius: .5rem;
+            padding: .5rem;
+        }
+
+
+        /***Weather Forecast Table***/
+        div.days:first-child {
+            border-left: none;
+        }
+
+        .days,
+        .column-col,
+        .grid-col {
+            border-right: 1px solid #333;
+            border-bottom: 1px solid #333;
+            text-align: center;
+        }
+
+        .forecast {
+            text-align: center;
+            margin: 1rem;
+        }
+
+        .forecast,
+        img {
+            border-radius: .6rem;
+        }
+
+        .label {
+            margin: .2rem;
+        }
+
+        .value {
+            margin: .2rem;
+        }
+
+        /***Article***/
+        #articleimg {
+            height: 15rem;
+            float: right;
+            box-shadow: 0 0 20px #111;
+            border-radius: .4rem;
+            margin-right: 1rem;
+            margin-left: 1rem;
+        }
+
+        /***Contact***/
+        .social {
+            border-radius: 3rem;
+        }
+    }
