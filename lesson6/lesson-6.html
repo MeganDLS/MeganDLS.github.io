@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	
+
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 	<title>Tut Tut it Looks Like Rain, windchill and images</title>
 	<meta name="description" content="Lesson 6, resized images. Web Development at BYU Idaho, WDD230-01">
@@ -16,12 +16,16 @@
 		rel="stylesheet"> 
 -->
 
+
 	<link rel="stylesheet" href="css/small.css" />
-	<link rel="stylesheet" href="css/medium.css" />
+	<link rel="stylesheet" href="css/medium.css">
 	<link rel="stylesheet" href="css/large.css" />
 
-	<!-- defer waits for the document to load, TODO read up on async -->
+	<!-- defer waits for the document to load, but wastes time. TODO read up on async -->
 	<script defer src="js/prestonIII.js"></script>
+	<script defer src="js/getdate.js"></script>
+	<script defer src="js/windchill.js"></script>
+
 </head>
 
 <body>
@@ -55,10 +59,12 @@
 			<picture>
 				<source media="(min-width: 500px) and (max-width: 799px)" srcset="images/medsunshine.jpg">
 				<source srcset="images/lrgsunshine.jpg" media="(min-width: 800px)">
-				<img class="hero" src="images/smlsunshine.jpg" alt="A green field with sunshine peeking through the clouds of a blue sky" width="1300" height="500">
+				<img class="hero" src="images/smlsunshine.jpg"
+					alt="A green field with sunshine peeking through the clouds of a blue sky" width="1300"
+					height="500">
 			</picture>
 
-<!--images/panoimage.svg-->
+			<!--images/panoimage.svg-->
 			<!-- <img id="sky" src="images/panoimage.svg" alt="A green field with sunshine peeking through the clouds of a blue sky" sizes=50vw"> -->
 
 			<section class="stats">
@@ -66,8 +72,8 @@
 				<div class="weatherdetails">
 					<p class="label">Currently: </p>
 					<p class="value"> 38&deg;F & Sunny</p>
-					<p class="label">Temperature: </p>
-					<p class="value"><span class="hightemp">49</span>&deg; F</p>
+					<p class="label">Temperature:</p>
+					<p class="value"><span class="hightemp">55</span>&deg;F</p>
 					<p class="label">Wind Chill: </p>
 					<p class="value"><span class="windchill"> </span>&deg;F</p>
 					<p class="label">Humidity: </p>
@@ -83,7 +89,7 @@
 
 			<div class="days">
 				<span class="day">Monday</span>
-				<img src="images/sunny50.jpg" alt="kitten!">
+				<img src="images/sunny50.jpg" alt="sunny">
 				<span class="data">Partly Cloudy</span>
 			</div>
 			<div class="days">
@@ -110,35 +116,60 @@
 
 
 		<div class="block">
-			<h2> How To Bond As A Family </h2>
+			<h2> Forging Stronger Family Bonds Through Activity </h2>
 			<img id="articleimg" src="images/thumbfamilypicture.svg"
 				alt="a dad a mom two girls and two boys standing on hilltop">
 			<p>
-				&emsp; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-				labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-				laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-				voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-				cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				<br><br>
-				&emsp; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-				labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-				laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-				voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-				cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-				labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-				<br>ullamco
-				laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-				voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-				cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				<br><br>
-				&emsp; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-				labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-				laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-				voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-				cupidatat non proident. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-				incididunt ut
-				labore et dolore magna aliqua.
+				An anonymous person has been playing the role of Secret Santa in eastern Idaho. Diana Boldman and her
+				husband Cameron were included on this year's nice list. They were given a 2019 Hyundai Tuscon.
+
+				DAVID GREENE, HOST:
+
+				For the past five years, a mysterious Secret Santa has been spreading holiday cheer in
+				Idaho. NATE EATON: It's amazing to watch somebody's life change in seconds, where you show up, they open
+				a box and that thing they never thought would happen just happened from an anonymous giver who doesn't
+				want to be known.
+
+				NOEL KING, HOST:
+
+				That's Nate Eaton. And he is Secret Santa's little helper, so to speak. He's also a journalist who
+				helped launch eastidahonews.com. In 2015, he got a random phone call.
+
+				EATON: From a local person who said, I have $100,000 that I want to give away. But I want to be sure
+				that the money goes to people who truly need it, people that would never ask for a handout, people that,
+				you know, are working hard. They've just run out of money and they've run out of luck.
+
+				GREENE: Eaton says he's gotten a flood of nominations every year since then. This year, Diana Boldman
+				was one. She and her husband are both 65. They wake up every morning to deliver newspapers in an old
+				van.
+
+				DIANA BOLDMAN: Right now, we are driving a 2003 Dodge Caravan, which I very much enjoy. But it's old.
+				And it's got 240,000 miles on it.
+
+				KING: After delivering the papers, Diana goes to her full-time job at McDonald's. She wants to retire
+				soon, but her husband is on disability. So she's the provider. Now, Nate Eaton, who's well known in the
+				community, recently showed up at the McDonald's where she works.
+
+				BOLDMAN: As soon as I saw Nate Eaton, I knew something was up.
+
+				GREENE: And she was right. Eaton presented her with a 2019 Hyundai Tucson.
+
+				BOLDMAN: I was really just a little bit flabbergasted. Whoever the person is, well, everybody would like
+				them to know that they are very much appreciated.
+
+				GREENE: That's Diana Boldman, thankful for a gift from a Secret Santa who still remains anonymous.
+
+				(SOUNDBITE OF SONG, "MERRY CHRISTMAS BABY")
+
+				OTIS REDDING: (Singing) Merry Christmas, baby. You sure did treat me nice.
+
+				Copyright © 2020 NPR. All rights reserved. Visit our website terms of use and permissions pages at
+				www.npr.org for further information.
+
+				NPR transcripts are created on a rush deadline by Verb8tm, Inc., an NPR contractor, and produced using a
+				proprietary transcription process developed with NPR. This text may not be in its final form and may be
+				updated or revised in the future. Accuracy and availability may vary. The authoritative record of NPR’s
+				programming is the audio record.
 			</p>
 		</div>
 
@@ -148,13 +179,13 @@
 	<footer>
 		<div id="contact" class="block">
 
-			<iframe class="map" id="map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28163.73619399447!2d-111.9033210029279!3d42.10001505535372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1590175225846!5m2!1sen!2sus"
-                width="450" height="300" style="border:0;" allowfullscreen="" aria-hidden="false"
-                tabindex="0">
-            </iframe>
+			<!--iframe is the best way.
+				<iframe class="map" id="map"
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28163.73619399447!2d-111.9033210029279!3d42.10001505535372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1590175225846!5m2!1sen!2sus"
+				width="450" height="300" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+			</iframe>-->
 
-			<!-- <img class="map" src="images/400hmap.JPG" alt="a map of our location" /> -->
+			<img class="map" src="images/400hmap.JPG" alt="a map of our location" />
 			<div class="contact">
 				<h2>Contact Information</h2>
 				<p>
@@ -168,7 +199,7 @@
 					<a href="https://twitter.com/?lang=en"><img src="images/iconfinder_twitter_1164528.png"
 							alt="Twitter Icon" /></a>
 
-					<a href="https://www.instagram.com/"><img src="images/iconfinder_instagram_1164531.png"
+					<a href="https://www.instagram.com/"><img src="images/iconfinder_instagram_1164531.png" 
 							alt="Instagram Icon" /></a>
 
 					<a href="https://www.facebook.com"><img src="images/iconfinder_facebook_1164534.png"
@@ -186,12 +217,16 @@
 		</div>
 	</footer>
 	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
 	<script>
-		WebFont.load({google: {families: ["Montserrat", "Raleway"]}});
+		WebFont.load({
+			google: {
+				families: ["Montserrat", "Raleway"]
+			}
+		});
 	</script>
-	 <script src="js/getdate.js"></script>
-	 <script src="js/prestonIII.js"></script>
-	 <script src="js/windchill.js"></script>
+
+
 </body>
 
 </html>

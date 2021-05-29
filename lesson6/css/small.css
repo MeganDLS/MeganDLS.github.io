@@ -1,8 +1,9 @@
-/***Root***/
+/***The Entire Page***/
 * {
     padding: 0;
     font-size: 16px;
     font-family: "Montserrat", Arial, sans-serif;
+    max-width: 2000px;
 }
 
 body {
@@ -23,6 +24,10 @@ h2 {
     font-family: "Raleway", Arial, sans-serif;
     font-size: 1.2rem;
     color: #1D3557;
+}
+
+h3 {
+    text-align: center;
 }
 
 #motto {

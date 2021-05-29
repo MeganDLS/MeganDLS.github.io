@@ -1,4 +1,3 @@
-
 //HAMBURGER MENU BUTTON
 // Responsive Hamburger button for the menu items
 const hamburgerButton = document.querySelector('.hamburger');
