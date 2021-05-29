@@ -10,13 +10,13 @@
     }
 
     header,
-footer {
-    border: 2px solid #CEE397;
-    padding: 1rem;
-    background-color: #1D3557;
-    border-radius: .5rem;
-    color: #8DB1AB;
-}
+    footer {
+        border: 2px solid #CEE397;
+        padding: 1rem;
+        background-color: #1D3557;
+        border-radius: .5rem;
+        color: #8DB1AB;
+    }
 
 
     /***Header***/
@@ -76,27 +76,28 @@ footer {
         margin: .5rem;
     }
 
+    /***Weather Forecast Table***/
+.days {
+    border-right: none;
+}
     /***Contact***/
     #contact {
         display: grid;
         grid-template-columns: 1fr 1fr;
         padding-right: 4rem;
+        padding-top: 2rem;
     }
 
     .social {
         padding-left: 4rem;
     }
 
-    #contact,
-    h2 {
-        padding-left: 0;
-    }
-
     .map {
         border: 2px solid #F2ED6F;
         border-radius: 1rem;
         padding: 1rem;
-        padding-left: 2.5rem;
+        padding-left: 4rem;
+        width: 60%;
     }
 
     .bottom {

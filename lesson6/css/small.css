@@ -212,6 +212,11 @@ img {
     margin-left: 1.4rem;
 }
 
+#newsarticle {
+font-size: 1rem;
+color: black;
+}
+
 /***Contact***/
 #contact {
     padding-right: 1rem;
