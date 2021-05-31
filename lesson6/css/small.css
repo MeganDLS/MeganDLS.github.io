@@ -55,7 +55,7 @@ header img {
     padding-top: .5rem;
 }
 /*Wayfinder*/
-#preston:hover {
+.active {
     opacity: 0.75;
     background-color: #1D3557;
     color: white;
