@@ -13,7 +13,7 @@ const loadImages = (image) => {
         image.removeAttribute('data-src');
     };
 };
-
+console.display(image);
 //do something with each image in the images list
 const imgOptions = {
     rootmargin: '0px 0px 300px 0px',
