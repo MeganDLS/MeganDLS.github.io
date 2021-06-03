@@ -2,35 +2,42 @@
 let d = new Date();
 document.querySelector('#copyrightyear').textContent = d.getFullYear();
 
-//one way is to create a list
-const images = document.querySelectorAll(".llimg")
 
-function preloadImage(img) {
-    const src = img.getAttribute(".llimg");
-    if(!src) {
-        return;
-    }
-//actual image source in DOM, set it to our created constant
-    img.src = src;
-}
+//****Lazy Loading****
+//Create a list
+const images = document.querySelectorAll('img[data-src]');
 
-const imgOptions = {
-    threshold: 0,
-    //300px off the screen start loading in the images.
-    rootmargin: "0px 0px 300px 0px"
+const loadImages = (image) => {
+    image.setAttribute('src', image.getAttribute('data-src'));
+    image.onload = () => {
+        image.removeAttribute('data-src');
+    };
 };
 
-const imgObserver = new IntersectionObserver((entries, imgObserver) => {
-    entries.forEach(entry => {
-        if (!entry.isIntersecting) {
-            return;
-        } else {
-            preloadImage(entry.target);
-            imgObserver.unobserve(entry.target);
-        }
-    })
-}, imgOptions);
+//do something with each image in the images list
+const imgOptions = {
+    rootmargin: '0px 0px 300px 0px',
+    threshold: 0
+};
 
-images.forEach(image => {
-    imgObserver.observe(img);
-})
+if ('IntersectionObserver' in Window) 
+{const imgObserver = new IntersectionObserver(items => 
+    {items.forEach(item =>
+        {if (item.isIntersecting) 
+            {loadImages(item.target);
+            imgObserver.unobserve(item.target);
+        }
+    });
+        }, imgOptions);
+
+        //load image if necessary
+    images.forEach((img) => 
+        {
+            imgObserver.observe(img);
+        });
+    }
+else {
+        //load all images if not supported
+        preloadImage(img);
+        imgObserver.unobserve(img);
+    }
