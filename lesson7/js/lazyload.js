@@ -1,42 +1,39 @@
-//copyright date
-let d = new Date();
-document.querySelector('#copyrightyear').textContent = d.getFullYear();
+//****Lazy Loading****//Create a list
+const imagesToLoad = document.querySelectorAll('img[data-src]');
 
-
-//****Lazy Loading****
-//Create a list
-const images = document.querySelectorAll('img[data-src]');
-
+//separate out or loop through each image ?
 const loadImages = (image) => {
     image.setAttribute('src', image.getAttribute('data-src'));
     image.onload = () => {
         image.removeAttribute('data-src');
     };
 };
-console.display(image);
+//console.display(image);
+
 //do something with each image in the images list
 const imgOptions = {
     rootmargin: '0px 0px 300px 0px',
     threshold: 0
 };
 
-if ('IntersectionObserver' in Window) 
-{const imgObserver = new IntersectionObserver(images => 
-    {images.forEach(image =>
-        {if (image.isIntersecting) 
-            {loadImages(image.target);
-            imgObserver.unobserve(image.target);
+if ('IntersectionObserver' in Window) {
+    const imgObserver = new IntersectionObserver(items => {
+        items.forEach((item) =>
+        {if (item.isIntersecting) {
+            loadImages(item.target);
+            imgObserver.unobserve(item.target);
         }
     });
         }, imgOptions);
 
         //load image if necessary
-    images.forEach((image) => 
-        {
-            imgObserver.observe(image);
+    imagesToLoad.forEach((img) => {
+            imgObserver.observe(img);
         });
     }
 else {
         //load all images if not supported
-        imgObserver.unobserve(image);
-    }
+        const imgObserver = new IntersectionObserver(items => {
+            items.forEach((item) =>
+        imgObserver.unobserve(img));
+    })}
