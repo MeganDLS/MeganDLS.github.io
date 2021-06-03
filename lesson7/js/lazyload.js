@@ -21,23 +21,22 @@ const imgOptions = {
 };
 
 if ('IntersectionObserver' in Window) 
-{const imgObserver = new IntersectionObserver(items => 
-    {items.forEach(item =>
-        {if (item.isIntersecting) 
-            {loadImages(item.target);
-            imgObserver.unobserve(item.target);
+{const imgObserver = new IntersectionObserver(images => 
+    {images.forEach(image =>
+        {if (image.isIntersecting) 
+            {loadImages(image.target);
+            imgObserver.unobserve(image.target);
         }
     });
         }, imgOptions);
 
         //load image if necessary
-    images.forEach((img) => 
+    images.forEach((image) => 
         {
-            imgObserver.observe(img);
+            imgObserver.observe(image);
         });
     }
 else {
         //load all images if not supported
-        preloadImage(img);
-        imgObserver.unobserve(img);
+        imgObserver.unobserve(image);
     }
