@@ -1,0 +1,43 @@
+@media only screen and (min-width: 760px) {
+    header,
+    footer {
+        border-radius: .3rem;
+    }
+
+    /***Header***/
+    header img {
+        border-radius: .3rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    nav {
+        border-radius: .3rem;
+    }
+
+    .navigation {
+        display: flex;
+        font-size: 1.3rem;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 auto;
+    }
+
+    .navigation a {
+        text-align: center;
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
+
+    nav ul li a {
+        padding: .5rem 5%;
+        /* removes underline for links */
+        text-decoration: none;
+        color: #1D3557;
+
+    }
+}

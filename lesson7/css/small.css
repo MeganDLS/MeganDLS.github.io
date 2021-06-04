@@ -1,13 +1,132 @@
 body {
-        margin-left: 4rem;
-}
-img {
-        border: 1px solid black;
         margin: 1rem;
+        max-width: 2000px;
+        font-family: "Montserrat", Arial, sans-serif;
 }
 
+header,
+footer {
+        border: 2px solid #CEE397;
+        background-color: #1D3557;
+        color: #8DB1AB;
+}
 
+header img {
+        height: 8rem;
+        border: 2px solid #1D3557;
+        float: left;
+        padding-top: .5rem;
+}
+
+#motto {
+        color: #8DB1AB;
+
+    }
+/*Wayfinder*/
+.active {
+        opacity: 0.75;
+        background-color: #1D3557;
+        color: white;
+}
+
+/*Navigation Bar*/
+nav {
+        margin: 0 auto;
+        background-color: #F2ED6F;
+        width: 100%;
+}
+
+nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+}
+
+/*Hamburger Button*/
+.navigation {
+        margin: .15rem 2%;
+        background-color: transparent;
+        font-size: 1.6rem;
+        color: #1D3557;
+        list-style: none;
+        padding: 0;
+}
+
+.navigation li:first-child {
+        display: block;
+}
+
+.navigation li {
+        display: none;
+}
+
+nav ul li a {
+        padding: .1rem 1%;
+        /*removes underline for links*/
+        text-decoration: none;
+        color: #1D3557;
+        /*border-top: 1px solid;*/
+}
+
+nav ul li a:hover {
+        background-color: #8DB1AB;
+}
+
+.hide li {
+        display: block;
+}
+
+/***Gallery***/
 picture {
         display: flex;
 }
+
+div.gallery {
+        display: grid;
+        margin: 5px;
+        border: 1px solid #ccc;
+        float: left;
+        width: 180px;
+}
+
+div.gallery:hover {
+        border: 1px solid #777;
+}
+
+div.gallery img {
+        width: 100%;
+        height: auto;
+}
+
+div.desc {
+        padding: 15px;
+        text-align: center;
+}
+
+/***Contact***/
+#contact {
+        padding-right: 1rem;
+        text-align: right;
+}
+
+#contactinfo {
+        color: #8DB1AB;
+        text-align: right;
+        padding-bottom: 1rem;
+}
+
+.social {
+        background-color: #8DB1AB;
+        border-radius: .4rem;
+        margin-left: 1rem;
+}
+
+.bottom {
+        text-align: center;
+}
+
+.bottom a {
+        color:#F4E04D;
+}
+
 /* transition: opacity 250ms ease-in, transform 400ms ease-in; */

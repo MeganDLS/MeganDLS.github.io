@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Gallery For Weather Images</title>
+    <meta name="description" content="Lesson 7, lazy loading. Web Development at BYU Idaho, WDD230-01">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+
+    <script defer src="js/lazyload.js"></script>
+</head>
+
+<body>
+    <header>
+        <img id="logo" src="images/umbrellalogo.jpg" alt="a blue umbrella" />
+        <h1> Tut, tut, <br> it looks like rain</h1>
+        <h2 id="motto"> Get connected with your community</h2>
+    </header>
+
+    <nav>
+        <!-- Default will be hidden, display none, until user clicks button-->
+        <ul class="navigation">
+            <li><a href="#" class="hamburger">&#9776; Menu</a></li>
+            <li><a href="/lesson6/lesson-6.html">Home</a></li>
+            <li><a id="preston" href="/lesson6/preston.html">Preston</a></li>
+            <li><a id="sodasprings" href="/lesson6/soda-springs.html">Soda Srings</a></li>
+            <li><a id="fishhaven" href="/lesson6/fish-haven.html">Fish Haven</a></li>
+            <li><a id="stormcenter" href="/lesson6/storm-center.html">Storm Center</a></li>
+            <li><a class="active" id="gallery" href="/lesson7/gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <h2>Gallery</h2>
+    <main>
+        <div class="gallery">
+            <a target="_blank" href="images/300x400.jpg">
+                <img src="images/umbrellalogo.jpg" data-src="images/300x400.jpg"
+                    alt="Green trees leaves with some blue sky peeking through" width="300" height="400">
+            </a>
+            <div class="title">Sunny</div>
+        </div>
+
+        <picture>
+            <source media="(min-width: 500px) and (max-width: 799px)" srcset="images/medsunshine.jpg">
+            <source srcset="images/lrgsunshine.jpg" media="(min-width: 800px)">
+            <img class="hero" src="images/smlsunshine.jpg"
+                alt="A green field with sunshine peeking through the clouds of a blue sky" width="1300" height="500">
+        </picture>
+
+        <h2>When did I last visit?</h2>
+
+    </main>
+    <footer>
+        <div id="contact" class="block">
+
+            <div class="contact">
+                <h2 id="contactinfo">Contact Information</h2>
+                <p>
+                    Tut Tut, LLC<br><br>
+                    Address: &ensp; 1st and 3rd, Preston, ID <br>
+                    E-mail: &emsp; &ensp;tuttut@pooh.com<br>
+                    Phone: &ensp; &ensp; 385-212-8520 <br>
+                </p>
+
+                <div class="social">
+                    <a href="https://twitter.com/?lang=en"><img src="images/iconfinder_twitter_1164528.png"
+                            alt="Twitter Icon" /></a>
+
+                    <a href="https://www.instagram.com/"><img src="images/iconfinder_instagram_1164531.png"
+                            alt="Instagram Icon" /></a>
+
+                    <a href="https://www.facebook.com"><img src="images/iconfinder_facebook_1164534.png"
+                            alt="Facebook Icon" /></a>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="bottom">
+            <p><span id="copyrightyear"></span> Megan De Le&oacute;n | <a href="https://www.byui.edu/">BYUI Online
+                    Learning</a>
+            </p>
+            <p id="updated"></p>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+    <script>
+        WebFont.load({
+            google: {
+                families: ["Montserrat", "Raleway"]
+            }
+        });
+    </script>
+</body>
+
+</html>
