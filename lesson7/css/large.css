@@ -51,6 +51,11 @@
         font-size: 2rem;
     }
 
+    #thegallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
     /***Contact***/
     #contact {
         padding-top: 2rem;
