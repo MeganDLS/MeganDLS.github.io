@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="css/medium.css" />
     <link rel="stylesheet" href="css/large.css" />
 
+    <script defer src="js/lastvisited.js"></script>
+    <script defer src="js/hamburger.js"></script>
     <script defer src="js/lazyload.js"></script>
 </head>
 
@@ -29,7 +31,7 @@
         <ul class="navigation">
             <li><a href="#" class="hamburger">&#9776; Menu</a></li>
             <li><a href="/lesson6/lesson-6.html">Home</a></li>
-            <li><a id="preston" href="/lesson6/preston.html">Preston</a></li>
+            <li><a id="preston" href="/lesson6/lesson-6.html">Preston</a></li>
             <li><a id="sodasprings" href="/lesson6/soda-springs.html">Soda Srings</a></li>
             <li><a id="fishhaven" href="/lesson6/fish-haven.html">Fish Haven</a></li>
             <li><a id="stormcenter" href="/lesson6/storm-center.html">Storm Center</a></li>
@@ -108,7 +110,11 @@
         </div>
     </div>
         <h2>When did I last visit?</h2>
-        <p></p>
+        <button onclick="getNumberOfDays()"> Last time?</button>
+        <button onclick="createInstance()">start</button>
+        <button onclick="lastDay()">end</button>
+
+        <p id="daysince"> </p>
     </main>
     <footer>
         <div id="contact" class="block">
