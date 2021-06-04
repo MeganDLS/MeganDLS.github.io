@@ -5,18 +5,35 @@
 #e7ffed; for first row
 #628ca6 for title and 7,500
 #7fb9c2 for acme and compiled
-<rowgroup> maybe
+rowgroup maybe
  */
-* {
+body {
     font-family: "Ubuntu", serif;
+   margin: 4rem;
 }
-thead:first-child {
+/* thead:first-child */
+/* thead .tr .th .p */
+/* just the acme title */
+/* thead p */
+td > p {
+    color: black;
     background-color: #7fb9c2;
+    font-family: "Ubuntu";
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+    padding: 2rem;
+}
 
+td > div {
+    color: black;
+    background-color: #7fb9c2;
+    text-align: center;
 }
-h2 {
+tfoot {
     background-color: #7fb9c2;
 }
+
 table, th, td {
     border: 1px solid #e7f0ed;
     border-collapse: collapse;
