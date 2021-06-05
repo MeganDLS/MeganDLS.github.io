@@ -6,8 +6,8 @@ function createInstance() {
     return startDay;
 }
 
-console.log(startDay);
-console.log(createInstance())
+//console.log(startDay);
+//console.log(createInstance())
 getNumberOfDays(createInstance());
 
 //Get the difference of dates to a number
@@ -27,6 +27,13 @@ function getNumberOfDays(startDay) {
     return diffInDays;
     
 }
-console.log(diffInDays);
-document.getElementById('#daysince').innerHTML = diffInDays;
+
+//var button = document.getElementById("createInstance")
+//count = 0;
+//button.onclick = getNumberOfDays() 
+//{ count += 1;
+ //   button.innerHTML = "Click me:" + count;
+//};
+
+document.querySelector('#daysince').innerHTML = getNumberOfDays(createInstance());
     
