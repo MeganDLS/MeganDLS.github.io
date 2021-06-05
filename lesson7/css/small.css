@@ -21,7 +21,8 @@ header img {
 #motto {
         color: #8DB1AB;
 
-    }
+}
+
 /*Wayfinder*/
 .active {
         opacity: 0.75;
@@ -89,7 +90,6 @@ picture {
 }
 
 .gallery:hover {
-        border: 1px solid #8DB1AB;
         box-shadow: 0 0 50px #333;
 }
 
@@ -126,7 +126,7 @@ picture {
 }
 
 .bottom a {
-        color:#F4E04D;
+        color: #F4E04D;
 }
 
 /* transition: opacity 250ms ease-in, transform 400ms ease-in; */
