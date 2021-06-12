@@ -45,49 +45,43 @@
 	</nav>
 	<h2 id="pagetitle">Storm Center</h2>
 	<main>
-	
+
 		<div class="block" class="form">
 			<h2>Have you seen a storm in your area? Tell us about it here!</h2>
-	 	<form action="#" method="get" class="form-example">
-			<h3>Contact Information:</h3>
-			<div class="entry">
-			  <label for="name">Your full name</label>
-			  	<input type="text" name="name" id="name" placeholder="Maria Lopez" required>
-			</div>
-			<div class="entry">
-				<label for="email">Email</label>
-					<input type="email" name="email" placeholder="user@email.com" required>
-			  </div>
-			  <div class="entry">
-				  <label for="#">Phone Number</label>umber: </label>
-				  	<input type="tel" name="phone" placeholder="###-###-####" required>
-				</div>
-				<div class="entry">
-					<label for="zip">Zipcode: </label>
-						<input type="zip" name="code" placeholder="#######" required>
-				  </div>
-			<h3>Storm Details: </h3>
-			
-			  <div class="entry">
-				<label for="email">Storm Date</label>
-					<input type="email" name="email" id="email" placeholder="user@email.com" required>
-			  </div>
-			  <div class="entry">
-				<label for="email">Storm Type</label>
-					<input type="email" name="email" id="email" placeholder="user@email.com" required>
-			  </div>
-			  <div class="entry">
-				<label for="email">Storm Severity</label>
-					<input type="email" name="email" id="email" placeholder="user@email.com" required>
-			  </div>
-			  <div class="entry">
-				<label for="email">Storm Region</label>
-					<input type="email" name="email" id="email" placeholder="user@email.com" required>
-			  </div>
-			<div class="entry">
-			  <input type="submit" value="Subscribe!">
-			</div>
-		  </form>
+			<form method="get" action="thanks.html">
+				<fieldset>
+					<legend>Contact Information</legend>
+					<label>Your full name
+						<input class="required" type="text" name="fname" placeholder="Maria Lopez" required></label>
+						<label>Email
+							<input type="email" name="email" placeholder="user@email.com"></label>
+							<label>Phone number
+								<input  class="required" type="tel" name="phone" placeholder="###-###-####" required></label>
+								<label>Zipcode
+									<input  class="required" type="text" name="fname" placeholder="#######" required></label>
+				</fieldset>
+<fieldset>
+	<legend>Storm Details:</legend>
+	<label>Storm date<input type="date" name="stormdate"></label>
+	
+	<label>Storm type<input type="list" name="stormtype"></label>
+	<option value="">Please select</option>
+	<option value="Flashflood">Flashflood</option>
+	<option value="Hail">Hail</option>
+	<option value="Hurricane">Hurricane</option>
+	<option value="Thunderstorm">Thunderstorm</option>
+	<option value="Tornado">Tornado</option>
+
+
+
+	<p>User in danger</p>
+<label><input type=radio name="danger" value="yes"></label>
+<label><input type=radio name="danger" value="maybe"></label>
+<label><input type=radio name="danger" value="no"></label>
+
+</fieldset>
+				
+			</form>
 		</div>
 
 	</main>
@@ -141,4 +135,5 @@
 		});
 	</script>
 </body>
+
 </html>
