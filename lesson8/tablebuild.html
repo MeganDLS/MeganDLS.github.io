@@ -8,34 +8,28 @@
     <title>Tables</title>
     <meta name="description" content="Lesson 8, Tables. Web Development at BYU Idaho, WDD230-01">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="css/small.css" />
-
     <script defer src="#"></script>
 
 <body>
     <header>
         <h1> Table Building</h1>
-
     </header>
     <main>
-
         <!-- Use thead, tbody, and tfoot tags, use only one id or class -->
-
         <table>
             <thead>
                 <tr>
-                    <td colspan="3">
+                    <th colspan="3">
                         <p>ACME Wildwest</p>
-                    </td>
+                    </th>
                 </tr>
                 <tr>
-                    <th>Period</th>
-                    <th>Sales</th>
-                    <th>Sales Goal</th>
+                    <th scope="col">Period</th>
+                    <th scope="col">Sales</th>
+                    <th scope="col">Sales Goal</th>
                 </tr>
             </thead>
             <tbody>
@@ -59,11 +53,11 @@
                 <tr>
                     <td>November</td>
                     <td>$8,610</td>
-                    <td>$7,500</td>
+                    <td id="lessthanactual">$7,500</td>
                 </tr>
 
                 <tr>
-                    <td>Black Friday</td>
+                    <td scope="rowgroup">Black Friday</td>
                     <td colspan="2">$3,200</td>
 
                 </tr>

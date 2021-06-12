@@ -1,5 +1,3 @@
-
-
 /*
 #e7f0ed for every other row for last row
 #e7ffed; for first row
@@ -9,55 +7,209 @@ rowgroup maybe
  */
 body {
     font-family: "Ubuntu", serif;
-   margin: 4rem;
+    margin: 4rem;
+    text-align: center;
+}
+
+table {
+    box-shadow: 8px 8px 5px #628ca6;
 }
 /* thead:first-child */
 /* thead .tr .th .p */
 /* just the acme title */
 /* thead p */
-td > p {
+
+
+#lessthanactual {
+    background-color: #628ca6;
+    color: white;
+}
+td>p {
     color: black;
     background-color: #7fb9c2;
     font-family: "Ubuntu";
     font-weight: 700;
     font-size: 2rem;
-    text-align: center;
     padding: 2rem;
 }
 
-td > div {
+td>div {
     color: black;
     background-color: #7fb9c2;
     text-align: center;
 }
+
 tfoot {
     background-color: #7fb9c2;
 }
 
-table, th, td {
-    border: 1px solid #e7f0ed;
+table,
+th,
+td {
+    border: 2px solid #e7f0ed;
     border-collapse: collapse;
 }
 
 thead {
     color: white;
 }
-    th {background-color: #628ca6;
+
+th {
+    background-color: #628ca6;
 }
 
-th, td {
+th,
+td {
     padding: 1rem;
-   
+
 }
 
 td {
     font-family: "Ubuntu";
     font-weight: 300;
 }
+
 tr:nth-child(even) {
-background-color: #e7f0ed;
+    background-color: #e7f0ed;
 }
 
 tr:nth-child(odd) {
     background-color: #e7ffed;
+}
+
+/***Entire Page***/
+* {
+    padding: 0;
+    font-size: 16px;
+    font-family: "Montserrat", Arial, sans-serif;
+}
+
+body {
+    margin: 1rem;
+    max-width: 2000px;
+}
+
+.block {
+    border-style: solid;
+    padding: .5rem;
+}
+
+h1 {
+    color: #F4E04D;
+}
+
+h2 {
+    font-family: "Raleway", Arial, sans-serif;
+    font-size: 1.2rem;
+    color: #1D3557;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    padding-top: 1rem;
+}
+
+#motto {
+    color: #8DB1AB;
+    text-align: center;
+}
+
+header,
+footer {
+    border: 2px solid #CEE397;
+    background-color: #1D3557;
+    color: #8DB1AB;
+}
+
+a {
+    color: #F2ED6F;
+}
+
+
+/***Header***/
+header img {
+    height: 8rem;
+    border: 2px solid #1D3557;
+    float: left;
+    padding-top: .5rem;
+}
+/*Wayfinder*/
+.active {
+    opacity: 0.75;
+    background-color: #1D3557;
+    color: white;
+}
+
+/*Navigation Bar*/
+nav {
+    margin: 0 auto;
+    background-color: #F2ED6F;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/*Hamburger Button*/
+.navigation {
+    margin: .15rem 2%;
+    background-color: transparent;
+    font-size: 1.6rem;
+    color: #1D3557;
+    list-style: none;
+    padding: 0;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none;
+}
+
+nav ul li a {
+    padding: .1rem 1%;
+    /*removes underline for links*/
+    text-decoration: none;
+    color: #1D3557;
+    /*border-top: 1px solid;*/
+}
+
+nav ul li a:hover {
+    background-color: #8DB1AB;
+}
+
+.hide li {
+    display: block;
+}
+
+/*Friday Pancake Banner*/
+.popup {
+    display: none;
+    padding: .5rem;
+    font-size: 1.3rem;
+    background-color: #8DB1AB;
+    text-align: center;
+    font-family: "Montserrat", Arial, sans-serif;
+}
+
+/***Contact***/
+#contact {
+    padding-right: 1rem;
+    text-align: right;
+}
+
+#contactinfo {
+    color: #8DB1AB;
+    text-align: right;
+    padding-bottom: 1rem;
+}
+.social {
+    background-color: #8DB1AB;
+    border-radius: .4rem;
 }
