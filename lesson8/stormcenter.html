@@ -46,41 +46,45 @@
 	<h2 id="pagetitle">Storm Center</h2>
 	<main>
 
-		<div class="block" class="form">
+		<div class="block">
+			<h1>Storm Sighting</h1>
 			<h2>Have you seen a storm in your area? Tell us about it here!</h2>
 			<form method="get" action="thanks.html">
 				<fieldset>
 					<legend>Contact Information</legend>
 					<label>Your full name
 						<input class="required" type="text" name="fname" placeholder="Maria Lopez" required></label>
-						<label>Email
-							<input type="email" name="email" placeholder="user@email.com"></label>
-							<label>Phone number
-								<input  class="required" type="tel" name="phone" placeholder="###-###-####" required></label>
-								<label>Zipcode
-									<input  class="required" type="text" name="fname" placeholder="#######" required></label>
+					<label>Email
+						<input type="email" name="email" placeholder="user@email.com"></label>
+					<label>Phone number
+						<input class="required" type="tel" name="phone" placeholder="###-###-####" required></label>
+					<label>Zipcode
+						<input class="required" type="text" name="fname" placeholder="#######" required></label>
 				</fieldset>
-<fieldset>
-	<legend>Storm Details:</legend>
-	<label>Storm date<input type="date" name="stormdate"></label>
-	
-	<label>Storm type<input type="list" name="stormtype"></label>
-	<option value="">Please select</option>
-	<option value="Flashflood">Flashflood</option>
-	<option value="Hail">Hail</option>
-	<option value="Hurricane">Hurricane</option>
-	<option value="Thunderstorm">Thunderstorm</option>
-	<option value="Tornado">Tornado</option>
-
-
-
-	<p>User in danger</p>
-<label><input type=radio name="danger" value="yes"></label>
-<label><input type=radio name="danger" value="maybe"></label>
-<label><input type=radio name="danger" value="no"></label>
-
-</fieldset>
+				<fieldset>
+					<legend>Storm Details:</legend>
+					<label>Storm date<input type="date" name="stormdate"></label>
+					<label for="type">Storm type
+						<input list="types" name="type" id="type">
+						<datalist id="types">
+					<option value="">Please select</option>
+					<option value="Flashflood">Flash Flood</option>
+					<option value="Hail">Hail</option>
+					<option value="Hurricane">Hurricane</option>
+					<option value="Thunderstorm">Thunderstorm</option>
+					<option value="Tornado">Tornado</option>
+				</datalist>
 				
+			</label>
+
+					<p>User in danger</p>
+					<label><input type=radio name="danger" value="yes"> Yes</label>
+					<label><input type=radio name="danger" value="maybe"> Maybe</label>
+					<label><input type=radio name="danger" value="no"> No</label>
+
+				</fieldset>
+
+				<input type="submit" value="Create my storm sighting">
 			</form>
 		</div>
 
