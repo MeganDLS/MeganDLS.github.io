@@ -89,9 +89,6 @@ picture {
         /* width: 180px; */
 }
 
-.gallery:hover {
-        box-shadow: 0 0 50px #333;
-}
 
 .gallery img {
         width: 100%;
