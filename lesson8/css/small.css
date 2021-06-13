@@ -12,8 +12,8 @@ body {
 }
 
 .block {
-    border-style: solid;
-    padding: .5rem;
+    border: 2px solid #1D3557;
+    padding:.5rem;
 }
 
 h1 {
@@ -261,6 +261,14 @@ form label input:required {
 
 form label input:required:valid {
     border-left: green solid 4px;
+}
+
+#gracias {
+    padding: 2rem;
+    background-color: #CEE397;
+    color: #1D3557;
+    font-size: 2rem;
+    margin: 4rem;
 
 }
 /*------------- Footer --------------*/
