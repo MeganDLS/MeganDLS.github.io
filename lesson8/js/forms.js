@@ -1,5 +1,5 @@
 // Full name
-let re = /^[a-z ,.'-]+$/i {1,6};
+let re = /^[a-z ,.'-]+$/i;
 
 // Storm style
 function adjustRange(range) {

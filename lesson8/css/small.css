@@ -1,3 +1,129 @@
+/***Entire Page***/
+* {
+    padding: 0;
+    font-size: 16px;
+    font-family: "Montserrat", Arial, sans-serif;
+}
+
+body {
+    font-family: "Ubuntu", serif;
+    margin: 4rem;
+    max-width: 2000px;
+}
+
+.block {
+    border-style: solid;
+    padding: .5rem;
+}
+
+h1 {
+    color: #F4E04D;
+}
+
+h2 {
+    font-family: "Raleway", Arial, sans-serif;
+    font-size: 1.2rem;
+    color: #1D3557;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    padding-top: 1rem;
+}
+
+/*------------- Header ---------------*/
+
+
+#motto {
+    color: #8DB1AB;
+    text-align: center;
+}
+
+header,
+footer {
+    border: 2px solid #CEE397;
+    background-color: #1D3557;
+    color: #8DB1AB;
+}
+
+a {
+    color: #F2ED6F;
+}
+
+header img {
+    height: 8rem;
+    border: 2px solid #1D3557;
+    float: left;
+    padding-top: .5rem;
+}
+
+/***Wayfinder***/
+.active {
+    opacity: 0.75;
+    background-color: #1D3557;
+    color: white;
+}
+
+/***Navigation Bar***/
+nav {
+    margin: 0 auto;
+    background-color: #F2ED6F;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/***Hamburger Button***/
+.navigation {
+    margin: .15rem 2%;
+    background-color: transparent;
+    font-size: 1.6rem;
+    color: #1D3557;
+    list-style: none;
+    padding: 0;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none;
+}
+
+nav ul li a {
+    padding: .1rem 1%;
+    /*removes underline for links*/
+    text-decoration: none;
+    color: #1D3557;
+    /*border-top: 1px solid;*/
+}
+
+nav ul li a:hover {
+    background-color: #8DB1AB;
+}
+
+.hide li {
+    display: block;
+}
+
+/***Friday Pancake Banner***/
+.popup {
+    display: none;
+    padding: .5rem;
+    font-size: 1.3rem;
+    background-color: #8DB1AB;
+    text-align: center;
+    font-family: "Montserrat", Arial, sans-serif;
+}
+/*------------- Main ---------------*/
+
+/***Table***/
 /*
 #e7f0ed for every other row for last row
 #e7ffed; for first row
@@ -5,20 +131,14 @@
 #7fb9c2 for acme and compiled
 rowgroup maybe
  */
-body {
-    font-family: "Ubuntu", serif;
-    margin: 4rem;
-    text-align: center;
-}
 
-table {
+ table {
     box-shadow: 8px 8px 5px #628ca6;
 }
 /* thead:first-child */
 /* thead .tr .th .p */
 /* just the acme title */
 /* thead p */
-
 
 #lessthanactual {
     background-color: #628ca6;
@@ -77,127 +197,6 @@ tr:nth-child(odd) {
     background-color: #e7ffed;
 }
 
-/***Entire Page***/
-* {
-    padding: 0;
-    font-size: 16px;
-    font-family: "Montserrat", Arial, sans-serif;
-}
-
-body {
-    margin: 1rem;
-    max-width: 2000px;
-}
-
-.block {
-    border-style: solid;
-    padding: .5rem;
-}
-
-h1 {
-    color: #F4E04D;
-}
-
-h2 {
-    font-family: "Raleway", Arial, sans-serif;
-    font-size: 1.2rem;
-    color: #1D3557;
-    text-align: center;
-}
-
-h3 {
-    text-align: center;
-    padding-top: 1rem;
-}
-
-#motto {
-    color: #8DB1AB;
-    text-align: center;
-}
-
-header,
-footer {
-    border: 2px solid #CEE397;
-    background-color: #1D3557;
-    color: #8DB1AB;
-}
-
-a {
-    color: #F2ED6F;
-}
-
-
-/***Header***/
-header img {
-    height: 8rem;
-    border: 2px solid #1D3557;
-    float: left;
-    padding-top: .5rem;
-}
-/*Wayfinder*/
-.active {
-    opacity: 0.75;
-    background-color: #1D3557;
-    color: white;
-}
-
-/*Navigation Bar*/
-nav {
-    margin: 0 auto;
-    background-color: #F2ED6F;
-    width: 100%;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-/*Hamburger Button*/
-.navigation {
-    margin: .15rem 2%;
-    background-color: transparent;
-    font-size: 1.6rem;
-    color: #1D3557;
-    list-style: none;
-    padding: 0;
-}
-
-.navigation li:first-child {
-    display: block;
-}
-
-.navigation li {
-    display: none;
-}
-
-nav ul li a {
-    padding: .1rem 1%;
-    /*removes underline for links*/
-    text-decoration: none;
-    color: #1D3557;
-    /*border-top: 1px solid;*/
-}
-
-nav ul li a:hover {
-    background-color: #8DB1AB;
-}
-
-.hide li {
-    display: block;
-}
-
-/*Friday Pancake Banner*/
-.popup {
-    display: none;
-    padding: .5rem;
-    font-size: 1.3rem;
-    background-color: #8DB1AB;
-    text-align: center;
-    font-family: "Montserrat", Arial, sans-serif;
-}
-
 
 /***Form***/
 
@@ -218,24 +217,60 @@ form legend {
     margin: 0.5rem;
     padding: 0 .5rem;
 }
+form label, form div {
+    display: block;
+    padding-top: 1rem;
+    color:#1D3557;
+    font-size: 1.3rem;
+}
 
 #ratingvalue {
 	color: #1D3557;
     font-weight: 700;
 }
+#danger {
+    border: 1px dotted white;
+    padding: 1rem;
+    margin-top: 1rem;
+}
 
 .sbutton {
     padding: 1rem;
     background-color: #F2ED6F;
+    box-shadow: .5rem .5rem .5rem #1D3557;
+    margin-bottom: 1.5rem;
 }
 
 .sbutton:hover {
     background-color: #CEE397;
 }
 
+label, input {
+    text-align: center;
+
+}
+input, select {
+    padding: .75rem;
+}
+
+
+form label input:required {
+    border-left: red solid 4px;
+
+}
+
+form label input:required:valid {
+    border-left: green solid 4px;
+
+}
+/*------------- Footer --------------*/
 /***Contact***/
+
+.bottom {
+    text-align: center;
+}
 #contact {
-    padding-right: 1rem;
+    padding: 1rem;
     text-align: right;
 }
 

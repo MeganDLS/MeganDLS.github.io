@@ -1,1 +1,89 @@
-<h1>Thank you for submitting a new storm sighting!</h1>
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+	<title>Tut Tut it Looks Like Rain, Storm Center</title>
+	<meta name="description" content="Lesson 8, Forms. Web Development at BYU Idaho, WDD230-01">
+	<link rel="shortcut icon" type="image/png" href="favicon.ico">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+	<link rel="stylesheet" href="css/small.css" />
+	<link rel="stylesheet" href="css/medium.css">
+	<link rel="stylesheet" href="css/large.css" />
+
+	<script defer src="js/forms.js"></script>
+	<script defer src="js/getdate.js"></script>
+</head>
+
+<body>
+
+	<header>
+		<img id="logo" src="images/umbrellalogo.jpg" alt="a blue umbrella" />
+		<h1> Tut, tut, <br> it looks like rain</h1>
+		<h2 id="motto"> Get connected with your community</h2>
+	</header>
+
+	<nav>
+		<!-- default will be hidden, display none, until user clicks button-->
+		<ul class="navigation">
+			<!-- emoji for hamburger menu &#9776; query selector is better choice than onclick-->
+			<li><a href="#" class="hamburger">&#9776; Menu</a></li>
+			<li><a href="/lesson6/lesson-6.html">Home</a></li>
+			<li><a id="preston" href="/lesson6/preston.html">Preston</a></li>
+			<li><a id="sodasprings" href="/lesson6/soda-springs.html">Soda Srings</a></li>
+			<li><a id="fishhaven" href="/lesson6/fish-haven.html">Fish Haven</a></li>
+			<li><a class="active" id="stormcenter" href="/lesson8/stormcenter.html">Storm Center</a></li>
+			<li><a id="gallery" href="/lesson7/gallery-7.html">Gallery</a></li>
+		</ul>
+	</nav>
+
+	<main>
+<div class="block"> Thank you for submitting a new storm sighting. </div>
+
+	</main>
+	<footer>
+		<div id="contact" class="block">
+			<div class="contact">
+				<h2 id="contactinfo">Contact Information</h2>
+				<p>
+					Tut Tut, LLC<br><br>
+					📪 Address: &ensp; 1st and 3rd, Preston, ID <br>
+					💻 E-mail: &emsp; &ensp;tuttut@pooh.com<br>
+					📞 Phone: &ensp; &ensp; 385-212-8520 <br>
+				</p>
+
+				<div class="social">
+					<a href="https://twitter.com/?lang=en"><img src="images/twitter.png" alt="Twitter Icon" /></a>
+
+					<a href="https://www.instagram.com/"><img src="images/instagram.png" alt="Instagram Icon" /></a>
+
+					<a href="https://www.facebook.com"><img src="images/facebook.png" alt="Facebook Icon" /></a>
+				</div>
+
+
+			</div>
+		</div>
+		<div class="bottom">
+			<p> &copy; <span id="copyrightyear"></span> | Megan De Le&oacute;n | Utah | <a
+					href="https://www.byui.edu/">BYUI Online Learning</a>
+			</p>
+			<p id="updated"></p>
+		</div>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+	<script>
+		WebFont.load({
+			google: {
+				families: ["Montserrat", "Raleway"]
+			}
+		});
+	</script>
+</body>
+
+</html>
