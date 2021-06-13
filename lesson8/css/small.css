@@ -219,31 +219,19 @@ form legend {
     padding: 0 .5rem;
 }
 
-
-
-.flexly {
-	display: flex;
-	align-items: center;
-}
-
 #ratingvalue {
-	margin: 0 15px;
-	color: #2075ff;
+	color: #1D3557;
+    font-weight: 700;
 }
 
-#selected {
-	position: absolute;
-	top: 550px;
-	left: 300px;
-	border: 1px solid #999;
-	background-color: #abe;
-	padding: 10px;
-	font-weight: 700;
-	display: none;
+.sbutton {
+    padding: 1rem;
+    background-color: #F2ED6F;
 }
 
-
-
+.sbutton:hover {
+    background-color: #CEE397;
+}
 
 /***Contact***/
 #contact {

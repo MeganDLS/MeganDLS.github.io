@@ -1,14 +1,14 @@
-// full name
+// Full name
 let re = /^[a-z ,.'-]+$/i {1,6};
 
-// style
-function adjustRating(rating) {
-    document.getElementById("ratingvalue").innerHTML = rating;
+// Storm style
+function adjustRange(range) {
+    document.getElementById("rangevalue").innerHTML = range;
 }
 
 function selectResponse() {
 	const s = document.querySelector('#selected')
-	const sel = document.querySelector('#selectbrowser');
+	const sel = document.querySelector('#selectregion');
 	s.style.display = "block";
 	s.textContent = sel.value;
 	

@@ -59,7 +59,7 @@
 					<label>Phone number
 						<input class="required" type="tel" name="phone" placeholder="###-###-####" required></label>
 					<label>Zipcode
-						<input class="required" type="text" name="fname" placeholder="#######" required></label>
+						<input class="required" type="text" name="zip" required></label>
 				</fieldset>
 				<fieldset>
 					<legend>Storm Details</legend>
@@ -76,14 +76,12 @@
 						</datalist>
 					</label>
 
-					<span>User in danger</span>
-					<label><input type=radio name="danger" value="yes"> Yes</label>
-					<label><input type=radio name="danger" value="maybe"> Maybe</label>
-					<label><input type=radio name="danger" value="no"> No</label>
-
-					<label class="flexly" for="rating">Rating: &nbsp;&nbsp;&nbsp;
-						<input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-						<span id="ratingvalue">5</span>
+					
+					<label>Storm style
+						<input type="range" value="5" min="1" max="10"
+						step="1" list="tickmarks" oninput="adjustRating(this.value)"
+						onchange="adjustRange(this.value)">
+						<span id="rangevalue">5</span>
 					</label>
 			
 					<datalist id="tickmarks">
@@ -101,9 +99,28 @@
 					</datalist>
 
 
+					<label>Storm Region
+						<select name="regions" id="selectregion" onchange="selectResponse()">
+<option value="" disabled selected>Select Region...</option>
+<option value="preston">Preston</option>
+<option value="soda-springs">Soda Springs</option>
+<option value="fish-haven">Fish Haven</option>
+						</select>
+					</label>
+
+					<span>User in danger</span>
+					<label><input type=radio name="danger" value="yes"> Yes</label>
+					<label><input type=radio name="danger" value="maybe"> Maybe</label>
+					<label><input type=radio name="danger" value="no"> No</label>
+
+				<label>
+					<input type="text">
+				</label>	
+
+
 				</fieldset>
 
-				<input type="submit" value="Create my storm sighting">
+				<input type="submit" value="Create my storm sighting" class="sbutton">
 			</form>
 		</div>
 
