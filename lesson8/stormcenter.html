@@ -46,7 +46,7 @@
 	<h2 id="pagetitle">Storm Center</h2>
 	<main>
 
-		<div class="block">
+		<div class="block" id="formarea">
 			<h1>Storm Sighting</h1>
 			<h2>Have you seen a storm in your area? Tell us about it here!</h2>
 			<form method="get" action="thanks.html">
@@ -62,9 +62,10 @@
 						<input class="required" type="text" name="fname" placeholder="#######" required></label>
 				</fieldset>
 				<fieldset>
-					<legend>Storm Details:</legend>
+					<legend>Storm Details</legend>
 					<label>Storm date<input type="date" name="stormdate"></label>
-					<label for="type">Storm type
+
+					<label>Storm type
 						<input list="types" name="type" id="type">
 						<datalist id="types">
 							<option value="Flashflood">Flash Flood</option>
@@ -73,13 +74,32 @@
 							<option value="Thunderstorm">Thunderstorm</option>
 							<option value="Tornado">Tornado</option>
 						</datalist>
-
 					</label>
 
-					<p>User in danger</p>
+					<span>User in danger</span>
 					<label><input type=radio name="danger" value="yes"> Yes</label>
 					<label><input type=radio name="danger" value="maybe"> Maybe</label>
 					<label><input type=radio name="danger" value="no"> No</label>
+
+					<label class="flexly" for="rating">Rating: &nbsp;&nbsp;&nbsp;
+						<input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+						<span id="ratingvalue">5</span>
+					</label>
+			
+					<datalist id="tickmarks">
+						<option value="0">
+						<option value="1">
+						<option value="2">
+						<option value="3">
+						<option value="4">
+						<option value="5">
+						<option value="6">
+						<option value="7">
+						<option value="8">
+						<option value="9">
+						<option value="10">
+					</datalist>
+
 
 				</fieldset>
 

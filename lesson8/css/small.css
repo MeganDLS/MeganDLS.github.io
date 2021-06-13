@@ -198,6 +198,53 @@ nav ul li a:hover {
     font-family: "Montserrat", Arial, sans-serif;
 }
 
+
+/***Form***/
+
+#formarea {
+    background-color: #8DB1AB;
+    margin: 1rem 2rem;
+    font-size: 1.5rem;
+}
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid white;
+    padding: 1.5rem 2%;
+}
+
+form legend {
+    color: #1D3557;
+    font-style: italic;
+    margin: 0.5rem;
+    padding: 0 .5rem;
+}
+
+
+
+.flexly {
+	display: flex;
+	align-items: center;
+}
+
+#ratingvalue {
+	margin: 0 15px;
+	color: #2075ff;
+}
+
+#selected {
+	position: absolute;
+	top: 550px;
+	left: 300px;
+	border: 1px solid #999;
+	background-color: #abe;
+	padding: 10px;
+	font-weight: 700;
+	display: none;
+}
+
+
+
+
 /***Contact***/
 #contact {
     padding-right: 1rem;
