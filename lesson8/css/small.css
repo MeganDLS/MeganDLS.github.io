@@ -7,7 +7,6 @@
 
 body {
     font-family: "Ubuntu", serif;
-    margin: 4rem;
     max-width: 2000px;
 }
 
@@ -38,6 +37,11 @@ h3 {
 #motto {
     color: #8DB1AB;
     text-align: center;
+}
+
+#stormsighting {
+    color: #1D3557;
+
 }
 
 header,
@@ -202,8 +206,6 @@ tr:nth-child(odd) {
 
 #formarea {
     background-color: #8DB1AB;
-    margin: 1rem 2rem;
-    font-size: 1.5rem;
 }
 form fieldset {
     margin: 2rem 0;
@@ -221,7 +223,6 @@ form label, form div {
     display: block;
     padding-top: 1rem;
     color:#1D3557;
-    font-size: 1.3rem;
 }
 
 #ratingvalue {
