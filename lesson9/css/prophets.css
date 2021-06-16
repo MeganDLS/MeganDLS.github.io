@@ -1,0 +1,64 @@
+* {
+    font-size: 16px;
+}
+body {
+    background-color: #fff1e6;
+}
+
+h1 {
+    font-family: "Montserrat";
+    color: #3d5a80;
+    padding-left: 1rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+    color: #fff1e6;
+    font-family: "Raleway";
+}
+
+.cards section {
+    border: 4px solid black;
+    margin: .5rem;
+    background-color: #3d5a80;
+}
+
+.cards p {
+    font-size: 1rem;
+    color: #fff1e6;
+}
+
+.cards img {
+    box-shadow: 8px 8px 8px black;
+    margin-bottom: 1rem;
+    max-width: 80%;
+}
+
+
+@media only screen and (max-width: 400px) {
+    .cards {
+        display: block;
+    }
+
+    h1 {
+        font-size: .5rem;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    h1 {
+        font-size: 2rem;
+        padding-left: 1rem;
+    }
+}
+
