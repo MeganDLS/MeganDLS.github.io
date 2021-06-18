@@ -14,34 +14,23 @@ fetch(requestURL)
     //   store the results of the converted response into an array
     const prophets = jsonObject['prophets'];
 
-    //how to process an array?
-    // document.getElementById("card").innerHTML = prophets;
-
-//prophets.forEach(prophet => {
-  let card = document.createElement('section');
-      let h2 = document.createElement('h2');
-
-
-      h2.innerHTML = '${prophets.name}';
-
-})
 
     for (let i = 0; i < prophets.length; i++) {
-      // add the h2 elements
+      // add the elements
       let card = document.createElement('section');
       let h2 = document.createElement('h2');
       let h3 = document.createElement('h3');
       let p = document.createElement('p');
       let image = document.createElement('img');
 
-    
-      // date of birth, date of death, place of birth, image
 
-      h2.textContent = '${prophets[i].name} ${prophets[i].lastname}';
-      //.innerHTML would be to alter 
+      // get date of birth, date of death, place of birth, image
+      h2.textContent = prophets[i].name + ' ' + prophets[i].lastname;
+
       h3.textContent = prophets[i].birthdate;
       p.textContent = prophets[i].birthplace;
       image.setAttribute('src', prophets[i].imageurl);
+      image.setAttribute('alt', "photo of " + prophets[i].name + ' ' + prophets[i].lastname);
       // img.style.boxShadow= '0 0 30px #999'; could alter here or in css
 
       card.appendChild(h2);
@@ -51,6 +40,6 @@ fetch(requestURL)
 
       document.querySelector('div.cards').appendChild(card);
     }
- 
+
 
   });

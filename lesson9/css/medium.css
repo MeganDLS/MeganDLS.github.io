@@ -41,12 +41,9 @@
 
     }
 
-/***gallery***/
-
-#thegallery {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-
+/*------------- Article --------------*/
+article {
+    display: flex;
+flex-direction: column;
+}  
 }

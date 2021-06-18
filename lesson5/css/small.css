@@ -72,6 +72,13 @@ nav ul li a:hover {
     display: block;
 }
 
+/***Wayfinder***/
+.active {
+    opacity: 0.75;
+    background-color: #1D3557;
+    color: white;
+}
+
 /* preston idaho  */
 #pagetitle {
     color: #1D3557;
