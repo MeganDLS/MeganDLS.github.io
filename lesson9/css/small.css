@@ -1,39 +1,32 @@
 /***Entire Page***/
 * {
-    padding: 0;
     font-size: 16px;
     font-family: "Montserrat", Arial, sans-serif;
 }
 
-body {
-    font-family: "Ubuntu", serif;
-    max-width: 2000px;
-}
-
 .block {
     border: 2px solid #1D3557;
-    padding:.5rem;
 }
 
+h1, h2, h3 {
+    font-family: "Raleway", Arial, sans-serif;
+    text-align: center;
+}
 h1 {
     color: #F4E04D;
 }
 
 h2 {
-    font-family: "Raleway", Arial, sans-serif;
-    font-size: 1.2rem;
     color: #1D3557;
-    text-align: center;
-}
-
-h3 {
-    text-align: center;
-    padding-top: 1rem;
 }
 
 /*------------- Header ---------------*/
+.hero {
+width: 100%;
+height: auto;
+/* align-content: center; */
 
-
+}
 #motto {
     color: #8DB1AB;
     text-align: center;
@@ -123,16 +116,29 @@ nav ul li a:hover {
 }  */
 
 article img {
-    max-width: 90%;
+    max-width: 100%;
 }
 
 article h2 {
     font-family: "Montserrat";
-    text-align: left;
+    text-align: center;
 }
 
 article h3 {
-    text-align: left;
+    text-align: center;
+}
+article p {
+    text-align: center;
+}
+
+/*------------- History --------------*/
+
+#wheat {
+    width: 100%;  
+}
+
+#news {
+    font-size: 1.3rem;
 }
 
 /*------------- Footer --------------*/

@@ -1,10 +1,20 @@
-@media only screen and (min-width: 760px) {
+@media only screen and (min-width: 31.25em) {
     header,
     footer {
         border-radius: .3rem;
     }
 
+    .block {
+        padding: .3rem;
+        margin: .3rem;
+    }
+
     /***Header***/
+    .hero {
+        height: 25rem;
+        width: auto;
+    }
+    
     header img {
         border-radius: .3rem;
         margin-left: 3rem;
@@ -41,9 +51,35 @@
 
     }
 
-/*------------- Article --------------*/
-article {
-    display: flex;
-flex-direction: column;
-}  
+    /*------------- Article --------------*/
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+#rowimg {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+    
+/* article:nth-child(odd) img {
+	grid-column: 2;
+}
+
+article:nth-child(odd) .data {
+	grid-column: 1;
+	grid-row: 1;
+}
+
+    #rowimg {
+        float: right;
+    } */
+/*------------- History --------------*/
+
+#wheat {
+    float: right;
+    margin: 1rem;
+    max-width: 25rem;
+}
+
+
 }

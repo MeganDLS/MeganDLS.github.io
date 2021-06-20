@@ -25,6 +25,7 @@ fetch(requestURL)
 
     for (let i = 0; i < towns.length; i++) {
 
+      if (towns[i].name == "Soda Springs" || towns[i].name == "Fish Haven" || towns[i].name == "Preston") {
       let data = document.createElement('section');
       let h2 = document.createElement('h2');
       let h3 = document.createElement('h3');
@@ -32,8 +33,6 @@ fetch(requestURL)
       let p3 = document.createElement('p');
       let p4 = document.createElement('p');
       let image = document.createElement('img');
-
-      if (towns[i].name == "Soda Springs" || towns[i].name == "Fish Haven" || towns[i].name == "Preston") {
 
       h2.textContent = towns[i].name;
       h3.textContent = towns[i].motto;
@@ -43,9 +42,7 @@ fetch(requestURL)
             
       image.setAttribute('src', "images/" + towns[i].photo);
       image.setAttribute('alt', "photo of " + towns[i].name);
-      }
-      //sourc lesson9/images/fishhaven.jpg
-      //img.style.boxShadow= '0 0 30px #999'; could alter here or in css
+      image.setAttribute('id', 'rowimg');
 
       data.appendChild(h2);
       data.appendChild(h3);
@@ -56,6 +53,5 @@ fetch(requestURL)
 
       document.querySelector('div.data').appendChild(data);
     }
-  
-
+  }
   });
