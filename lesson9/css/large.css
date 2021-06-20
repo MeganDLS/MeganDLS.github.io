@@ -17,6 +17,12 @@
     }
 
     /***Header***/
+
+    .hero {
+        height: 61rem;
+        width: auto;
+    }
+
     header h1 {
         text-align: right;
     }
@@ -50,12 +56,10 @@
     }
 
 /*------------- Article --------------*/
-article div {
-    display: flex;
-   /* grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); */
-    padding: 1rem;
-} 
+#eachtown {
+grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
 
+}
     /***Contact***/
     #contact {
         padding-top: 2rem;

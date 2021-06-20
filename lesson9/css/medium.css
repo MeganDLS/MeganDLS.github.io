@@ -52,26 +52,28 @@
     }
 
     /*------------- Article --------------*/
-    .container {
+    #eachtown {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-#rowimg {
-    grid-column-start: 2;
-    grid-column-end: 3;
+    #eachtown h3 {
+        grid-column-start: 1;
+    } 
+#eachtown p {
+    grid-column-start: 1;
 }
-    
-/* article:nth-child(odd) img {
+
+#eachtown:nth-child(odd) img {
 	grid-column: 2;
 }
 
-article:nth-child(odd) .data {
+#eachtown:nth-child(odd) .data {
 	grid-column: 1;
 	grid-row: 1;
-}
-
+}*/
+/* 
     #rowimg {
-        float: right;
+        grid-column-start: 2;
     } */
 /*------------- History --------------*/
 

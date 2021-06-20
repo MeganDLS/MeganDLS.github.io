@@ -34,6 +34,7 @@ fetch(requestURL)
       let p4 = document.createElement('p');
       let image = document.createElement('img');
 
+      data.setAttribute('id', 'eachtown');
       h2.textContent = towns[i].name;
       h3.textContent = towns[i].motto;
       p2.textContent = "Year Founded: " + towns[i].yearFounded;

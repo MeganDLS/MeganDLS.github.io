@@ -109,12 +109,6 @@ nav ul li a:hover {
 }
 
 /*------------- Article --------------*/
-/* article {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    padding: 1rem;
-}  */
-
 article img {
     max-width: 100%;
 }
