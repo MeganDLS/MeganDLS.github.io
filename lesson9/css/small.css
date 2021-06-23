@@ -5,7 +5,7 @@
 }
 
 body {
-    width: 89%;
+    width: 98%;
 }
 
 .block {
@@ -151,6 +151,9 @@ article p {
 /*------------- Footer --------------*/
 /***Contact***/
 
+footer a {
+    font-size: 1rem;
+}
 .bottom {
     text-align: center;
 }

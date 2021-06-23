@@ -11,16 +11,17 @@
     }
 
     /***Header***/
-    .hero {
-        height: 25rem;
-        width: auto;
-    }
+
 
     header img {
         border-radius: .3rem;
         margin-left: 3rem;
         margin-right: 3rem;
+        float: right;
     }
+header h1, #motto {
+    text-align: right;
+}
 
     nav {
         border-radius: .3rem;
@@ -52,22 +53,32 @@
 
     }
 
-    /*------------- Article --------------*/
-    #eachtown {
+    /*------------- Towns --------------*/
+    .data {
         display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     }
+.data:nth-child(odd) {
+    float: right;
+}
 
-    #eachtown h3, p {
-        grid-column-start: 1;
+    .carditem img {
+        max-width: 50%;
     }
- 
-    #rowimg {
-        grid-column-start: 2;
+    .carditem {
+        border: 2px solid black;
     }
-    .leftside {
-        grid-column-start: 1;
+    .carditem:first-child img {
+        grid-column: 2 / 3;
+
     }
+
+    .carditem:second-child img {
+        grid-column: 2 / 3;
+    }
+
+
     /*------------- History --------------*/
 
     #wheat {

@@ -18,11 +18,6 @@
 
     /***Header***/
 
-    .hero {
-        height: 49rem;
-        width: auto;
-    }
-
     header h1 {
         text-align: right;
     }
@@ -53,6 +48,15 @@
         color: #F2ED6F;
         font-size: 2rem;
     }
+
+    .data {
+        display: block;
+    }
+
+    .carditem {
+        border: 2px solid black;
+    }
+
 
     /*------------- Article --------------*/
     #eachtown {
