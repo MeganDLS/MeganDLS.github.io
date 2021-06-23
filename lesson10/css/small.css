@@ -1,0 +1,175 @@
+/***Entire Page***/
+* {
+    font-size: 16px;
+    font-family: "Montserrat", Arial, sans-serif;
+}
+
+body {
+    width: 98%;
+}
+
+.block {
+    border: 2px solid #1D3557;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Raleway", Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #F4E04D;
+}
+
+h2 {
+    color: #1D3557;
+}
+
+/*------------- Header ---------------*/
+.hero {
+    width: 100%;
+    height: auto;
+    /* align-content: center; */
+
+}
+
+#motto {
+    color: #8DB1AB;
+    text-align: center;
+}
+
+#stormsighting {
+    color: #1D3557;
+}
+
+header,
+footer {
+    border: 2px solid #CEE397;
+    background-color: #1D3557;
+    color: #8DB1AB;
+}
+
+a {
+    color: #F2ED6F;
+}
+
+header img {
+    height: 8rem;
+    border: 2px solid #1D3557;
+    float: left;
+    padding-top: .5rem;
+}
+
+/***Wayfinder***/
+.active {
+    opacity: 0.75;
+    background-color: #1D3557;
+    color: white;
+}
+
+/***Navigation Bar***/
+nav {
+    margin: 0 auto;
+    background-color: #F2ED6F;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/***Hamburger Button***/
+.navigation {
+    margin: .15rem 2%;
+    background-color: transparent;
+    font-size: 1.6rem;
+    color: #1D3557;
+    list-style: none;
+    padding: 0;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none;
+}
+
+nav ul li a {
+    padding: .1rem 1%;
+    /*removes underline for links*/
+    text-decoration: none;
+    color: #1D3557;
+    /*border-top: 1px solid;*/
+}
+
+nav ul li a:hover {
+    background-color: #8DB1AB;
+}
+
+.hide li {
+    display: block;
+}
+
+/*------------- Article --------------*/
+.carditem {
+    max-width: 100%;
+}
+
+.carditem img {
+    width: 100%;
+}
+
+article h2 {
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+article h3 {
+    text-align: center;
+}
+
+article p {
+    text-align: center;
+}
+
+/*------------- History --------------*/
+
+#wheat {
+    width: 100%;
+}
+
+#news {
+    font-size: 1.3rem;
+}
+
+/*------------- Footer --------------*/
+/***Contact***/
+
+footer a {
+    font-size: 1rem;
+}
+.bottom {
+    text-align: center;
+}
+
+#contact {
+    padding: 1rem;
+    text-align: right;
+}
+
+#contactinfo {
+    color: #8DB1AB;
+    text-align: right;
+    padding-bottom: 1rem;
+}
+
+.social {
+    background-color: #8DB1AB;
+    border-radius: .4rem;
+}
