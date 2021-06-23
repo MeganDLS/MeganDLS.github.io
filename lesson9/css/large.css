@@ -19,7 +19,7 @@
     /***Header***/
 
     .hero {
-        height: 61rem;
+        height: 49rem;
         width: auto;
     }
 
@@ -44,7 +44,7 @@
     #stormsighting {
         padding-left: 2rem;
     }
-    
+
     /*Navigation Bar*/
     .navigation {
         padding: 1rem;
@@ -55,11 +55,18 @@
         font-size: 2rem;
     }
 
-/*------------- Article --------------*/
-#eachtown {
-grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    /*------------- Article --------------*/
+    #eachtown {
+        border: 2px solid #1D3557;
+        padding: .2rem;
+    }
+    
 
-}
+    #wheat {
+        height: 20rem;
+        width: auto;
+    }
+
     /***Contact***/
     #contact {
         padding-top: 2rem;

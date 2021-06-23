@@ -4,14 +4,21 @@
     font-family: "Montserrat", Arial, sans-serif;
 }
 
+body {
+    width: 89%;
+}
+
 .block {
     border: 2px solid #1D3557;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: "Raleway", Arial, sans-serif;
     text-align: center;
 }
+
 h1 {
     color: #F4E04D;
 }
@@ -22,11 +29,12 @@ h2 {
 
 /*------------- Header ---------------*/
 .hero {
-width: 100%;
-height: auto;
-/* align-content: center; */
+    width: 100%;
+    height: auto;
+    /* align-content: center; */
 
 }
+
 #motto {
     color: #8DB1AB;
     text-align: center;
@@ -109,8 +117,12 @@ nav ul li a:hover {
 }
 
 /*------------- Article --------------*/
-article img {
+.carditem {
     max-width: 100%;
+}
+
+.carditem img {
+    width: 100%;
 }
 
 article h2 {
@@ -121,6 +133,7 @@ article h2 {
 article h3 {
     text-align: center;
 }
+
 article p {
     text-align: center;
 }
@@ -128,7 +141,7 @@ article p {
 /*------------- History --------------*/
 
 #wheat {
-    width: 100%;  
+    width: 100%;
 }
 
 #news {
@@ -141,6 +154,7 @@ article p {
 .bottom {
     text-align: center;
 }
+
 #contact {
     padding: 1rem;
     text-align: right;
@@ -151,6 +165,7 @@ article p {
     text-align: right;
     padding-bottom: 1rem;
 }
+
 .social {
     background-color: #8DB1AB;
     border-radius: .4rem;

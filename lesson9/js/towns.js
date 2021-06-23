@@ -34,7 +34,7 @@ fetch(requestURL)
       let p4 = document.createElement('p');
       let image = document.createElement('img');
 
-      data.setAttribute('id', 'eachtown');
+      data.setAttribute('class', 'carditem');
       h2.textContent = towns[i].name;
       h3.textContent = towns[i].motto;
       p2.textContent = "Year Founded: " + towns[i].yearFounded;
@@ -42,8 +42,7 @@ fetch(requestURL)
       p4.textContent = "Annual Rain Fall: " + towns[i].averageRainfall;
             
       image.setAttribute('src', "images/" + towns[i].photo);
-      image.setAttribute('alt', "photo of " + towns[i].name);
-      image.setAttribute('id', 'rowimg');
+      image.setAttribute('alt', "photo of " + towns[i].name);    
 
       data.appendChild(h2);
       data.appendChild(h3);
@@ -53,6 +52,10 @@ fetch(requestURL)
       data.appendChild(image);
 
       document.querySelector('div.data').appendChild(data);
+      if (towns[i].name == "Fish Haven") {
+        image.setAttribute('class', 'leftside');
+      }
+    
     }
   }
   });
