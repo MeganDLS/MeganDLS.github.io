@@ -3,11 +3,6 @@
             border-radius: .4rem;
         }
 
-        h3 {
-            padding-top: 0;
-            
-        }
-
         header,
         footer {
             border-radius: .5rem;
@@ -15,7 +10,7 @@
 
         /***Header***/
         header img {
-            border-radius: .3rem;
+            padding: .2rem;
         }
 
         nav {
