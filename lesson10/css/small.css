@@ -116,37 +116,64 @@ nav ul li a:hover {
     display: block;
 }
 
-/*------------- Article --------------*/
-.carditem {
-    max-width: 100%;
+
+/*------------- Forecast --------------*/
+#currently {
+    text-transform: capitalize;
 }
 
-.carditem img {
-    width: 100%;
+/***Weather Forecast Table***/
+.forecast {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #8DB1AB;
+    margin-bottom: 3rem;
 }
 
-article h2 {
-    font-family: "Montserrat";
+.days {
+    flex: 1 1 auto;
+}
+
+.days,
+.column-col,
+.grid-col {
+    border: 1px solid #333;
     text-align: center;
 }
 
-article h3 {
+.days:hover,
+td:hover,
+.column-col:hover,
+.grid-col:hover {
+    opacity: 0.75;
+    background-color: #1D3557;
+    color: white;
+}
+
+.forecast,
+img {
+    margin: .5rem;
+}
+
+.day {
+    display: block;
+    padding: 5px;
+    border-bottom: 1px solid #333;
     text-align: center;
 }
 
-article p {
+.data {
+    display: block;
+    padding: 0 5px 5px;
+    font-size: 0.8rem;
     text-align: center;
 }
 
-/*------------- History --------------*/
 
-#wheat {
-    width: 100%;
-}
+/* .data p:first-letter {
+    text-transform:capitalize;
+} */
 
-#news {
-    font-size: 1.3rem;
-}
 
 /*------------- Footer --------------*/
 /***Contact***/

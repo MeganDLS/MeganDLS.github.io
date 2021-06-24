@@ -1,49 +1,46 @@
 // API edd40baf43f2b3f80219cb8af5bd05d9
 
-// let firsturl = 'https://api.openweathermap.org/data/2.5/weather?=id';
-// let preston = '5604473'; //'preston, ID';
-// let sodasprings = 'soda springs, ID';
-// let fishhaven = 'fish haven, ID';
-// // 'http://api.openweathermap.org/data/2.5/forecast?id=524901&appid='
-// let mykey = '&appid=edd40baf43f2b3f80219cb8af5bd05d9';
-
 const requestURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=edd40baf43f2b3f80219cb8af5bd05d9';
 
-//const apiURL = "...";
 fetch(requestURL)
   .then((response) => response.json())
   .then((jsObject) => {
     console.log(jsObject);
-    
-//    const desc1 = jsObject.weather[2].description; 
-    document.getElementById('currently').textContent = jsObject.weather[2].'description';
-    document.getElementById('hightemp').textContent = jsObject.main.temp_max;
+
+    let t = jsObject.main.temp_max;
+
+    let s = jsObject.wind.speed;
+
+
+    document.getElementById('currently').textContent = jsObject.weather[0].description;
+    document.getElementById('hightemp').textContent = t;
     document.getElementById('currenttemp').textContent = jsObject.main.temp;
     document.getElementById('humidity').textContent = jsObject.main.humidity;
-    document.getElementById('speed').textContent = jsObject.wind.speed;
+    document.getElementById('speed').textContent = s;
+
+    let wc = Math.round((35.74 + (.6215 * t)) - (35.75 * Math.pow(s, .16)) + (.4275 * t * Math.pow(s, .16)));
+
+    if (t <= 50 && s > 3) {
+      document.querySelector('#windchill').innerHTML = wc;
+    } else {
+      document.querySelector('#windchill').innerHTML = "N/A";
+    }
 
 
-
-
-
-
-const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';  // note the concatenation
- const desc = jsObject.weather[0].description;  // note how we reference the weather array
-document.getElementById('imagesrc').textContent = imagesrc;  // informational specification only
-document.getElementById('icon').setAttribute('src', imagesrc);  // focus on the setAttribute() method
-document.getElementById('icon').setAttribute('alt', desc);
-
-});
-
-
+    const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png'; // note the concatenation
+    const desc = jsObject.weather[0].description; // note how we reference the weather array
+    document.getElementById('imagesrc').textContent = imagesrc; // informational specification only
+    document.getElementById('icon').setAttribute('src', imagesrc); // focus on the setAttribute() method
+    document.getElementById('icon').setAttribute('alt', desc);
+  });
 
 
 
 // // extract the JSON content we want
 //fetch(requestURL)
 //   .then(function (response) {
-  //   return response.json();
- //  })
+//   return response.json();
+//  })
 
 //   //   work with the converted response
 //   .then(function (jsonObject) {
@@ -70,7 +67,7 @@ document.getElementById('icon').setAttribute('alt', desc);
 //       p2.textContent = "Year Founded: " + towns[i].yearFounded;
 //       p3.textContent = "Population: " + towns[i].currentPopulation;
 //       p4.textContent = "Annual Rain Fall: " + towns[i].averageRainfall;
-            
+
 //       image.setAttribute('src', "images/" + towns[i].photo);
 //       image.setAttribute('alt', "photo of " + towns[i].name);    
 
@@ -85,7 +82,7 @@ document.getElementById('icon').setAttribute('alt', desc);
 //       if (towns[i].name == "Fish Haven") {
 //         image.setAttribute('class', 'leftside');
 //       }
-    
+
 //     }
 //   }
 //   });

@@ -13,8 +13,8 @@
 
 	<link rel="stylesheet" href="css/small.css" />
 
-    <script src="js/weatherapi.js"></script>
-    <script src="js/windchill.js"></script>
+	<script src="js/weatherapi.js"></script>
+	<script src="js/fiveday.js"></script>
 
 </head>
 
@@ -43,23 +43,51 @@
 	<main>
 		<picture>
 			<source media="(min-width: 31.25em) and (max-width: 49.9em)" srcset="images/medcropbanner.jpg">
-			<source srcset="images/panoimage.svg"  media="(min-width: 50em)">
+			<source srcset="images/panoimage.svg" media="(min-width: 50em)">
 			<!-- "images/lrgcropbanner.jpg" -->
 			<img class="hero" src="images/smlcropbanner.jpg"
 				alt="A green field with sunshine peeking through the clouds of a blue sky">
 		</picture>
 
-				<div class="data">
-                    <h1>Summary</h1>
-                    <p>The current condition description: <span id="currently"></span></p>
-                    <p>The high temp is: <span class='hightemp' id="hightemp"></span> &deg; F</p>
-                    <p>The current temperature in Preston, Idaho is <span id="currenttemp"></span>&deg; F</p>
-                    <p>The humidity: <span id="humidity"></span> &deg; F</p>
-                    <p>The wind speed:  <span class='windspeed' id="speed"></span> </p>
-                    <p>Wind Chill: <span class="windchill"> </span>&nbsp;&deg;F</p>
-                    <p>Image Icon Path Test: <span id="imagesrc"></span> &nbsp; <img src="" alt="" id="icon"></p>
+		<div class="data">
+			<h2>Summary</h2>
+			<p>The current condition description: <span id="currently"></span></p>
+			<p>The high temp is: <span id="hightemp"></span> &deg; F</p>
+			<p>The current temperature in Preston, Idaho is <span id="currenttemp"></span>&deg; F</p>
+			<p>The humidity: <span id="humidity"></span> &deg; F</p>
+			<p>The wind speed: <span id="speed"></span> mph </p>
+			<p>Wind Chill: <span id="windchill"> </span>&nbsp;&deg;F</p>
+			<p>Image Icon Path Test: <span id="imagesrc"></span> &nbsp; <img src="" alt="" id="icon"></p>
+		</div>
 
-				</div>
+		<h2>Five Day Weather Forecast</h2>
+		<div class="forecast block">
+
+			<div class="days">
+				<span id="day1"></span> :
+				<span id="data1"></span> &deg; F
+
+			</div>
+			<div class="days">
+				<span id="day2"></span> :
+			
+				<span id="data2"></span>
+			</div>
+			<div class="days">
+				<span id="day3"></span> :
+				
+				<span id="data3"></span>
+			</div>
+			<div class="days">
+				<span id="day4"></span> :
+			
+				<span id="data4"></span>
+			</div>
+			<div class="days">
+				<span id="day5"></span> :
+				<span id="data5"></span>
+			</div>
+		</div>
 
 	</main>
 	<footer>
@@ -72,7 +100,8 @@
 					💻 E-mail: &emsp; &ensp;tuttut@pooh.com<br>
 					📞 Phone: &ensp; &ensp; 385-212-8520 <br>
 				</p>
-				<p>Weather information on this page is thanks to <a href="https://openweathermap.org/">Open Weather Map</a> </p>
+				<p>Weather information on this page is thanks to <a href="https://openweathermap.org/">Open Weather
+						Map</a> </p>
 
 				<div class="social">
 					<a href="https://twitter.com/?lang=en"><img src="images/twitter.png" alt="Twitter Icon" /></a>
