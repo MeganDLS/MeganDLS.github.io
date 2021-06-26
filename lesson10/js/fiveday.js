@@ -24,13 +24,13 @@ fetch(requestAPI)
     fivedays.forEach(x => {
       let d = new Date(x.dt_txt);
       console.log(d);
+      console.log(x);
       //template literal to avoid concatination
       document.getElementById('day' + day).textContent = dayofweek[d.getDay()];
     
-     // document.getElementById('forecast'+ day).textContent = x.main.temp;
-     //document.getElementById('image' + day).setAttribule('src', day1image);
-
-     day++;
+    document.getElementById('data'+ day).textContent = x.main.temp;
+     document.getElementById('day' + day + 'image').setAttribute('src', `https://openweathermap.org/img/w/${x.weather[0].icon}.png`);
+      day++;
 
 
     //  const day1image = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png'; 
