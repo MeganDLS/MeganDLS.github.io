@@ -63,10 +63,11 @@
         display: flex;
        }
     .data img {
-        padding: 2.5rem;
+        margin-left: 2.5rem;
     }
     .carditem div h2 {
         font-size: 2.3rem;
+        margin-top: 0;
     }
     .carditem {
         display: block;
