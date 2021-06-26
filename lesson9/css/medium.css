@@ -19,9 +19,11 @@
         margin-right: 3rem;
         float: right;
     }
-header h1, #motto {
-    text-align: right;
-}
+
+    header h1,
+    #motto {
+        text-align: right;
+    }
 
     nav {
         border-radius: .3rem;
@@ -54,30 +56,27 @@ header h1, #motto {
     }
 
     /*------------- Towns --------------*/
-    .data {
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    }
-.data:nth-child(odd) {
-    float: right;
-}
-
     .carditem img {
-        max-width: 50%;
+        max-width: 70%;
+        padding: 2.5rem;
     }
+
+    .carditem div {
+        padding-left: .4rem;
+        text-align: center;
+    }
+
     .carditem {
-        border: 2px solid black;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
     }
-    .carditem:first-child img {
+
+    .rightside {
         grid-column: 2 / 3;
+        grid-row: 1 / 2;
 
     }
-
-    .carditem:second-child img {
-        grid-column: 2 / 3;
-    }
-
 
     /*------------- History --------------*/
 

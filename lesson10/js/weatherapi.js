@@ -1,6 +1,7 @@
 // API edd40baf43f2b3f80219cb8af5bd05d9
 
-const requestURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=edd40baf43f2b3f80219cb8af5bd05d9';
+const requestURL = 
+'https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=edd40baf43f2b3f80219cb8af5bd05d9';
 
 fetch(requestURL)
   .then((response) => response.json())
@@ -8,9 +9,7 @@ fetch(requestURL)
     console.log(jsObject);
 
     let t = jsObject.main.temp_max;
-
     let s = jsObject.wind.speed;
-
 
     document.getElementById('currently').textContent = jsObject.weather[0].description;
     document.getElementById('hightemp').textContent = t;

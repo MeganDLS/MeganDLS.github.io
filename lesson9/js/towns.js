@@ -33,6 +33,7 @@ fetch(requestURL)
       let p3 = document.createElement('p');
       let p4 = document.createElement('p');
       let image = document.createElement('img');
+      let details = document.createElement('div');
 
       data.setAttribute('class', 'carditem');
       h2.textContent = towns[i].name;
@@ -40,20 +41,22 @@ fetch(requestURL)
       p2.textContent = "Year Founded: " + towns[i].yearFounded;
       p3.textContent = "Population: " + towns[i].currentPopulation;
       p4.textContent = "Annual Rain Fall: " + towns[i].averageRainfall;
-            
+
+      
       image.setAttribute('src', "images/" + towns[i].photo);
       image.setAttribute('alt', "photo of " + towns[i].name);    
 
-      data.appendChild(h2);
-      data.appendChild(h3);
-      data.appendChild(p2);
-      data.appendChild(p3);
-      data.appendChild(p4);
+      details.appendChild(h2);
+      details.appendChild(h3);
+      details.appendChild(p2);
+      details.appendChild(p3);
+      details.appendChild(p4);
       data.appendChild(image);
+      data.appendChild(details);
 
       document.querySelector('div.data').appendChild(data);
       if (towns[i].name == "Fish Haven") {
-        image.setAttribute('class', 'leftside');
+        image.setAttribute('class', 'rightside');
       }
     
     }

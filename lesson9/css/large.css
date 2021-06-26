@@ -58,13 +58,10 @@
     }
 
 
-    /*------------- Article --------------*/
-    #eachtown {
-        border: 2px solid #1D3557;
-        padding: .2rem;
-    }
-    
+    /*------------- Towns --------------*/
 
+    
+    /*------------- History --------------*/
     #wheat {
         height: 20rem;
         width: auto;

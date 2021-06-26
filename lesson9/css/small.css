@@ -4,10 +4,6 @@
     font-family: "Montserrat", Arial, sans-serif;
 }
 
-body {
-    width: 98%;
-}
-
 .block {
     border: 2px solid #1D3557;
 }
@@ -118,34 +114,38 @@ nav ul li a:hover {
 
 /*------------- Article --------------*/
 .carditem {
-    max-width: 100%;
+    background-color: #CEE397;
+    border: 2px solid #1D3557;
+    margin: .5rem;
+    padding: .3rem;
 }
-
+.carditem div h2 {
+    color: #1D3557;
+    font-family:"Raleway", Arial, sans-serif;
+    font-size: 1.3rem;
+}
 .carditem img {
     width: 100%;
 }
 
-article h2 {
-    font-family: "Montserrat";
-    text-align: center;
-}
-
-article h3 {
-    text-align: center;
-}
-
-article p {
-    text-align: center;
-}
 
 /*------------- History --------------*/
 
 #wheat {
-    width: 100%;
+    width: 90%;
+    margin: .2rem;
+    padding-left: .5rem;
+    padding-top: .2rem;
 }
 
-#news {
-    font-size: 1.3rem;
+.news {
+    font-size: 1rem;
+    padding: .5rem;
+}
+
+.block h2 {
+    font-size: 1.2rem;
+    color: #1D3557;
 }
 
 /*------------- Footer --------------*/
