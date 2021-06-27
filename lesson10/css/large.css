@@ -1,0 +1,105 @@
+@media only screen and (min-width: 50em) {
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    header,
+    footer {
+        border: 2px solid #CEE397;
+        padding: 1rem;
+        background-color: #1D3557;
+        border-radius: .4rem;
+        color: #8DB1AB;
+    }
+
+    /***Header***/
+
+    header h1 {
+        text-align: right;
+    }
+
+    header img {
+        width: auto;
+        height: 16rem;
+        border-radius: .4rem;
+        float: right;
+        padding-top: .2rem;
+    }
+
+    #motto {
+        font-size: 2rem;
+        text-align: right;
+    }
+
+    #stormsighting {
+        padding-left: 2rem;
+    }
+
+    /*Navigation Bar*/
+    .navigation {
+        padding: 1rem;
+    }
+
+    .navigation a {
+        font-size: 1.3rem;
+    }
+
+    .carditem {
+        border: 2px solid black;
+    }
+/*------------- Current Conditions --------------*/
+.data p {
+    padding: .5rem;
+    margin: .3rem;
+}
+
+
+    /*------------- Five Day Table --------------*/
+    .forecast {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        }
+
+        .days {
+            display: grid;
+        }
+
+    /*------------- Towns --------------*/
+    
+    .data {
+        display: flex;
+       }
+    .data img {
+        margin-left: 2.5rem;
+    }
+    .carditem div h2 {
+        font-size: 2.3rem;
+        margin-top: 0;
+    }
+    .carditem {
+        display: block;
+    }
+    
+   
+
+
+    /*------------- History --------------*/
+    #wheat {
+        height: 20rem;
+        width: auto;
+    }
+
+    /***Contact***/
+    #contact {
+        padding-top: 2rem;
+    }
+
+    .social {
+        padding-left: 4rem;
+        border-radius: .4rem;
+    }
+
+    .bottom a {
+        font-size: 1rem;
+    }
+}

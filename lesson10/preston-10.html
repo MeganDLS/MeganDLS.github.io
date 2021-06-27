@@ -3,22 +3,21 @@
 
 <head>
 	<meta charset="UTF-8">
-
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 	<title>Tut Tut it Looks Like Rain, Storm Center</title>
 	<meta name="description" content="Lesson 9, Home. Web Development at BYU Idaho, WDD230-01">
 	<link rel="shortcut icon" type="image/png" href="favicon.ico">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-
-	<link rel="stylesheet" href="css/small.css" />
+	<link rel="stylesheet" href="css/small.css"/>
+	<link rel="stylesheet" href="css/medium.css"/>
+	<link rel="stylesheet" href="css/large.css"/>
 
 	<script src="js/weatherapi.js"></script>
 	<script src="js/fiveday.js"></script>
 </head>
 
 <body>
-
 	<header>
 		<img id="logo" src="images/umbrellalogo.jpg" alt="a blue umbrella" />
 		<h1> Tut, tut, <br> it looks like rain</h1>
@@ -26,9 +25,7 @@
 	</header>
 
 	<nav>
-
 		<ul class="navigation">
-
 			<li><a href="#" class="hamburger">&#9776; Menu</a></li>
 			<li><a class="active" href="/lesson9/index.html">Home</a></li>
 			<li><a id="preston" href="/lesson5/lesson-5.html">Preston</a></li>
@@ -43,57 +40,87 @@
 		<picture>
 			<source media="(min-width: 31.25em) and (max-width: 49.9em)" srcset="images/medcropbanner.jpg">
 			<source srcset="images/panoimage.svg" media="(min-width: 50em)">
-			<!-- "images/lrgcropbanner.jpg" -->
 			<img class="hero" src="images/smlcropbanner.jpg"
 				alt="A green field with sunshine peeking through the clouds of a blue sky">
 		</picture>
 
+		<!-- Summary of weather information -->
 		<div class="data">
-			<h2>Summary</h2>
-			<p>The current condition description: <span id="currently"></span></p>
-			<p>The high temp is: <span id="hightemp"></span> &deg; F</p>
-			<p>The current temperature in Preston, Idaho is <span id="currenttemp"></span>&deg; F</p>
-			<p>The humidity: <span id="humidity"></span> &deg; F</p>
-			<p>The wind speed: <span id="speed"></span> mph </p>
+			<h2>Current Conditions in Preston</h2>
+			<p><span id="currently"></span></p>
+			<p>High temperature: <span id="hightemp"></span> &deg; F</p>
+			<p>Current temperature: <span id="currenttemp"></span>&deg; F</p>
+			<p>Humidity: <span id="humidity"></span> &deg; F</p>
+			<p>Wind speed: <span id="speed"></span> mph </p>
 			<p>Wind Chill: <span id="windchill"> </span>&nbsp;&deg;F</p>
-			<p>Image Icon Path Test: <span id="imagesrc"></span> &nbsp; <img src="" alt="" id="icon"></p>
+			
 		</div>
 
+		<!-- Five Day Table -->	
 		<h2>Five Day Weather Forecast</h2>
 		<div class="forecast">
-
-			<div class="days">
+					<div class="days">
 				<span id="day1"></span> :
 				<span id="data1"></span> &deg; F
-				<img id='day1image' src='' alt=''/>
-			
-
+				<img id='day1image' src='' alt='' />
 			</div>
 			<div class="days">
 				<span id="day2"></span> :
-			
-				<span id="data2"></span>
-				<img id='day2image' src='' alt=''/>
+				<span id="data2"></span> &deg; F
+				<img id='day2image' src='' alt='' />
 			</div>
 			<div class="days">
 				<span id="day3"></span> :
-				
-				<span id="data3"></span>
-				<img id='day3image' src='' alt=''/>
+				<span id="data3"></span> &deg; F
+				<img id='day3image' src='' alt='' />
 			</div>
 			<div class="days">
 				<span id="day4"></span> :
-			
-				<span id="data4"></span>
-				<img id='day4image' src='' alt=''/>
+				<span id="data4"></span> &deg; F
+				<img id='day4image' src='' alt='' />
 			</div>
 			<div class="days">
 				<span id="day5"></span> :
-				<span id="data5"></span>
-				<img id='day5image' src='' alt=''/>
+				<span id="data5"></span> &deg; F
+				<img id='day5image' src='' alt='' />
 			</div>
 		</div>
 
+		<div class="block">
+			<h2>A History of Idaho</h2>
+			<p class="news">&emsp; Native Americans People have lived in the land of Idaho for thousands of years.
+				 When the Europeans arrived there were two major Native American tribes in the region:
+				  the Nez Perce in the north and the Shoshone to the south. <br>
+				  <img id="wheat" src="images/medsunny.jpg" alt="A wheat field">  
+				  &emsp;Both tribes lived similar lifestyles.
+				   For food they hunted animals such as deer and buffalo, fished the rivers,
+				    and planted corn and beans. They lived in tepees, which were easy to transport
+					 when they were following buffalo herds. Owyhee Mountains, Idaho from the USDA
+					  Europeans Arrive Because of its remote location, Idaho was one of the last of
+					   the lower 48 U.S. states to be visited by Europeans. <br>
+				
+					   
+					   &emsp;In 1805, explorers Lewis
+					    and Clark entered Idaho on their way to the Pacific Ocean. They met with both
+						 the Shoshone and the Nez Perce peoples. Their guide was Sacagawea, a Shoshone 
+						 Indian they had met in North Dakota. Soon after, fur traders moved into the area
+						  including Andrew Henry who built Fort Henry in 1810. Early Settlers Throughout
+						   the early 1800s more settlers came to Idaho. They included missionaries, fur
+						    traders, minors, and farmers. Many settlers traveled along the Oregon Trail
+							 which went through southern Idaho. Some settlers stopped along the way and
+							  made their home in Idaho. The first permanent settlement in Idaho was Franklin,
+							   which was established by the Mormons in 1860. The State Capitol building in
+							    Boise,Idaho by Jon Sullivan Becoming a State For many years, the region that
+								 included Idaho was claimed by both the United States and Britain. In 1846,
+								  the area officially became part of the United States through the Oregon Treaty
+								   with Britain. 
+								   It joined the Oregon Territory in 1848. In 1853, Oregon became
+								    its own territory and Idaho became part of the Washington Territory. Idaho
+									 grew in population after gold was discovered in 1860 and, in 1863, became
+									  its own territory called Idaho Territory. <br> <br><br> 
+Read more at: https://www.ducksters.com
+</p>
+		</div>
 	</main>
 	<footer>
 		<div id="contact" class="block">

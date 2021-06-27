@@ -5,7 +5,8 @@
 }
 
 body {
-    width: 98%;
+    width: 95%;
+    margin: 2rem;
 }
 
 .block {
@@ -31,6 +32,7 @@ h2 {
 .hero {
     width: 100%;
     height: auto;
+
     /* align-content: center; */
 
 }
@@ -117,63 +119,59 @@ nav ul li a:hover {
 }
 
 
-/*------------- Forecast --------------*/
+/*------------- Current Conditions --------------*/
 #currently {
     text-transform: capitalize;
+}
+
+.data {
+    padding: 0 5px 5px;
+    font-size: 0.8rem;
+    text-align: center;
+    background-color: #F2ED6F
 }
 
 /***Weather Forecast Table***/
 .forecast {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column;
     background-color: #8DB1AB;
-    margin-bottom: 3rem;
+    border: 1px solid #333;
+    margin: .3rem;
+    padding: .4rem;
+    text-align: center;
+}
+
+.forecast h2 {
+    font-size: 1.3rem;
 }
 
 .days {
-    flex: 1 1 auto;
-}
-
-.days,
-.column-col,
-.grid-col {
     border: 1px solid #333;
-    text-align: center;
-}
+    margin: .2rem;
+    padding-bottom: 1.2rem;
+    background-color: white;
 
-.days:hover,
-td:hover,
-.column-col:hover,
-.grid-col:hover {
-    opacity: 0.75;
-    background-color: #1D3557;
-    color: white;
-}
-
-.forecast,
-img {
-    margin: .5rem;
-}
-
-.day {
-    display: block;
-    padding: 5px;
-    border-bottom: 1px solid #333;
-    text-align: center;
-}
-
-.data {
-    display: block;
-    padding: 0 5px 5px;
-    font-size: 0.8rem;
-    text-align: center;
 }
 
 
-/* .data p:first-letter {
-    text-transform:capitalize;
-} */
+/*------------- History --------------*/
 
+#wheat {
+    width: 70%;
+    margin: .2rem;
+    padding-left: .2rem;
+}
+
+.news {
+    font-size: 1rem;
+    padding: .5rem;
+}
+
+.block h2 {
+    font-size: 1.2rem;
+    color: #1D3557;
+}
 
 /*------------- Footer --------------*/
 /***Contact***/
@@ -181,6 +179,7 @@ img {
 footer a {
     font-size: 1rem;
 }
+
 .bottom {
     text-align: center;
 }
