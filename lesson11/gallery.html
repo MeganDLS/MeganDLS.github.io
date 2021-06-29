@@ -12,6 +12,8 @@
     <link rel="icon" type="image/png" href="favicon.ico">
 
     <script src="js/weatherapi.js"></script>
+    <script src="js/forms.js"></script>
+    <script defer src="js/lazyload.js"></script>
 
     <link href="css/small.css" rel="stylesheet"/>
 	<link href="css/medium.css" rel="stylesheet"/>
@@ -20,6 +22,8 @@
 
 <body>
     <header>
+        <div class="popup"> 🥞 Come for pancakes Saturday Morning!</div>
+
         <img id="logo" src="images/umbrellalogo.jpg" alt="a blue umbrella"/>
 		<h1> Tut, tut, it looks like rain</h1>
 		<h2 id="motto"> Get connected with your community</h2> 
@@ -44,46 +48,49 @@
 			<img class="hero" src="images/smlcropbanner.jpg"
 				alt="Looking up to a partly cloudy blue sky, shrouded by trees">
 		</picture> 
-        <div>
-            <h2>Current Conditions</h2>
-        </div>
 
+    </main>
+
+    <footer>
         <div class="block">
-            <h2>Five Day Forecast</h2>
-            <div id="forecast">
-                <div class="day">
-                    <span id="day1"></span>
-                    <span id="data1"></span> &deg; F
-                    <img id='image1' src='' alt='' />
-                </div>
-                <div class="day">
-                    <span id="day2"></span> :
-                    <span id="data2"></span> &deg; F
-                    <img id='image2' src='' alt='' />
-                </div>
-                <div class="day">
-                    <span id="day3"></span> :
-                    <span id="data3"></span> &deg; F
-                    <img id='image3' src='' alt='' />
-                </div>
-                <div class="day">
-                    <span id="day4"></span> :
-                    <span id="data4"></span> &deg; F
-                    <img id='image4' src='' alt='' />
-                </div>
-                <div class="day">
-                    <span id="day5"></span> :
-                    <span id="data5"></span> &deg; F
-                    <img id='image5' src='' alt=''/>
-                </div>  
+            <h2>Contact Information</h2>
+            <p>
+            Tut Tut, LLC<br><br>
+		    📪 Address: &ensp; 1st and 3rd, Preston, ID <br>
+		    💻 E-mail: &emsp; &ensp;tuttut@pooh.com<br>
+		    📞 Phone: &ensp; &ensp; 385-212-8520 <br>
+            </p>
+            <p>Weather information on this page is thanks to
+                <a href="https://openweathermap.org/">
+                Open Weather Map</a>
+            </p>
+            <div class="block">  
+                <h2>Follow us on social media:</h2>
+                <a href="https://twitter.com/?lang=en">
+                    <img src="images/twitter.png" alt="Twitter bird Icon"/>
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img src="images/instagram.png" alt="Instagram camera Icon"/>
+                </a>
+                <a href="https://www.facebook.com">
+                    <img src="images/facebook.png" alt="Facebook letter F Icon"/>
+                </a>
             </div>
         </div>
-    </main>
-<footer>
-</footer>
-<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-<script>WebFont.load({google: {families: ["Montserrat", "Raleway"]}});</script>
-<script src="js/getdate.js"></script>
+<div>
+    <p>
+        &copy; <span id="copyrightyear"></span> | Megan De Le&oacute;n | Utah |
+        <a
+		    href="https://www.byui.edu/">BYUI Online Learning
+        </a>
+        <span id="updated"></span> 
+    </p>
+</div>
+
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>WebFont.load({google: {families: ["Montserrat", "Raleway"]}});</script>
+    <script src="js/getdate.js"></script>
 </body>
 
 </html>

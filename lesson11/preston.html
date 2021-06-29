@@ -12,7 +12,7 @@
     <link rel="icon" type="image/png" href="favicon.ico">
 
     <script src="js/weatherapi.js"></script>
-    <script src="js/forms.js"></script>
+    <script src="js/fiveday.js"></script>
 
     <link href="css/small.css" rel="stylesheet"/>
 	<link href="css/medium.css" rel="stylesheet"/>
@@ -21,21 +21,19 @@
 
 <body>
     <header>
-        <div class="popup"> 🥞 Come for pancakes Saturday Morning!</div>
-
-        <img id="logo" src="images/umbrellalogo.jpg" alt="a blue umbrella"/>
+        <img id="logo" src="images/logoumbrella.png" alt="a blue umbrella"/>
 		<h1> Tut, tut, it looks like rain</h1>
 		<h2 id="motto"> Get connected with your community</h2> 
 
-        <nav>
-            <ul class="navigation">
+        <nav class="block">
+            <ul>
                 <li><a href="#" class="hamburger">&#9776; Menu</a></li>
-                <li><a class="active" href="/lesson11/index.html">Home</a></li>
-                <li><a id="preston" href="/lesson11/preston.html">Preston</a></li>
-                <li><a id="sodasprings" href="/lesson11/sodasprings.html">Soda Srings</a></li>
-                <li><a id="fishhaven" href="/lesson11/fishhaven.html">Fish Haven</a></li>
-                <li><a id="stormcenter" href="/lesson11/stormcenter.html">Storm Center</a></li>
-                <li><a id="gallery" href="/lesson11/gallery.html">Gallery</a></li>
+                <li><a href="/lesson11/index.html">Home</a></li>
+                <li><a class="active" href="/lesson11/preston.html">Preston</a></li>
+                <li><a href="/lesson11/sodasprings.html">Soda Srings</a></li>
+                <li><a href="/lesson11/fishhaven.html">Fish Haven</a></li>
+                <li><a href="/lesson11/stormcenter.html">Storm Center</a></li>
+                <li><a href="/lesson11/gallery.html">Gallery</a></li>
             </ul>
         </nav>
     </header>
@@ -43,15 +41,57 @@
     <main>
         <picture>
 			<source media="(min-width: 31.25em) and (max-width: 49.9em)" srcset="images/medcropbanner.jpg">
-			<source srcset="images/panoimage.svg" media="(min-width: 50em)">
+			<source srcset="images/lrgbannerc.jpg" media="(min-width: 50em)">
 			<img class="hero" src="images/smlcropbanner.jpg"
 				alt="Looking up to a partly cloudy blue sky, shrouded by trees">
 		</picture> 
 
-    </main>
+        <!-- Summary of one town weather information -->
+        <div class="data block">
+			<h2>Current Conditions in Preston</h2>
+			<p class="conditions"><span id="currently"></span></p>
+			<p>High temperature: <span id="hightemp"></span> &deg; F</p>
+			<p>Current temperature: <span id="currenttemp"></span>&deg; F</p>
+			<p>Humidity: <span id="humidity"></span> &deg; F</p>
+			<p>Wind speed: <span id="speed"></span> mph </p>
+			<p>Wind Chill: <span id="windchill"> </span>&nbsp;&deg;F</p>
+			
+		</div>
 
-    <footer>
+        <!-- Five Day Table with temp and image-->	
         <div class="block">
+            <h2>Five Day Forecast</h2>
+            <div class="forecast">
+                <div class="day">
+                    <span id="day1"></span>
+                    <span id="data1"></span> &deg; F
+                    <img id='day1image' src='' alt='' />
+                </div>
+                <div class="day">
+                    <span id="day2"></span> :
+                    <span id="data2"></span> &deg; F
+                    <img id='day2image' src='' alt='' />
+                </div>
+                <div class="day">
+                    <span id="day3"></span> :
+                    <span id="data3"></span> &deg; F
+                    <img id='day3image' src='' alt='' />
+                </div>
+                <div class="day">
+                    <span id="day4"></span> :
+                    <span id="data4"></span> &deg; F
+                    <img id='day4image' src='' alt='' />
+                </div>
+                <div class="day">
+                    <span id="day5"></span> :
+                    <span id="data5"></span> &deg; F
+                    <img id='day5image' src='' alt=''/>
+                </div>  
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="block contact">
             <h2>Contact Information</h2>
             <p>
             Tut Tut, LLC<br><br>
@@ -64,7 +104,7 @@
                 Open Weather Map</a>
             </p>
             <div class="block">  
-                <h2>Follow us on social media:</h2>
+                <h3>Follow us on social media:</h3>
                 <a href="https://twitter.com/?lang=en">
                     <img src="images/twitter.png" alt="Twitter bird Icon"/>
                 </a>

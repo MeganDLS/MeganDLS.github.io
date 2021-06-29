@@ -25,8 +25,6 @@ body {
     border: 1px solid black;
     float: right;
     border-radius: 3rem;
-    margin: .4rem;
-    padding: .2rem;
 }
 
 /* Wayfinder */
@@ -41,10 +39,11 @@ body {
 /* Navigation Bar */
 nav ul {
     list-style: none;
+    display: flex;
+    justify-content: space-around;
 }
 nav ul li {
-    display: inline;
-    margin: 5rem;
+
     padding: .5rem;
 }
 
@@ -66,7 +65,9 @@ nav ul li a:hover {
 
 
 /******BODY******/
-/* News Article */
+/* PRESTON: One Town weather information */
+
+/*HOME: News Article */
 .wheat {
     float: right;
     margin: 1rem;
@@ -74,5 +75,79 @@ nav ul li a:hover {
 .news {
     padding: 1.5rem;
 }
+
+/* STORM CENTER: Form */
+#formarea {
+    background-color: #8DB1AB;
+}
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid white;
+    padding: 1.5rem 2%;
+}
+
+form legend {
+    color: #1D3557;
+    font-style: italic;
+    margin: 0.5rem;
+    padding: 0 .5rem;
+}
+form label, form div {
+    display: block;
+    padding-top: 1rem;
+    color:#1D3557;
+}
+
+#ratingvalue {
+	color: #1D3557;
+    font-weight: 700;
+}
+#danger {
+    border: 1px dotted white;
+    font-style: italic;
+    padding: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.sbutton {
+    padding: 1rem;
+    background-color: #F2ED6F;
+    box-shadow: .5rem .5rem .5rem #1D3557;
+    margin-bottom: 1.5rem;
+}
+
+.sbutton:hover {
+    background-color: #CEE397;
+}
+
+label, input {
+    text-align: center;
+
+}
+input, select {
+    padding: .75rem;
+}
+
+
+form label input:required {
+    border-left: red solid 4px;
+
+}
+
+form label input:required:valid {
+    border-left: green solid 4px;
+}
+
+#gracias {
+    padding: 2rem;
+    background-color: #CEE397;
+    color: #1D3557;
+    font-size: 2rem;
+    margin: 4rem;
+
+}
+
+
 
 /******FOOTER******/
