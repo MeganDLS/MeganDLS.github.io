@@ -6,90 +6,189 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Megan De León">
-    <meta name="description" content="Web Development for BYU Idaho, WDD230-01. Lesson 11">    
+    <meta name="description" content="Web Development for BYU Idaho, WDD230-01. Lesson 11">
     <title>Tut Tut it Looks Like Rain Weather Service for some towns in Idaho.</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="icon" type="image/png" href="favicon.ico">
 
-    <script src="js/weatherapi.js"></script>
-    <script src="js/forms.js"></script>
-    <script defer src="js/lazyload.js"></script>
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
 
-    <link href="css/small.css" rel="stylesheet"/>
-	<link href="css/medium.css" rel="stylesheet"/>
-	<link href="css/large.css" rel="stylesheet"/>
+    <script defer src="js/lastvisited.js"></script>
+    <script defer src="js/hamburger.js"></script>
+    <script defer src="js/lazyload.js"></script>
 </head>
 
 <body>
     <header>
-        <div class="popup"> 🥞 Come for pancakes Saturday Morning!</div>
+        <img id="logo" src="images/logoumbrella.png" alt="a blue umbrella" />
+        <h1> Tut, tut, it looks like rain</h1>
+        <h2> Get connected with your community</h2>
 
-        <img id="logo" src="images/umbrellalogo.jpg" alt="a blue umbrella"/>
-		<h1> Tut, tut, it looks like rain</h1>
-		<h2 id="motto"> Get connected with your community</h2> 
-
-        <nav>
-            <ul class="navigation">
+        <nav class="block">
+            <ul>
                 <li><a href="#" class="hamburger">&#9776; Menu</a></li>
-                <li><a class="active" href="/lesson11/index.html">Home</a></li>
-                <li><a id="preston" href="/lesson11/preston.html">Preston</a></li>
-                <li><a id="sodasprings" href="/lesson11/sodasprings.html">Soda Srings</a></li>
-                <li><a id="fishhaven" href="/lesson11/fishhaven.html">Fish Haven</a></li>
-                <li><a id="stormcenter" href="/lesson11/stormcenter.html">Storm Center</a></li>
-                <li><a id="gallery" href="/lesson11/gallery.html">Gallery</a></li>
+                <li><a href="/lesson11/index.html">Home</a></li>
+                <li><a href="/lesson11/preston.html">Preston</a></li>
+                <li><a href="/lesson11/sodasprings.html">Soda Srings</a></li>
+                <li><a href="/lesson11/fishhaven.html">Fish Haven</a></li>
+                <li><a href="/lesson11/stormcenter.html">Storm Center</a></li>
+                <li><a class="active" href="/lesson11/gallery.html">Gallery</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <picture>
-			<source media="(min-width: 31.25em) and (max-width: 49.9em)" srcset="images/medcropbanner.jpg">
-			<source srcset="images/panoimage.svg" media="(min-width: 50em)">
-			<img class="hero" src="images/smlcropbanner.jpg"
-				alt="Looking up to a partly cloudy blue sky, shrouded by trees">
-		</picture> 
+            <source media="(min-width: 31.25em) and (max-width: 49.9em)" srcset="images/medcropbanner.jpg">
+            <source srcset="images/lrgbannerc.jpg" media="(min-width: 50em)">
+            <img class="hero" src="images/smlcropbanner.jpg"
+                alt="Looking up to a partly cloudy blue sky, shrouded by trees">
+        </picture>
 
+        <div id="thegallery">
+            <div class="gallery">
+                <picture>
+                    <source media="(min-width: 500px) and (max-width: 799px)" srcset="images/medlightning.jpg">
+                    <source srcset="images/lrglightning.jpg" media="(min-width: 800px)">
+                    <img src="images/umbrellalogo.jpg" data-src="images/smllightning.jpg"
+                        alt="A distant showerstorm over a tan landscape, one strand of lightning kissing the earth."
+                        width="300" height="400">
+                </picture>
+                <div class="title">Lightning</div>
+            </div>
+            <div class="gallery">
+                <picture>
+                    <source media="(min-width: 500px) and (max-width: 799px)" srcset="images/medcloudy.jpg">
+                    <source srcset="images/lrgcloudy.jpg" media="(min-width: 800px)">
+                    <img src="images/umbrellalogo.jpg" data-src="images/smlcloud.jpg"
+                        alt="Pink fluffy cumulous clouds over a long road between green hills." width="300"
+                        height="400">
+                </picture>
+                <div class="title">Cloudy</div>
+            </div>
+            <div class="gallery">
+                <picture>
+                    <source media="(min-width: 500px) and (max-width: 799px)" srcset="images/medfoggy.jpg">
+                    <source srcset="images/lrgfoggy.jpg" media="(min-width: 800px)">
+                    <img src="images/umbrellalogo.jpg" data-src="images/smlfoggy.jpg"
+                        alt="A mountain of pine trees next to a still lake. Everything is covered in fog." width="300"
+                        height="400">
+                </picture>
+                <div class="title">Foggy</div>
+            </div>
+
+            <div class="gallery">
+                <picture>
+                    <source media="(min-width: 500px) and (max-width: 799px)" srcset="images/medrainy.jpg">
+                    <source srcset="images/lrgrainy.jpg" media="(min-width: 800px)">
+                    <img src="images/umbrellalogo.jpg" data-src="images/smlrainy.jpg"
+                        alt="Storm clouds in a deep sky. A dark blue mountain range and a green field beneath."
+                        width="300" height="400">
+                </picture>
+                <div class="title">Rainy</div>
+            </div>
+            <div class="gallery">
+                <picture>
+                    <source media="(min-width: 500px) and (max-width: 799px)" srcset="images/medsnowy.jpg">
+                    <source srcset="images/lrgsnowy.jpg" media="(min-width: 800px)">
+                    <img src="images/umbrellalogo.jpg" data-src="images/smlsnowy.jpg"
+                        alt="Evergreen trees covered in snow on a snowy field under a stary dusk sky" width="300"
+                        height="400">
+                </picture>
+                <div class="title">Snowy</div>
+            </div>
+            <div class="gallery">
+                <picture>
+                    <source media="(min-width: 500px) and (max-width: 799px)" srcset="images/medsunny.jpg">
+                    <source srcset="images/lrgsunny.jpg" media="(min-width: 800px)">
+                    <img src="images/umbrellalogo.jpg" data-src="images/smlsunny.jpg"
+                        alt="Bright sun peeking through tall wheat grass" width="300" height="400">
+                </picture>
+                <div class="title">Sunny</div>
+            </div>
+            <div class="gallery">
+                <picture>
+                    <source media="(min-width: 500px) and (max-width: 799px)" srcset="images/medtornado2.jpg">
+                    <source srcset="images/lrgtornado2.jpg" media="(min-width: 800px)">
+                    <img src="images/umbrellalogo.jpg" data-src="images/smltornado2.jpg"
+                        alt="A dark gray tornado in the middle of a peaceful field." width="300" height="400">
+                </picture>
+                <div class="title">Tornados</div>
+            </div>
+            <div class="gallery">
+                <picture>
+                    <source media="(min-width: 500px) and (max-width: 799px)" srcset="images/medcropbanner.jpg">
+                    <source srcset="images/lrgcropbanner.jpg" media="(min-width: 800px)">
+                    <img src="images/umbrellalogo.jpg" data-src="images/300x400.jpg"
+                        alt="Green trees leaves with some blue sky and clouds showing" width="300" height="400">
+                </picture>
+                <div class="title">Partly Cloudy</div>
+            </div>
+
+            <div class="gallery">
+                <picture>
+                    <source media="(min-width: 500px) and (max-width: 799px)" srcset="images/medflood.jpg">
+                    <source srcset="images/lrgflood.jpg" media="(min-width: 800px)">
+                    <img src="images/umbrellalogo.jpg" data-src="images/smlflood.jpg"
+                        alt="Overflowing river and broken trees that were in its path" width="300" height="400">
+                </picture>
+                <div class="title">Flooding</div>
+            </div>
+        </div>
+        <div class="block">
+            <h2>When did I last visit?</h2>
+
+            <button onclick="createInstance()">I'm here today</button>
+            <p><br /></p>
+            <button onclick="getNumberOfDays()">How many days since my last visit?</button>
+            <p><br /></p>
+            <p>It's been <span id='daysince'></span> since your last visit to the gallery page.</p>
+        </div>
     </main>
 
     <footer>
         <div class="block">
             <h2>Contact Information</h2>
             <p>
-            Tut Tut, LLC<br><br>
-		    📪 Address: &ensp; 1st and 3rd, Preston, ID <br>
-		    💻 E-mail: &emsp; &ensp;tuttut@pooh.com<br>
-		    📞 Phone: &ensp; &ensp; 385-212-8520 <br>
+                Tut Tut, LLC<br><br>
+                📪 Address: &ensp; 1st and 3rd, Preston, ID <br>
+                💻 E-mail: &emsp; &ensp;tuttut@pooh.com<br>
+                📞 Phone: &ensp; &ensp; 385-212-8520 <br>
             </p>
-            <p>Weather information on this page is thanks to
-                <a href="https://openweathermap.org/">
-                Open Weather Map</a>
-            </p>
-            <div class="block">  
+         
+            <div class="block">
                 <h2>Follow us on social media:</h2>
                 <a href="https://twitter.com/?lang=en">
-                    <img src="images/twitter.png" alt="Twitter bird Icon"/>
+                    <img src="images/twitter.png" alt="Twitter bird Icon" />
                 </a>
                 <a href="https://www.instagram.com/">
-                    <img src="images/instagram.png" alt="Instagram camera Icon"/>
+                    <img src="images/instagram.png" alt="Instagram camera Icon" />
                 </a>
                 <a href="https://www.facebook.com">
-                    <img src="images/facebook.png" alt="Facebook letter F Icon"/>
+                    <img src="images/facebook.png" alt="Facebook letter F Icon" />
                 </a>
             </div>
         </div>
-<div>
-    <p>
-        &copy; <span id="copyrightyear"></span> | Megan De Le&oacute;n | Utah |
-        <a
-		    href="https://www.byui.edu/">BYUI Online Learning
-        </a>
-        <span id="updated"></span> 
-    </p>
-</div>
+        <div>
+            <p>
+                &copy; <span id="copyrightyear"></span> | Megan De Le&oacute;n | Utah |
+                <a href="https://www.byui.edu/">BYUI Online Learning
+                </a>
+                <span id="updated"></span>
+            </p>
+        </div>
 
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <script>WebFont.load({google: {families: ["Montserrat", "Raleway"]}});</script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ["Montserrat", "Raleway"]
+            }
+        });
+    </script>
     <script src="js/getdate.js"></script>
 </body>
 

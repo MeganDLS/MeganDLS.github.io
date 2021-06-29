@@ -10,3 +10,12 @@
     text-align: right;
     padding-right: 2rem;
 }
+
+/*------------- Gallery --------------*/
+#thegallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+img:hover {
+    box-shadow: 0 0 50px #333;
+}

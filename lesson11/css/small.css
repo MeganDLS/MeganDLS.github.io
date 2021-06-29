@@ -149,5 +149,32 @@ form label input:required:valid {
 }
 
 
+/* GALLERY */
+picture {
+    display: flex;
+}
+
+.gallery {
+    display: grid;
+    margin: 1rem;
+    border: 1px solid #1D3557;
+    /* width: 180px; */
+}
+
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.desc {
+    padding: 1rem;
+    text-align: center;
+}
+
+.title {
+    padding: 1rem;
+    text-align: center;
+}
 
 /******FOOTER******/
