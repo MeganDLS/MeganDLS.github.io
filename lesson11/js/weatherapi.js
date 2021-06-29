@@ -13,7 +13,6 @@ fetch(requestURL)
 
     document.getElementById('currently').textContent = jsObject.weather[0].description;
     document.getElementById('hightemp').textContent = t;
-    document.getElementById('currenttemp').textContent = jsObject.main.temp;
     document.getElementById('humidity').textContent = jsObject.main.humidity;
     document.getElementById('speed').textContent = s;
 

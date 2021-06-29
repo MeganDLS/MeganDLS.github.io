@@ -27,6 +27,10 @@ body {
     border-radius: 3rem;
 }
 
+.hero {
+    border-radius: .5rem;
+}
+
 /* Wayfinder */
 .active {
     opacity: 0.75;
@@ -42,6 +46,7 @@ nav ul {
     display: flex;
     justify-content: space-around;
 }
+
 nav ul li {
 
     padding: .5rem;
@@ -63,15 +68,86 @@ nav ul li a:hover {
     width: 100%;
 }
 
-
 /******BODY******/
-/* PRESTON: One Town weather information */
+/* PRESTON, SODA SPRINGS, and FISH HAVEN: One Town weather information */
+.overlay {
+    background-color: #CEE397;
+    opacity: 80%;
+    box-shadow: 0 0 10px #1D3557;
+}
+
+.overlay h2 {
+    text-align: center;
+}
+
+.weatherconditions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.label {
+    font-weight: bold;
+}
+
+.value {
+    text-align: center;
+}
+
+.first {
+    font-size: 1.3rem;
+    text-align: left;
+}
+
+/* Forecast Table */
+.table {
+    margin-left: 8rem;
+    margin-right: 4rem;
+
+}
+
+.forecast {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #8DB1AB;
+    margin-bottom: 3rem;
+}
+
+.forecast img {
+    border-radius: .5rem;
+    margin: .5rem;
+    box-shadow: 0 0 5px #1D3557;
+}
+
+.day {
+    flex: 1 1 auto;
+    box-shadow: 0 0 10px #1D3557;
+    border-radius: .5rem;
+    padding: .3rem;
+    border-bottom: 1px solid #333;
+}
+
+.day:hover {
+    opacity: 0.75;
+    background-color: #1D3557;
+    color: white;
+}
+
+.labels {
+    font-weight: bold;
+    padding: .2rem;
+    display: block;
+    text-align: center;
+
+}
+
+
 
 /*HOME: News Article */
 .wheat {
     float: right;
     margin: 1rem;
 }
+
 .news {
     padding: 1.5rem;
 }
@@ -80,6 +156,7 @@ nav ul li a:hover {
 #formarea {
     background-color: #8DB1AB;
 }
+
 form fieldset {
     margin: 2rem 0;
     border: 1px solid white;
@@ -92,16 +169,19 @@ form legend {
     margin: 0.5rem;
     padding: 0 .5rem;
 }
-form label, form div {
+
+form label,
+form div {
     display: block;
     padding-top: 1rem;
-    color:#1D3557;
+    color: #1D3557;
 }
 
 #ratingvalue {
-	color: #1D3557;
+    color: #1D3557;
     font-weight: 700;
 }
+
 #danger {
     border: 1px dotted white;
     font-style: italic;
@@ -121,11 +201,14 @@ form label, form div {
     background-color: #CEE397;
 }
 
-label, input {
+label,
+input {
     text-align: center;
 
 }
-input, select {
+
+input,
+select {
     padding: .75rem;
 }
 
@@ -148,7 +231,6 @@ form label input:required:valid {
 
 }
 
-
 /* GALLERY */
 picture {
     display: flex;
@@ -158,9 +240,8 @@ picture {
     display: grid;
     margin: 1rem;
     border: 1px solid #1D3557;
-    /* width: 180px; */
+    border-radius: .5rem;
 }
-
 
 .gallery img {
     width: 100%;

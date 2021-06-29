@@ -47,47 +47,143 @@
 		</picture> 
 
         <!-- Summary of one town weather information -->
-        <div class="data block">
-			<h2>Current Conditions in Preston</h2>
-			<p class="conditions"><span id="currently"></span></p>
-			<p>High temperature: <span id="hightemp"></span> &deg; F</p>
-			<p>Current temperature: <span id="currenttemp"></span>&deg; F</p>
-			<p>Humidity: <span id="humidity"></span> &deg; F</p>
-			<p>Wind speed: <span id="speed"></span> mph </p>
-			<p>Wind Chill: <span id="windchill"> </span>&nbsp;&deg;F</p>
-			
+        <div class="overlay block">
+			<h2>Currently in Preston</h2>
+            <div class="weatherconditions" >
+                <p class="label"></p>
+                <p class="value first"><span id="currently"></span> </p>
+                <p class="label">Temperature:</p>
+                <p class="value"><span id="hightemp"></span> &nbsp;&deg;F</p>
+                <p class="label">Wind Chill: </p>
+                <p class="value"><span id="windchill"> </span>&nbsp;&deg;F</p>
+                <p class="label">Humidity: </p>
+                <p class="value"> <span id="humidity"></span> % </p>
+                <p class="label">Wind Speed: </p>
+                <p class="value"> <span id="speed"></span> MPH </p>
+            </div>
 		</div>
 
         <!-- Five Day Table with temp and image-->	
-        <div class="block">
+        <div class="table block">
             <h2>Five Day Forecast</h2>
             <div class="forecast">
                 <div class="day">
-                    <span id="day1"></span>
-                    <span id="data1"></span> &deg; F
-                    <img id='day1image' src='' alt='' />
+                    <span class="labels" id="day1"></span>
+                    <span class="values" id="data1"></span>&deg; F
+                    <img id='day1image' src='...' alt='...' />
                 </div>
                 <div class="day">
-                    <span id="day2"></span> :
+                    <span class="labels" id="day2"></span>
                     <span id="data2"></span> &deg; F
-                    <img id='day2image' src='' alt='' />
+                    <img id='day2image' src='...' alt='...' />
                 </div>
                 <div class="day">
-                    <span id="day3"></span> :
+                    <span class="labels" id="day3"></span>
                     <span id="data3"></span> &deg; F
-                    <img id='day3image' src='' alt='' />
+                    <img id='day3image' src='...' alt='...' />
                 </div>
                 <div class="day">
-                    <span id="day4"></span> :
+                    <span class="labels" id="day4"></span>
                     <span id="data4"></span> &deg; F
-                    <img id='day4image' src='' alt='' />
+                    <img id='day4image' src='...' alt='...' />
                 </div>
                 <div class="day">
-                    <span id="day5"></span> :
+                    <span class="labels" id="day5"></span>
                     <span id="data5"></span> &deg; F
-                    <img id='day5image' src='' alt=''/>
+                    <img id='day5image' src='...' alt='...'/>
                 </div>  
             </div>
+        </div>
+
+        <!-- Events -->
+        <div class="block">
+            <h2>Upcoming Events</h2>
+            <p>Merrill Park, 637 E. Shore Drive, Eagle, ID
+                Visitors can stop by the Eagle Field of Honor at Merrill Park see more than 600 American flags, each
+                honoring a local veteran
+                Flags are lit at night</p>
+
+            <p>Idaho State Veterans Cemetery - several events are planned.
+                On Saturday, May 29 -- 9 a.m.
+                Gov. Brad Little, former Gov. Dirk Kempthorne and other dignitaries to host a Memorial Day
+                observance event and unveil
+                a statue sculpted for the Idaho Veterans Cemetery by world-renowned Idaho artist Benjamin Victor.
+
+                The life-size statue features two U.S. Armed Forces service members depicting reverence, respect and
+                resolve. In
+                addition to the unveiling, the event will include an invocation by a military chaplain, remarks by
+                dignitaries, an
+                Idaho National Guard color guard, a rifle party, a bugler and more.</p>
+
+            <p>On Monday, May 31 -- 10 a.m.
+
+                The annual Memorial Day observance at the Idaho Veterans Cemetery.
+
+                Flags will be placed throughout the cemetery by the Young Marines. Activities include flyovers by
+                the Idaho Air National
+                Guard's 124th Fighter Wing at 10 a.m. and a Warhawk Air Museum Warbird flight at 11:11. TAPS will be
+                performed by a member
+                of Bugles Across America and followed by a bagpipe lament performed by a member of the Boise
+                Highlanders.</p>
+
+            <p>Kohlerlawn Cemetery (Nampa) - Monday, May 31
+                The City of Nampa will host a ceremony at 10 a.m. at Veteran's Loop in Kohlerlawn Cemetery (76 6th
+                St. N.) to honor the men
+                and women who served in our country's military as well as those who gave their lives for our
+                freedoms.
+                The keynote speaker will be Rev. Bill Roscoe, President of the Boise Rescue Mission Ministries.
+                Parking will be available in designated areas. For more info, call 208-468-5797.</p>
+            <p>Julius M. Kleiner Park (Meridian)
+                11:00 a.m.
+                Rock of Honor Memorial - the names of Meridian's 62 fallen heroes are engraved on the rock and will
+                be read aloud.
+                Vintage planes from the Warhawk Air Museum will conduct a flyover. Julius M. Kleiner Park (1900 N.
+                Records Avenue, Meridian)
+                45-minute ceremony features a short speech by Meridian City Councilman Treg Bernt, a wreath laying,
+                a rifle salute, and the
+                playing of Taps. The event will additionally pay tribute to police and firefighters, first
+                responders, and health care workers.
+                Attendees are encouraged to bring their own folding chairs or lawn blankets, as seats are limited.
+                In addition to Meridian's Memorial Day Tribute at the Rock of Honor, there will also be another
+                gathering on
+                Monday, May 31, at 1 p.m. at the Meridian Cemetery (895 E. Franklin Road) presented by the American
+                Legion Post 113 and
+                the Meridian Cemetery. It will feature a short speech, a reading of names, wreath laying, rifle
+                salute and the playing of Taps.
+                Morris Hill Cemetery observance. </p>
+
+            <p>Memorial Day weekend will be observed at Morris Hill Cemetery (317 N. Latah St.) Saturday, May 29
+                through Monday, May 31.
+                Boise Parks and Recreation team members will be on site in a limited capacity Saturday through
+                Monday to assist the public in
+                identifying grave locations. Hours at the cemetery will be:
+
+                10 a.m. to 4 p.m. on Saturday, May 29
+                11 a.m. to 3 p.m. on Sunday, May 30
+                10 a.m. to 4 p.m. on Monday, May 31 (Memorial Day)</p>
+
+            <p>Observance of the holiday will include additional health and safety protocols.
+                Boise Parks and Recreation employees will be available at the on-site outdoor kiosk to provide
+                additional information and help
+                family members and visitors during the hours of operation listed above. A separate table will also
+                be set up and equipped with
+                a plexiglass barrier for visitors to safely interact with staff members to locate grave markers and
+                burial sites. Two other
+                cemeteries maintained by Boise Parks and Recreation will be open to the public Memorial Day weekend
+                but will not be
+                staffed. They are:
+                Pioneer Cemetery (460 E. Warm Springs Ave.)
+                Fort Boise Military Reserve Cemetery (1101 N. Mountain Cove Rd.)
+                Civil War reenactments are scheduled at Morris Hill Cemetery and Fort Boise Cemetery on Memorial
+                Day. The reenactment at
+                Morris Hill Cemetery will start at 11:45 a.m. and the reenactment at Fort Boise Military Reserve
+                Cemetery is scheduled to start at 12:45 p.m.</p>
+
+            <a id="newsarticle"
+                href="https://www.ktvb.com/article/news/local/lots-of-memorial-day-events-being-held-around-the-valley/277-ec3f0fcb-eba4-4099-9b20-963106047cf9">Read
+                the full article here</a>
+
+
         </div>
     </main>
     <footer>

@@ -15,8 +15,8 @@
     <link rel="stylesheet" href="css/medium.css" />
     <link rel="stylesheet" href="css/large.css" />
 
-    <script defer src="js/lastvisited.js"></script>
-    <script defer src="js/hamburger.js"></script>
+    <!-- <script src="js/lastvisited.js"></script> -->
+    <!-- <script  src="js/hamburger.js"></script> -->
     <script defer src="js/lazyload.js"></script>
 </head>
 
@@ -112,7 +112,7 @@
                 <picture>
                     <source media="(min-width: 500px) and (max-width: 799px)" srcset="images/medtornado2.jpg">
                     <source srcset="images/lrgtornado2.jpg" media="(min-width: 800px)">
-                    <img src="images/umbrellalogo.jpg" data-src="images/smltornado2.jpg"
+                    <img class="gallery" src="images/umbrellalogo.jpg" data-src="images/smltornado2.jpg"
                         alt="A dark gray tornado in the middle of a peaceful field." width="300" height="400">
                 </picture>
                 <div class="title">Tornados</div>
@@ -139,10 +139,8 @@
         </div>
         <div class="block">
             <h2>When did I last visit?</h2>
-
-            <button onclick="createInstance()">I'm here today</button>
-            <p><br /></p>
-            <button onclick="getNumberOfDays()">How many days since my last visit?</button>
+            //<button onclick="setStart()">start</button>
+            //<button onclick="getNumberOfDays()">stop</button>
             <p><br /></p>
             <p>It's been <span id='daysince'></span> since your last visit to the gallery page.</p>
         </div>
@@ -190,6 +188,8 @@
         });
     </script>
     <script src="js/getdate.js"></script>
+    <script src="js/lastvisited.js"></script>
+    <script src="js/hamburger.js"></script>
 </body>
 
 </html>

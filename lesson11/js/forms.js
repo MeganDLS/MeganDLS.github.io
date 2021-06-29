@@ -1,10 +1,13 @@
 // Full name
 let re = /^[a-z ,.'-]+$/i;
 
+
 // Storm style
 function adjustRange(range) {
-    document.getElementById("rangevalue").innerHTML = range;
+  document.getElementById("rangevalue").innerHTML = range;
 }
+
+adjustRange(5);
 
 function selectResponse() {
 	const s = document.querySelector('#selected')
