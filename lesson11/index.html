@@ -13,6 +13,10 @@
 
     <script src="js/weatherapi.js"></script>
     <script src="js/forms.js"></script>
+    <script src="js/towns.js"></script>
+    <script defer src="js/lastvisited.js"></script>
+    <script defer src="js/hamburger.js"></script>
+    <script defer src="js/lazyload.js"></script>
 
     <link href="css/small.css" rel="stylesheet"/>
 	<link href="css/medium.css" rel="stylesheet"/>
@@ -21,19 +25,21 @@
 
 <body>
     <header>
-        <img id="logo" src="images/umbrellalogo.jpg" alt="a blue umbrella"/>
-		<h1> Tut, tut, it looks like rain</h1>
-		<h2 id="motto"> Get connected with your community</h2> 
+        <div class="block popup"> 🥞 Come for pancakes Saturday Morning!</div>
 
-        <nav>
-            <ul class="navigation">
-                <li><a href="#" class="hamburger">&#9776; Menu</a></li>
+        <img id="logo" src="images/logoumbrella.png" alt="a blue umbrella"/>
+		<h1> Tut, tut, it looks like rain</h1>
+		<h2> Get connected with your community</h2> 
+
+        <nav class="block">
+            <ul>
+                <li class="block"><a href="#" class="hamburger">&#9776; Menu</a></li>
                 <li><a class="active" href="/lesson11/index.html">Home</a></li>
-                <li><a id="preston" href="/lesson11/preston.html">Preston</a></li>
-                <li><a id="sodasprings" href="/lesson11/sodasprings.html">Soda Srings</a></li>
-                <li><a id="fishhaven" href="/lesson11/fishhaven.html">Fish Haven</a></li>
-                <li><a id="stormcenter" href="/lesson11/stormcenter.html">Storm Center</a></li>
-                <li><a id="gallery" href="/lesson11/gallery.html">Gallery</a></li>
+                <li><a href="/lesson11/preston.html">Preston</a></li>
+                <li><a href="/lesson11/sodasprings.html">Soda Srings</a></li>
+                <li><a href="/lesson11/fishhaven.html">Fish Haven</a></li>
+                <li><a href="/lesson11/stormcenter.html">Storm Center</a></li>
+                <li><a href="/lesson11/gallery.html">Gallery</a></li>
             </ul>
         </nav>
     </header>
@@ -41,33 +47,39 @@
     <main>
         <picture>
 			<source media="(min-width: 31.25em) and (max-width: 49.9em)" srcset="images/medcropbanner.jpg">
-			<source srcset="images/panoimage.svg" media="(min-width: 50em)">
+			<source srcset="images/lrgbannerc.jpg" media="(min-width: 50em)">
 			<img class="hero" src="images/smlcropbanner.jpg"
 				alt="Looking up to a partly cloudy blue sky, shrouded by trees">
 		</picture> 
 
-        <div class="block">
+        <div class="block towndata">
+            <h2>Our Three Towns</h2>
+        </div>
+
+
+        <div class="block news">
             <h2> A History of Idaho</h2>
             <p>
                 &emsp; Native Americans People have lived in the land of Idaho for thousands of years.
 				When the Europeans arrived there were two major Native American tribes in the region:
-				the Nez Perce in the north and the Shoshone to the south. <br>
+				the Nez Perce in the north and the Shoshone to the south. Both tribes lived similar lifestyles. For food they hunted animals such as deer and buffalo, fished the rivers,
+                and planted corn and beans. <br>
             </p>
-            <img id="wheat" src="images/medsunny.jpg" alt="A wheat field">
+            <img class="wheat" src="images/smlsunny.jpg" alt="A wheat field">
             <p>
-                &emsp;Both tribes lived similar lifestyles.
-                For food they hunted animals such as deer and buffalo, fished the rivers,
-                and planted corn and beans. They lived in tepees, which were easy to transport
+                &emsp;
+                 They lived in tepees, which were easy to transport
                 when they were following buffalo herds. Owyhee Mountains, Idaho from the USDA
                 Europeans Arrive Because of its remote location, Idaho was one of the last of
-                the lower 48 U.S. states to be visited by Europeans.<br>
-            </p>
-            <p>
-                &emsp;In 1805, explorers Lewis
+                the lower 48 U.S. states to be visited by Europeans. In 1805, explorers Lewis
 				and Clark entered Idaho on their way to the Pacific Ocean. They met with both
 				the Shoshone and the Nez Perce peoples. Their guide was Sacagawea, a Shoshone 
 				Indian they had met in North Dakota. Soon after, fur traders moved into the area
-				including Andrew Henry who built Fort Henry in 1810. Early Settlers Throughout
+				including Andrew Henry who built Fort Henry in 1810.<br>
+            </p>
+            
+            <p>
+                &emsp; Early Settlers Throughout
 				the early 1800s more settlers came to Idaho. They included missionaries, fur
 				traders, minors, and farmers. Many settlers traveled along the Oregon Trail
 				which went through southern Idaho. Some settlers stopped along the way and
@@ -88,7 +100,7 @@
     </main>
 
     <footer>
-        <div class="block">
+        <div class="block contact">
             <h2>Contact Information</h2>
             <p>
             Tut Tut, LLC<br><br>
@@ -101,7 +113,7 @@
                 Open Weather Map</a>
             </p>
             <div class="block">  
-                <h2>Follow us on social media:</h2>
+                <h3>Follow us on social media:</h3>
                 <a href="https://twitter.com/?lang=en">
                     <img src="images/twitter.png" alt="Twitter bird Icon"/>
                 </a>

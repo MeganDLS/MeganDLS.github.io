@@ -1,0 +1,78 @@
+/******Entire Site******/
+
+body {
+    background-color: #8DB1AB;
+    font-family: "Montserrat", Arial, sans-serif;
+    margin: 8rem;
+    text-align: right;
+}
+
+.block {
+    border: 2px solid #1D3557;
+    margin: .5rem;
+    padding: .5rem;
+    border-radius: .5rem;
+}
+
+/******HEADER******/
+.popup {
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: #CEE397;
+}
+
+#logo {
+    border: 1px solid black;
+    float: right;
+    border-radius: 3rem;
+    margin: .4rem;
+    padding: .2rem;
+}
+
+/* Wayfinder */
+.active {
+    opacity: 0.75;
+    background-color: #1D3557;
+    color: white;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+/* Navigation Bar */
+nav ul {
+    list-style: none;
+}
+nav ul li {
+    display: inline;
+    margin: 5rem;
+    padding: .5rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #CEE397;
+    color: #1D3557;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+/* Hero Image*/
+.hero {
+    width: 100%;
+}
+
+
+/******BODY******/
+/* News Article */
+.wheat {
+    float: right;
+    margin: 1rem;
+}
+.news {
+    padding: 1.5rem;
+}
+
+/******FOOTER******/

@@ -1,0 +1,25 @@
+
+    /*------------- Towns --------------*/
+    .carditem img {
+        max-width: 70%;
+        padding: 2.5rem;
+    }
+
+    .carditem div {
+        padding-left: .4rem;
+        text-align: center;
+    }
+
+    .carditem {
+        border: 2px solid #1D3557;
+        margin: .5rem;
+        padding: .5rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .rightside {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
