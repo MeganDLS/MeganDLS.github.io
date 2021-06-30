@@ -12,3 +12,9 @@ const fulldate = new Intl.DateTimeFormat("en-US", {
 }).format(d);
 
 datefield.innerHTML = `<em>${fulldate}</em>`;
+
+//POPUP
+//getDay() and display: block; 5 would be for friday. Query selector all is an option.
+if (d.getDay() == 5) {
+  document.querySelector('.popup').style.display='block';
+}

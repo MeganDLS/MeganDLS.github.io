@@ -39,6 +39,7 @@
     </header>
 
     <main>
+        <div class="herooverlay">
         <picture>
 			<source media="(min-width: 31.25em) and (max-width: 49.9em)" srcset="images/medcropbanner.jpg">
 			<source srcset="images/lrgbannerc.jpg" media="(min-width: 50em)">
@@ -47,10 +48,10 @@
 		</picture> 
 
         <!-- Summary of one town weather information -->
-        <div class="overlay block">
+        <section class="overlay block">
 			<h2>Currently in Preston</h2>
-            <div class="weatherconditions" >
-                <p class="label"></p>
+            <div class="weatherconditions">
+            <p class="label"></p>
                 <p class="value first"><span id="currently"></span> </p>
                 <p class="label">Temperature:</p>
                 <p class="value"><span id="hightemp"></span> &nbsp;&deg;F</p>
@@ -59,9 +60,10 @@
                 <p class="label">Humidity: </p>
                 <p class="value"> <span id="humidity"></span> % </p>
                 <p class="label">Wind Speed: </p>
-                <p class="value"> <span id="speed"></span> MPH </p>
-            </div>
-		</div>
+                <p class="value"> <span id="speed"></span> MPH </p>  
+            </div>    
+		</section>
+    </div>
 
         <!-- Five Day Table with temp and image-->	
         <div class="table block">
@@ -199,7 +201,7 @@
                 <a href="https://openweathermap.org/">
                 Open Weather Map</a>
             </p>
-            <div class="block">  
+            <div class="social block">  
                 <h3>Follow us on social media:</h3>
                 <a href="https://twitter.com/?lang=en">
                     <img src="images/twitter.png" alt="Twitter bird Icon"/>

@@ -3,6 +3,7 @@
 body {
     background-color: #8DB1AB;
     font-family: "Montserrat", Arial, sans-serif;
+    color: #1D3557;
     margin: 8rem;
     text-align: right;
 }
@@ -14,22 +15,28 @@ body {
     border-radius: .5rem;
 }
 
+h1 {
+    font-size: 2.6rem;
+    color: #F2ED6F;
+    font-family: "Raleway", Arial, sans-serif;
+    ;
+}
+
 /******HEADER******/
 .popup {
     text-align: center;
     font-size: 1.5rem;
     background-color: #CEE397;
+    display: none;
 }
+
 
 #logo {
-    border: 1px solid black;
     float: right;
     border-radius: 3rem;
+    padding: .3rem;
 }
 
-.hero {
-    border-radius: .5rem;
-}
 
 /* Wayfinder */
 .active {
@@ -48,7 +55,6 @@ nav ul {
 }
 
 nav ul li {
-
     padding: .5rem;
 }
 
@@ -63,17 +69,16 @@ nav ul li a:hover {
     border-radius: .5rem;
 }
 
-/* Hero Image*/
+/******BODY******/
+/* PRESTON, SODA SPRINGS, and FISH HAVEN: One Town weather information */
 .hero {
     width: 100%;
 }
-
-/******BODY******/
-/* PRESTON, SODA SPRINGS, and FISH HAVEN: One Town weather information */
 .overlay {
     background-color: #CEE397;
     opacity: 80%;
     box-shadow: 0 0 10px #1D3557;
+    width: 15%;
 }
 
 .overlay h2 {
@@ -98,11 +103,10 @@ nav ul li a:hover {
     text-align: left;
 }
 
-/* Forecast Table */
+/* PRESTON, SODA SPRINGS, and FISH HAVEN: Forecast Table */
 .table {
     margin-left: 8rem;
     margin-right: 4rem;
-
 }
 
 .forecast {
@@ -137,10 +141,7 @@ nav ul li a:hover {
     padding: .2rem;
     display: block;
     text-align: center;
-
 }
-
-
 
 /*HOME: News Article */
 .wheat {
@@ -228,14 +229,9 @@ form label input:required:valid {
     color: #1D3557;
     font-size: 2rem;
     margin: 4rem;
-
 }
 
 /* GALLERY */
-picture {
-    display: flex;
-}
-
 .gallery {
     display: grid;
     margin: 1rem;
