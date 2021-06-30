@@ -259,3 +259,7 @@ picture {
 }
 
 /******FOOTER******/
+
+.social a {
+    color: transparent;
+}

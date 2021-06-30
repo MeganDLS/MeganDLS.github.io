@@ -11,8 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="icon" type="image/png" href="favicon.ico">
 
-    <script src="js/weatherapi.js"></script>
-    <script src="js/forms.js"></script>
+    
 
     <link href="css/small.css" rel="stylesheet"/>
 	<link href="css/medium.css" rel="stylesheet"/>
@@ -45,7 +44,100 @@
 			<img class="hero" src="images/smlcropbanner.jpg"
 				alt="Looking up to a partly cloudy blue sky, shrouded by trees">
 		</picture> 
+  <!-- Summary of one town weather information -->
+  <div class="overlay block">
+    <h2>Currently in Preston</h2>
+    <div class="weatherconditions" >
+        <p class="label"></p>
+        <p class="value first"><span id="currently"></span> </p>
+        <p class="label">Temperature:</p>
+        <p class="value"><span id="hightemp"></span> &nbsp;&deg;F</p>
+        <p class="label">Wind Chill: </p>
+        <p class="value"><span id="windchill"> </span>&nbsp;&deg;F</p>
+        <p class="label">Humidity: </p>
+        <p class="value"> <span id="humidity"></span> % </p>
+        <p class="label">Wind Speed: </p>
+        <p class="value"> <span id="speed"></span> MPH </p>
+    </div>
+</div>
 
+<!-- Five Day Table with temp and image-->	
+<div class="table block">
+    <h2>Five Day Forecast</h2>
+    <div class="forecast">
+        <div class="day">
+            <span class="labels" id="day1"></span>
+            <span class="values" id="data1"></span>&deg; F
+            <img id='day1image' src='...' alt='...' />
+        </div>
+        <div class="day">
+            <span class="labels" id="day2"></span>
+            <span id="data2"></span> &deg; F
+            <img id='day2image' src='...' alt='...' />
+        </div>
+        <div class="day">
+            <span class="labels" id="day3"></span>
+            <span id="data3"></span> &deg; F
+            <img id='day3image' src='...' alt='...' />
+        </div>
+        <div class="day">
+            <span class="labels" id="day4"></span>
+            <span id="data4"></span> &deg; F
+            <img id='day4image' src='...' alt='...' />
+        </div>
+        <div class="day">
+            <span class="labels" id="day5"></span>
+            <span id="data5"></span> &deg; F
+            <img id='day5image' src='...' alt='...'/>
+        </div>  
+    </div>
+</div>
+
+<!-- Events -->
+<div class="block">
+    <h2>Upcoming Events</h2>
+    <p>
+        More steelhead have returned to the Lochsa River in Idaho so far this
+        year than the past three years on average, which Fish and Game Biologist
+         Marika Dobos said is an encouraging example for the state.
+
+        Working out of the Clearwater Region, which borders the Salmon Region
+         to the north, Dobos said “it does seem like there’s an uptick.”
+          However, she said the increase of steelhead returning to the Lochsa
+           and to Idaho doesn’t mean the growth will continue indefinitely.
+        
+        Dobos said in a June 4 Fish and Game post that since 2015 state personnel
+         have used PIT tag arrays and fish weirs to track a steady decline in
+          adult steelhead returning to their home rivers to spawn. In an interview
+           with the Messenger Dobos said travel and ocean conditions in recent years
+            haven’t been conducive to fish survival rates. That trend reversed across
+             the state last spring. In the Lochsa River, Dobos reported 181 wild steelhead
+              detected. Between 2018 and 2020, Fish and Game workers tracked on average 77
+               wild steelhead annually in the river.
+    </p>
+    <p>
+        Also, on the Fish Creek tributary of the Lochsa, Dobos said the weir crew caught
+         more than 80 adult steelhead by early June. That was an impressive jump from
+          the 12 they trapped in 2020, Dobos said, and the fewer than 10 they caught each
+           year between 2017 and 2019.
+
+Although it’s good to see the higher catch numbers, Dobos said numbers aren’t where fish
+ biologists want them. Between 1992 and 2020 the average catch of steelhead at Fish Creek
+  was 105 fish. Survival rates on average are still lacking, she said.
+
+Hopeful the increase carries into 2022, Dobos admitted “it’s a complicated equation.”
+ Because of the distance steelhead have to travel, the obstacles they run into and the
+  variety of ocean conditions they have to adjust to, it’s a good thing they are resilient, she said.
+
+Long-term population data on steelhead shows an ebb and flow, according to Dobos.
+ If the return cycle continues as it has since Fish and Game began tracking steelhead
+  in Idaho 20 years ago, then the increase could potentially continue two or three more years.
+    </p>
+    <a href="https://www.postregister.com/messenger/sports/steelhead-show-signs-of-rebounding-in-idaho/article_bc343013-0d6d-5980-9183-0af8e56d159e.html">Read
+        the full article here</a>
+
+    
+</div>
     </main>
 
     <footer>
@@ -88,6 +180,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>WebFont.load({google: {families: ["Montserrat", "Raleway"]}});</script>
     <script src="js/getdate.js"></script>
+    <script src="js/weatherapi.js"></script>
+    <script src="js/forms.js"></script>
 </body>
 
 </html>

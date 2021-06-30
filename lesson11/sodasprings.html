@@ -11,8 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="icon" type="image/png" href="favicon.ico">
 
-    <script src="js/weatherapi.js"></script>
-    <script src="js/forms.js"></script>
+    
 
     <link href="css/small.css" rel="stylesheet"/>
 	<link href="css/medium.css" rel="stylesheet"/>
@@ -46,6 +45,83 @@
 				alt="Looking up to a partly cloudy blue sky, shrouded by trees">
 		</picture> 
 
+         <!-- Summary of one town weather information -->
+         <div class="overlay block">
+			<h2>Currently in Soda Springs</h2>
+            <div class="weatherconditions" >
+                <p class="label"></p>
+                <p class="value first"><span id="currently"></span> </p>
+                <p class="label">Temperature:</p>
+                <p class="value"><span id="hightemp"></span> &nbsp;&deg;F</p>
+                <p class="label">Wind Chill: </p>
+                <p class="value"><span id="windchill"> </span>&nbsp;&deg;F</p>
+                <p class="label">Humidity: </p>
+                <p class="value"> <span id="humidity"></span> % </p>
+                <p class="label">Wind Speed: </p>
+                <p class="value"> <span id="speed"></span> MPH </p>
+            </div>
+		</div>
+
+        <!-- Five Day Table with temp and image-->	
+        <div class="table block">
+            <h2>Five Day Forecast</h2>
+            <div class="forecast">
+                <div class="day">
+                    <span class="labels" id="day1"></span>
+                    <span class="values" id="data1"></span>&deg; F
+                    <img id='day1image' src='...' alt='...' />
+                </div>
+                <div class="day">
+                    <span class="labels" id="day2"></span>
+                    <span id="data2"></span> &deg; F
+                    <img id='day2image' src='...' alt='...' />
+                </div>
+                <div class="day">
+                    <span class="labels" id="day3"></span>
+                    <span id="data3"></span> &deg; F
+                    <img id='day3image' src='...' alt='...' />
+                </div>
+                <div class="day">
+                    <span class="labels" id="day4"></span>
+                    <span id="data4"></span> &deg; F
+                    <img id='day4image' src='...' alt='...' />
+                </div>
+                <div class="day">
+                    <span class="labels" id="day5"></span>
+                    <span id="data5"></span> &deg; F
+                    <img id='day5image' src='...' alt='...'/>
+                </div>  
+            </div>
+        </div>
+
+        <!-- Events -->
+        <div class="block">
+            <h2>Upcoming Events</h2>
+            <p>FRIDAY, JULY 2
+                Foam party - 3 p.m. to 5 p.m. at City Park.<br>
+                "The Soda Springs Fire Department will spray
+                 foam that is fun for everyone. You may want
+                  to bring a swimsuit, towels, lawn chairs etc.
+                   Clean water is available to wash off."
+            </p>
+                   <p>SATURDAY, JULY 3
+                5K Fun Run/Walk - 6:30 a.m. at Octagon Park.<br>
+                Lions Club Breakfast - 7:00 a.m. to 9:30 a.m. at City Park.
+                Kid's Mile - 9:40 a.m. at the Chevron station.
+            </p>
+            <p>
+                July 4th Parade - 10 a.m. at Highway 30.<br>
+                20th Annual Spectacular Fireworks Show
+                 - 10 p.m. at Kelly Park.<br>
+                SouthEast Idaho Liberty Celebration -
+                 "Fireworks will be launched at 10 p.m.
+                  over Alexander Reservoir where they
+                   will be visible to the Soda Springs community!"</p>
+            <a href="https://localnews8.com/life/holidays/2021/06/28/2021-independence-day-celebration-events/">Read
+                the full article here</a>
+
+
+        </div>
     </main>
 
     <footer>
@@ -88,6 +164,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>WebFont.load({google: {families: ["Montserrat", "Raleway"]}});</script>
     <script src="js/getdate.js"></script>
+    <script src="js/weatherapi.js"></script>
+    <script src="js/fiveday.js"></script>
 </body>
 
 </html>
