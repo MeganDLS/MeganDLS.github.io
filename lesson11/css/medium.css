@@ -1,4 +1,30 @@
 @media only screen and (min-width: 31.25em) {
+    /*------------- Hamburger Button --------------*/
+    .navigation {
+        font-size: 1.3rem;
+        text-align: left;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 auto;
+    }
+
+    .navigation a {
+        text-align: center;
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
+
+    nav ul li a {
+        padding: .5rem 5%;
+        text-decoration: none;
+        color: #1D3557;
+
+    }
+    
     /*------------- Towns --------------*/
     .carditem img {
         max-width: 70%;
@@ -23,6 +49,7 @@
         grid-column: 2 / 3;
         grid-row: 1 / 2;
     }
+
 
       /*------------- Gallery --------------*/
       #thegallery {

@@ -1,4 +1,4 @@
-//HAMBURGER MENU BUTTON
+
 // Responsive Hamburger button for the menu items
 const hamburgerButton = document.querySelector('.hamburger');
 const navigation = document.querySelector('.navigation');
@@ -10,6 +10,6 @@ hamburgerButton.addEventListener('click', () =>
 
 //If the menu is shown and then the window is resized, avoid problems by
 // the 760 or the 32.5em
-window.onresize = () => {
-  if (window.innerWidth > 760) navigation.classList.remove('hide')
-};
+// window.onresize = () => {
+//   if (window.innerWidth > 760) navigation.classList.remove('hide')
+// };

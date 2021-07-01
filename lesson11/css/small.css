@@ -51,7 +51,10 @@ h1 {
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: space-around;
+}
+
+.navigation li:first-child {
+    display: block;
 }
 
 nav ul li {
