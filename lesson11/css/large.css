@@ -1,31 +1,32 @@
 @media only screen and (min-width: 50em) {
-   /*------------- Body --------------*/
+/*------------- Body --------------*/
    body {
     margin: 8rem;
-
 }
 
-    /* Navigation Bar */
+/* Navigation Bar */
 .navigation ul {
-    padding-inline-start: 0px;
+    padding-inline-start: 40px;
 }
 .navigation {
     font-size: 1.5rem;
 }
-
 .navigation li:first-child {
     display: none;
 }
 
 /*------------- Towns --------------*/
+.towndata h2 {
+    padding-right: 2rem;
+}
 .carditem {
     font-size: 1.5rem;
 }
-
 .carditem  p {
-    text-align: right;
+    text-align: center;
     padding-right: 2rem;
 }
+
 /*------------- Overlay --------------*/
 .herooverlay {
     margin: 10px auto;
@@ -38,6 +39,17 @@
 	right: 50px;
 }
 /*------------- Forecast --------------*/
+.forecast {
+ display: grid; 
+ grid-template-columns: repeat(5, 1fr);
+ 
+}
+.day {
+   display: grid;
+   grid-template-rows: repeat(3, 1fr);
+   justify-content: center;
+}
+
 .labels {
     font-size: 1.1rem;
 }
@@ -50,4 +62,14 @@
 img:hover {
     box-shadow: 0 0 50px #333;
 }
+
+/*------------- Gallery --------------*/
+
+.contact>img {
+    padding-left: 2rem;
+    border-radius: .5rem;
+    float: left;
+    
+}
+
 }
