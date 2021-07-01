@@ -1,10 +1,9 @@
-/******Entire Site******/
+/******--Entire Site--******/
 
 body {
     background-color: #8DB1AB;
     font-family: "Montserrat", Arial, sans-serif;
     color: #1D3557;
-    padding: .5rem;
 }
 
 .block {
@@ -19,7 +18,7 @@ h1 {
     
 }
 
-/******HEADER******/
+/****** HEADER ******/
 .popup {
     text-align: center;
     font-size: 1.5rem;
@@ -36,21 +35,8 @@ header {
     padding: .3rem;
 }
 
-/* Wayfinder */
-.active {
-    opacity: 0.75;
-    background-color: #1D3557;
-    color: white;
-    padding: .5rem;
-    border-radius: .5rem;
-}
-
-.active:hover {
-    background-color: #1D3557;
-    color: white;
-}
-
-/* Navigation Bar */
+/****** HEADER ******/
+/****** Navigation ******/
 .navigation {
     margin: 0 auto;
     width: 100%;
@@ -78,9 +64,37 @@ nav ul li a:hover {
     padding: 1rem;
     border-radius: .5rem;
 }
+/* Navigation */
+/* Wayfinder */
+.active {
+    opacity: 0.75;
+    background-color: #1D3557;
+    color: white;
+    padding: .5rem;
+    border-radius: .5rem;
+}
+
+.active:hover {
+    background-color: #1D3557;
+    color: white;
+}
 
 /******BODY******/
-/* PRESTON, SODA SPRINGS, and FISH HAVEN: One Town weather information */
+/* HOME */
+/* News Article */
+.wheat {
+    float: right;
+    margin: 1rem;
+    border-radius: .5rem;
+}
+
+.news {
+    padding: 1.5rem;
+}
+
+/* PRESTON, SODA SPRINGS, and FISH HAVEN*/
+/* Current Conditions */
+
 .hero {
     width: 100%;
 }
@@ -113,7 +127,8 @@ nav ul li a:hover {
     text-align: left;
 }
 
-/* PRESTON, SODA SPRINGS, and FISH HAVEN: Forecast Table */
+/* PRESTON, SODA SPRINGS, and FISH HAVEN*/
+/* Forecast Table */
 .table {
     margin-left: 8rem;
     margin-right: 4rem;
@@ -152,19 +167,15 @@ nav ul li a:hover {
     display: block;
     text-align: center;
 }
-
-/*HOME: News Article */
-.wheat {
-    float: right;
-    margin: 1rem;
-    border-radius: .5rem;
+/* PRESTON, SODA SPRINGS, and FISH HAVEN*/
+/* Upcoming Events */
+.upcomingp h3 {
+    padding-right: .5rem;
 }
 
-.news {
-    padding: 1.5rem;
-}
 
-/* STORM CENTER: Form */
+/* STORM CENTER*/
+/* Form */
 #formarea {
     background-color: #8DB1AB;
 }
