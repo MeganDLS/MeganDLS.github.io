@@ -4,14 +4,11 @@ body {
     background-color: #8DB1AB;
     font-family: "Montserrat", Arial, sans-serif;
     color: #1D3557;
-    margin: 8rem;
-    text-align: right;
+    padding: .5rem;
 }
 
 .block {
-    border: 2px solid #1D3557;
-    margin: .5rem;
-    padding: .5rem;
+    border: 1px solid #1D3557;
     border-radius: .5rem;
 }
 
@@ -19,7 +16,7 @@ h1 {
     font-size: 2.6rem;
     color: #F2ED6F;
     font-family: "Raleway", Arial, sans-serif;
-    ;
+    
 }
 
 /******HEADER******/
@@ -30,35 +27,45 @@ h1 {
     display: none;
 }
 
+header {
+    text-align: right;
+}
 
 #logo {
     float: right;
-    border-radius: 3rem;
     padding: .3rem;
 }
-
 
 /* Wayfinder */
 .active {
     opacity: 0.75;
     background-color: #1D3557;
     color: white;
-    padding: 1rem;
+    padding: .5rem;
     border-radius: .5rem;
 }
 
-/* Navigation Bar */
-nav ul {
-    list-style: none;
-    display: flex;
+.active:hover {
+    background-color: #1D3557;
+    color: white;
 }
 
+/* Navigation Bar */
+.navigation {
+    margin: 0 auto;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+}
 .navigation li:first-child {
     display: block;
 }
 
 nav ul li {
     padding: .5rem;
+    
 }
 
 nav ul li a {

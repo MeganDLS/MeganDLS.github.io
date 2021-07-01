@@ -1,13 +1,21 @@
 @media only screen and (min-width: 50em) {
-/* Navigation Bar */
-nav {
+   /*------------- Body --------------*/
+   body {
+    margin: 8rem;
+
+}
+
+    /* Navigation Bar */
+.navigation ul {
+    padding-inline-start: 0px;
+}
+.navigation {
     font-size: 1.5rem;
 }
 
 .navigation li:first-child {
     display: none;
 }
-
 
 /*------------- Towns --------------*/
 .carditem {
