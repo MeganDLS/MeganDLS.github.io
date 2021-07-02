@@ -319,6 +319,10 @@ form label input:required:valid {
     text-align: center;
 }
 
+#tornado {
+    width: 95%;
+}
+
 /******FOOTER******/
 
 .contact {
