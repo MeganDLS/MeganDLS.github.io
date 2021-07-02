@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="icon" type="image/png" href="favicon.ico">
 
-    <script src="js/weatherapi.js"></script>
     <script src="js/forms.js"></script>
 
     <link href="css/small.css" rel="stylesheet"/>
@@ -25,32 +24,30 @@
 		<h1> Tut, tut, it looks like rain</h1>
 		<h2 id="motto"> Get connected with your community</h2> 
 
-        <nav>
-            <ul class="navigation">
+        <nav class="block">
+            <ul class="navigation responsive">
                 <li><a href="#" class="hamburger">&#9776; Menu</a></li>
                 <li><a class="active" href="/lesson11/index.html">Home</a></li>
-                <li><a id="preston" href="/lesson11/preston.html">Preston</a></li>
-                <li><a id="sodasprings" href="/lesson11/sodasprings.html">Soda Srings</a></li>
-                <li><a id="fishhaven" href="/lesson11/fishhaven.html">Fish Haven</a></li>
-                <li><a id="stormcenter" href="/lesson11/stormcenter.html">Storm Center</a></li>
-                <li><a id="gallery" href="/lesson11/gallery.html">Gallery</a></li>
+                <li><a href="/lesson11/preston.html">Preston</a></li>
+                <li><a href="/lesson11/sodasprings.html">Soda Srings</a></li>
+                <li><a href="/lesson11/fishhaven.html">Fish Haven</a></li>
+                <li><a href="/lesson11/stormcenter.html">Storm Center</a></li>
+                <li><a href="/lesson11/gallery.html">Gallery</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <picture>
-			<source media="(min-width: 31.25em) and (max-width: 49.9em)" srcset="images/medcropbanner.jpg">
-			<source srcset="images/panoimage.svg" media="(min-width: 50em)">
-			<img class="hero" src="images/smlcropbanner.jpg"
-				alt="Looking up to a partly cloudy blue sky, shrouded by trees">
-		</picture> 
+            <source media="(min-width: 31.25em) and (max-width: 49.9em)" srcset="images/medcropbanner.jpg">
+            <source srcset="images/lrgbannerc.jpg" media="(min-width: 50em)">
+            <img class="hero" src="images/smlcropbanner.jpg"
+                alt="Looking up to a partly cloudy blue sky, shrouded by trees">
+        </picture>
 
         <div class="block" id="gracias">
             Thank you for submitting a new storm sighting.
         </div>
-
-
     </main>
 
     <footer>

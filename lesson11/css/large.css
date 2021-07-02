@@ -1,74 +1,91 @@
 @media only screen and (min-width: 50em) {
-/*------------- Body --------------*/
-   body {
-    margin: 8rem;
-}
+    header {
+        text-align: right;
+    }
 
-/* Navigation Bar */
+    #logo {
+        float: right;
+        padding-left: .7rem;
+        padding-right: 4rem;
+        margin-bottom: 1rem;
+    }
 
-.navigation {
-    font-size: 1.5rem;
-}
-.navigation li:first-child {
-    display: none;
-}
+    /* Navigation Bar */
+    .navigation {
+        font-size: 1.5rem;
+    }
 
-/*------------- Towns --------------*/
-.towndata h2 {
-    padding-right: 2rem;
-}
-.carditem {
-    font-size: 1.5rem;
-    border: 1px dotted #1E153C;
-}
-.carditem  p {
-    text-align: center;
-    padding-right: 2rem;
-}
+    .navigation li:first-child {
+        display: none;
+    }
 
-/*------------- Overlay --------------*/
-.herooverlay {
-    margin: 10px auto;
-    position: relative;
-}
+    /*------------- Towns --------------*/
+    .towndata h2 {
+        text-align: center;
+    }
 
-.overlay {
-    position: absolute;
-    top: 25px;
-	right: 50px;
-}
-/*------------- Forecast --------------*/
-.forecast {
- display: grid; 
- grid-template-columns: repeat(5, 1fr);
- 
-}
-.day {
-   display: grid;
-   grid-template-rows: repeat(2, 1fr);
-   justify-content: center;
-}
+    .carditem {
+        font-size: 1rem;
+        border: 1px dotted #1E153C;
+    }
 
-.labels {
-    font-size: 1.1rem;
-}
+    .carditem p {
+        text-align: center;
+        padding-right: 2rem;
+    }
 
-/*------------- Gallery --------------*/
-#thegallery {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-img:hover {
-    box-shadow: 0 0 50px #333;
-}
+    /*------------- Overlay --------------*/
+    .herooverlay {
+        position: relative;
+    }
 
-/*------------- Gallery --------------*/
+    .overlay {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
 
-.contact>img {
-    padding-left: 2rem;
-    border-radius: .5rem;
-    float: left;
-    
-}
+    .overlay h2 {
+        padding-left: .3rem;
+    }
+
+    /*------------- Forecast --------------*/
+   
+    .forecast {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .day {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        justify-content: center;
+    }
+
+    .labels {
+        font-size: 1.1rem;
+    }
+
+    /*------------- Gallery --------------*/
+    #thegallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .gallery img:hover {
+        box-shadow: 0 0 50px #1D3557;
+    }
+
+
+
+
+    /*------------- Footer --------------*/
+
+    .contact>img {
+        padding-left: 2rem;
+        border-radius: .5rem;
+        float: left;
+
+    }
 
 }

@@ -5,7 +5,10 @@ body {
     font-family: "Montserrat", Arial, sans-serif;
     color: #1D3557;
 }
-
+main {
+    max-width: 960px;
+    margin: 0 auto;
+}
 .block {
     border: 1px solid #1D3557;
     border-radius: .5rem;
@@ -23,20 +26,13 @@ h1 {
 .popup {
     text-align: center;
     font-size: 1.5rem;
-    background-color: #CEE397;
+    background-color: #F2ED6F;
     display: none;
-    padding: .3rem;
-}
-
-header {
-    text-align: right;
+    padding: .5rem;
 }
 
 #logo {
     float: right;
-    padding-left: .7rem;
-    padding-right: 4rem;
-    margin-bottom: 1rem;
 }
 
 /****** HEADER ******/
@@ -89,22 +85,25 @@ nav {
     color: white;
 }
 /* Search */
-.search{
+.search {
     margin-right: 3rem;
-    margin-top: -.7rem;
+    margin-top: -3.5rem;
     border-radius: .5rem;
 }
 
+.search input {
+    border-radius: .5rem;
+}
 .search label {
-    text-align: right;
-    color:#1E153C;
-    text-decoration: double;
+    color: transparent;
 }
 
 .searchbtn {
 padding: .5rem;
 margin-bottom: 1rem;
 border-radius: .5rem;
+color: #1D3557;
+background-color: #F2ED6F;
 }
 
 /******BODY******/
@@ -114,12 +113,9 @@ border-radius: .5rem;
     padding: 2rem;
 }
 
-.towndata img {
-    max-width: 100%;
-}
-
-.carditem div {
-    padding-top: 5rem;
+.towndata img:hover {
+    max-width: 70%;
+    box-shadow: 0 0 20px #1D3557;
 }
 
 /* HOME */
@@ -145,20 +141,23 @@ border-radius: .5rem;
     background-color: #CEE397;
     opacity: 80%;
     box-shadow: 0 0 10px #1D3557;
-    width: 15%;
 }
 
 .overlay h2 {
     text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 0;
 }
 
 .weatherconditions {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    font-size: .8rem;
 }
 
 .label {
     font-weight: bold;
+    padding-left: .3rem;
 }
 
 .value {
@@ -166,16 +165,13 @@ border-radius: .5rem;
 }
 
 .first {
-    font-size: 1.3rem;
-    text-align: left;
+    font-size: 1.2rem;
+    margin-left: -4rem;
+    padding-right: 1rem;
 }
 
 /* PRESTON, SODA SPRINGS, and FISH HAVEN*/
 /* Forecast Table */
-.table {
-    margin-left: 8rem;
-    margin-right: 4rem;
-}
 .table h3, h2 {
     padding-right: 1rem;
 }
@@ -194,8 +190,8 @@ border-radius: .5rem;
 .day {
     box-shadow: 0 0 10px #1D3557;
     border-radius: .5rem;
-    padding: .3rem;
     border-bottom: 1px solid #1E153C;
+    margin: .3rem;
 }
 
 .day:hover {
@@ -203,13 +199,20 @@ border-radius: .5rem;
     background-color: #1D3557;
     color: white;
 }
-
 .labels {
     font-weight: bold;
-    padding: .2rem;
+    max-width: 200px;
     display: block;
-    text-align: center;
+    padding-top: 1rem;
 }
+.values {
+    padding-bottom: 3rem;
+}
+
+#day1image, #day2image, #day3image, #day4image, #day5image {
+    margin-bottom: 1.5rem;
+}
+
 /* PRESTON, SODA SPRINGS, and FISH HAVEN*/
 /* Upcoming Events */
 .upcomingp h3 {
@@ -324,19 +327,22 @@ form label input:required:valid {
 }
 
 /******FOOTER******/
-
 .contact {
     padding-right: .5rem;
 }
-
-.contact .social {
-    padding-right: 0;
+.social {
+    padding-right: .1rem;
 }
 
-.social {
-    margin: .5rem;
+.social h3 {
+    display: inline-block;
 }
 
 .social a {
     color: transparent;
+}
+
+.social a img {
+    padding-top: .7rem;
+    padding-right: .3rem;
 }
