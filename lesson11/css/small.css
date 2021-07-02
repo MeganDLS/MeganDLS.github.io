@@ -33,7 +33,9 @@ header {
 
 #logo {
     float: right;
-    padding: .3rem;
+    padding-left: .7rem;
+    padding-right: 4rem;
+    margin-bottom: 1rem;
 }
 
 /****** HEADER ******/
@@ -85,6 +87,18 @@ nav {
     background-color: #1D3557;
     color: white;
 }
+/* Search */
+.search{
+    margin-right: 3rem;
+    margin-top: -.7rem;
+    border-radius: .5rem;
+}
+
+.searchbtn {
+padding: .5rem;
+margin-bottom: 1rem;
+border-radius: .5rem;
+}
 
 /******BODY******/
 /* HOME */
@@ -101,6 +115,7 @@ nav {
     padding-top: 5rem;
 }
 
+/* HOME */
 /* News Article */
 .wheat {
     float: right;
@@ -236,7 +251,8 @@ form div {
 }
 
 .sbutton {
-    padding: 1rem;
+    padding-right: 1rem;
+    margin: 2rem;
     background-color: #F2ED6F;
     box-shadow: .5rem .5rem .5rem #1D3557;
     margin-bottom: 1.5rem;
