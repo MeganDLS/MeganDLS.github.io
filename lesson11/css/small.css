@@ -9,11 +9,12 @@ body {
 .block {
     border: 1px solid #1D3557;
     border-radius: .5rem;
+    margin: 1rem;
 }
 
 h1 {
     font-size: 2.6rem;
-    color: #F2ED6F;
+    color: #1E153C;
     font-family: "Raleway", Arial, sans-serif;
     
 }
@@ -37,32 +38,38 @@ header {
 
 /****** HEADER ******/
 /****** Navigation ******/
-.navigation {
+nav {
     margin: 0 auto;
+	/* max-width: 760px; */
+}
+.navigation {
+    list-style: none;
+    padding: 0;
     width: 100%;
 }
 
-nav ul {
-    list-style: none;
-}
 .navigation li:first-child {
     display: block;
 }
 
-nav ul li {
-    padding: .5rem;
-    
+.navigation li {
+    display: none;
 }
 
-nav ul li a {
-    text-decoration: none;
+.navigation a {
+    display: block;
+    transition: .5s;
 }
 
-nav ul li a:hover {
-    background-color: #CEE397;
+.navigation a:hover {
+    background-color: #F2ED6F;
     color: #1D3557;
     padding: 1rem;
     border-radius: .5rem;
+}
+
+.responsive li {
+    display: block;
 }
 /* Navigation */
 /* Wayfinder */
@@ -81,11 +88,25 @@ nav ul li a:hover {
 
 /******BODY******/
 /* HOME */
+/* Individual Town Data Cards */
+.towndata {
+    padding: 2rem;
+}
+
+.towndata img {
+    max-width: 100%;
+}
+
+.carditem div {
+    padding-top: 5rem;
+}
+
 /* News Article */
 .wheat {
     float: right;
     margin: 1rem;
     border-radius: .5rem;
+    max-width: 100%;
 }
 
 .news {
@@ -152,7 +173,7 @@ nav ul li a:hover {
     box-shadow: 0 0 10px #1D3557;
     border-radius: .5rem;
     padding: .3rem;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #1E153C;
 }
 
 .day:hover {
@@ -171,6 +192,7 @@ nav ul li a:hover {
 /* Upcoming Events */
 .upcomingp h3 {
     padding-right: .5rem;
+    margin: 1rem;
 }
 
 
@@ -235,10 +257,8 @@ select {
     padding: .75rem;
 }
 
-
 form label input:required {
     border-left: red solid 4px;
-
 }
 
 form label input:required:valid {
@@ -277,9 +297,19 @@ form label input:required:valid {
 }
 
 /******FOOTER******/
-footer p{
-    padding: .5rem;
+
+.contact {
+    padding-right: .5rem;
 }
+
+.contact .social {
+    padding-right: 0;
+}
+
+.social {
+    margin: .5rem;
+}
+
 .social a {
     color: transparent;
 }

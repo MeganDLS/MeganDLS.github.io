@@ -21,6 +21,7 @@
 }
 .carditem {
     font-size: 1.5rem;
+    border: 1px dotted #1E153C;
 }
 .carditem  p {
     text-align: center;

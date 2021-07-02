@@ -14,8 +14,11 @@ fetch(requestURLp)
             if (towns[i].name == "Preston") {
                 let events = document.createElement('div');
                 let h3 = document.createElement('h3');
+                
                 h3.textContent = towns[i].events;
+
                 events.appendChild(h3);
+                
                 document.querySelector('div.upcomingp').appendChild(events);
             }
         }

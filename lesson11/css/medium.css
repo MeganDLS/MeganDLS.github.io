@@ -15,36 +15,23 @@
     border-radius: .5rem;
 }
     
-    /*------------- Hamburger Button --------------*/
-    
-    
+    /*------------- Hamburger Button --------------*/  
     .navigation {
-        font-size: 1.3rem;
-        text-align: left;
-    }
+		display: flex;
+	}
 
-    .navigation ul {
-        display: flex;
-    }
-    .navigation li {
-        display: block;
-        flex: 1 1 auto;
-    }
-
-    .navigation a {
-        text-align: center;
-    }
-
-    .navigation li:first-child {
-        display: none;
-    }
-
-    nav ul li a {
-        padding: .5rem 5%;
+	.navigation li {
+		display: block;
+		flex: 1 1 auto;
+	}
+	.navigation a {
+		text-align: center;
+        padding: .5rem;
         text-decoration: none;
-        color: #1D3557;
-
-    }
+	}
+	.navigation li:first-child {
+		display: none;
+	}
     
     /*------------- Towns --------------*/
     .carditem img {
@@ -53,7 +40,6 @@
     }
 
     .carditem div {
-        padding-left: .4rem;
         text-align: center;
     }
 
