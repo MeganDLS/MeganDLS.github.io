@@ -14,11 +14,14 @@ fetch(requestURLp)
             if (towns[i].name == "Preston") {
                 let events = document.createElement('div');
                 let h3 = document.createElement('h3');
-                
-                h3.textContent = towns[i].events;
-
+                let h4 = document.createElement('h3');
+                let h5 = document.createElement('h3');
+                h3.textContent = towns[i].events[0];
+                h4.textContent = towns[i].events[1];
+                h5.textContent = towns[i].events[2];
                 events.appendChild(h3);
-                
+                events.appendChild(h4);
+                events.appendChild(h5);
                 document.querySelector('div.upcomingp').appendChild(events);
             }
         }

@@ -25,6 +25,7 @@ h1 {
     font-size: 1.5rem;
     background-color: #CEE397;
     display: none;
+    padding: .3rem;
 }
 
 header {
