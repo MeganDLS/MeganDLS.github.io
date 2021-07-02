@@ -1,7 +1,7 @@
 /******--Entire Site--******/
 
 body {
-    background-color: #8DB1AB;
+    background-color: #C2D6D2; 
     font-family: "Montserrat", Arial, sans-serif;
     color: #1D3557;
 }
@@ -92,6 +92,12 @@ nav {
     margin-right: 3rem;
     margin-top: -.7rem;
     border-radius: .5rem;
+}
+
+.search label {
+    text-align: right;
+    color:#1E153C;
+    text-decoration: double;
 }
 
 .searchbtn {
