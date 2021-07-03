@@ -41,6 +41,12 @@ nav {
     margin: 0 auto;
 	/* max-width: 760px; */
 }
+
+.navigation a:visited {
+color: #1D3557
+} 
+/*change font color for links */
+
 .navigation {
     list-style: none;
     padding: 0;
