@@ -21,6 +21,10 @@ h1 {
     font-family: "Raleway", Arial, sans-serif;
     
 }
+/* unvisited link */
+a {
+    color: #1D3557;
+}
 
 /****** HEADER ******/
 .popup {
@@ -37,15 +41,9 @@ h1 {
 
 /****** HEADER ******/
 /****** Navigation ******/
-nav {
+/* nav {
     margin: 0 auto;
-	/* max-width: 760px; */
-}
-
-.navigation a:visited {
-color: #1D3557
-} 
-/*change font color for links */
+} */
 
 .navigation {
     list-style: none;
@@ -76,6 +74,7 @@ color: #1D3557
 .responsive li {
     display: block;
 }
+
 /* Navigation */
 /* Wayfinder */
 .active {
@@ -85,11 +84,14 @@ color: #1D3557
     padding: .5rem;
     border-radius: .5rem;
 }
-
+.active:hover a:link {
+    color: white;
+}
 .active:hover {
     background-color: #1D3557;
     color: white;
 }
+
 /* Search */
 .search {
     margin-right: 3rem;
@@ -99,9 +101,6 @@ color: #1D3557
 
 .search input {
     border-radius: .5rem;
-}
-.search label {
-    color: transparent;
 }
 
 .searchbtn {

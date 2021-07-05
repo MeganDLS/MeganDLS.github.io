@@ -1,5 +1,6 @@
 // Full name
-let re = /^[a-z ,.'-]+$/i;
+let re = "[A-Za-z ]{4,}";
+///^[a-z ,.'-]+$/i;
 
 
 // Storm style
