@@ -17,7 +17,7 @@ fetch(requestAPI)
       let d = new Date(x.dt_txt);
 
       document.getElementById('day' + day).textContent = dayofweek[d.getDay()];
-      document.getElementById('data' + day).textContent = x.main.temp;
+      document.getElementById('data' + day).textContent = x.main.temp + ' °F';
       document.getElementById('day' + day + 'image').setAttribute('src', `https://openweathermap.org/img/w/${x.weather[0].icon}.png`);
       day++;
     })

@@ -332,6 +332,11 @@ form label input:required:valid {
 }
 
 /******FOOTER******/
+footer {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
 .contact {
     padding-right: .5rem;
 }
