@@ -41,6 +41,9 @@
         padding: 2.5rem;
     }
 
+    .carditem {
+        border: 1px dotted #1E153C;
+    }
     .carditem div {
         text-align: center;
     }
@@ -58,7 +61,24 @@
         grid-column: 2 / 3;
         grid-row: 1 / 2;
     }
+ /*------------- Forecast --------------*/
+   
+ .forecast {
+     max-width: 30%;
+     margin: 0 auto;
+ }
 
+ .table h3, h2 {
+     text-align: center;
+ }
+
+ .labels {
+     text-align: center;
+ }
+
+ .day {
+     padding-bottom: .4rem;
+ }
 
     /*------------- Gallery --------------*/
     #thegallery {
@@ -83,8 +103,8 @@
     #map {
         display: block;
         float: left;
-        padding: 2rem;
-        margin-top: -180px;
+        padding: 1rem;
+        margin-top: -145px;
     }
 
     .contact {

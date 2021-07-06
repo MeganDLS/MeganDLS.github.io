@@ -19,20 +19,18 @@
         display: none;
     }
 
-    /*------------- Towns --------------*/
-    .towndata h2 {
-        text-align: center;
-    }
-
-    .carditem {
-        font-size: 1rem;
-        border: 1px dotted #1E153C;
-    }
-
-    .carditem p {
-        text-align: center;
-        padding-right: 2rem;
-    }
+        /*------------- Towns --------------*/
+       .towndata {
+           display: flex;
+           flex-wrap: nowrap;
+       }
+       #townh2 {
+           text-align: center;
+       }
+    
+        .carditem {
+            display: block;
+        }
 
     /*------------- Overlay --------------*/
     .herooverlay {

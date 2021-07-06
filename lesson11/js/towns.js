@@ -48,8 +48,6 @@ fetch(requestURL)
       document.querySelector('div.towndata').appendChild(data);
       if (towns[i].name == "Fish Haven") {
         image.setAttribute('class', 'rightside');
-        image.setAttribute('width', '400');
-        image.setAttribute('height', '267');
       }
     }
   }

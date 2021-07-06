@@ -4,6 +4,7 @@ body {
     background-color: #C2D6D2; 
     font-family: "Montserrat", Arial, sans-serif;
     color: #1D3557;
+    padding: .3rem;
 }
 main {
     max-width: 960px;
@@ -18,10 +19,12 @@ main {
 h1 {
     font-size: 2.6rem;
     color: #1E153C;
-    font-family: "Raleway", Arial, sans-serif;
-    
+    font-family: "Raleway", Arial, sans-serif;    
 }
 
+h2 {
+    padding: .3rem;
+}
 a {
     color: #1D3557;
 }
