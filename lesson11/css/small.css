@@ -21,7 +21,7 @@ h1 {
     font-family: "Raleway", Arial, sans-serif;
     
 }
-/* unvisited link */
+
 a {
     color: #1D3557;
 }
@@ -41,10 +41,6 @@ a {
 
 /****** HEADER ******/
 /****** Navigation ******/
-/* nav {
-    margin: 0 auto;
-} */
-
 .navigation {
     list-style: none;
     padding: 0;
@@ -123,6 +119,12 @@ background-color: #F2ED6F;
     box-shadow: 0 0 20px #1D3557;
 }
 
+.townimg {
+    max-width: 100%;
+}
+.rightside {
+    max-width: 100%;
+}
 /* HOME */
 /* News Article */
 .wheat {
@@ -334,30 +336,17 @@ form label input:required:valid {
 
 /******FOOTER******/
 footer {
-    max-width: 90%;
+    max-width: 92%;
     margin: 0 auto;
 }
-
 .contact {
-    padding-right: .5rem;
+    text-align: center;
+    padding: .3rem;
 }
-
-.contact>img {
-    float: left;
-}
-.social {
-    padding-right: .1rem;
-}
-
-.social h3 {
-    display: inline-block;
+#map {
+display: none;
 }
 
 .social a {
     color: transparent;
-}
-
-.social a img {
-    padding-top: .7rem;
-    padding-right: .3rem;
 }

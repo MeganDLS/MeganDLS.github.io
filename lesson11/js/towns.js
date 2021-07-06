@@ -35,6 +35,7 @@ fetch(requestURL)
 
       image.setAttribute('src', "images/" + towns[i].photo);
       image.setAttribute('alt', "photo of " + towns[i].name);    
+      image.setAttribute('class', "townimg");
 
       details.appendChild(h2);
       details.appendChild(h3);
