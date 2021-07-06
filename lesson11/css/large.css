@@ -53,6 +53,7 @@
     .forecast {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
+        max-width: 90%;
     }
 
     .day {
@@ -65,6 +66,14 @@
         font-size: 1.1rem;
     }
 
+    /*------------- Story --------------*/
+    .story img {
+        float: right;
+        margin-left: 1.5rem;
+        margin-right: .5rem;
+        padding: .5rem;
+        margin-top: -.5rem;
+    }
     /*------------- Gallery --------------*/
     #thegallery {
         display: grid;
