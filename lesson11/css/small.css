@@ -58,6 +58,8 @@ a {
 .navigation a {
     display: block;
     transition: .5s;
+    text-decoration: none;
+    padding: .2rem;
 }
 
 .navigation a:hover {

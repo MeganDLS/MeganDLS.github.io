@@ -5,7 +5,7 @@ const navigation = document.querySelector('.navigation');
 
 // add the callback function () is a shortcut, arrow function is => in modern javascript (see js_arrow_function in w3 schools), the false is a kickback to the event listener.
 hamburgerButton.addEventListener('click', () =>
-{navigation.classList.toggle('hide')}, false
+{navigation.classList.toggle('responsive')}, false
 );
 
 //POPUP Pancake Day

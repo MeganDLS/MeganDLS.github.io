@@ -27,7 +27,6 @@
 	.navigation a {
 		text-align: center;
         padding: .5rem;
-        text-decoration: none;
 	}
 	.navigation li:first-child {
 		display: none;
