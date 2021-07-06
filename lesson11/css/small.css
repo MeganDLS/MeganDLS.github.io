@@ -134,6 +134,7 @@ background-color: #F2ED6F;
 
 .news {
     padding: 1.5rem;
+    text-align: center;
 }
 
 /* PRESTON, SODA SPRINGS, and FISH HAVEN*/
@@ -339,6 +340,10 @@ footer {
 
 .contact {
     padding-right: .5rem;
+}
+
+.contact>img {
+    float: left;
 }
 .social {
     padding-right: .1rem;
