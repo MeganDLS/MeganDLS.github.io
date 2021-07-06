@@ -1,37 +1,40 @@
 @media only screen and (min-width: 31.25em) {
+
     /*------------- Body --------------*/
     body {
         margin: 4rem;
         text-align: right;
-    
-    }
-    
-    /* Wayfinder */
-.active {
-    opacity: 0.75;
-    background-color: #1D3557;
-    color: white;
-    padding: 1rem;
-    border-radius: .5rem;
-}
-    
-    /*------------- Hamburger Button --------------*/  
-    .navigation {
-		display: flex;
-	}
 
-	.navigation li {
-		display: block;
-		flex: 1 1 auto;
-	}
-	.navigation a {
-		text-align: center;
+    }
+
+    /* Wayfinder */
+    .active {
+        opacity: 0.75;
+        background-color: #1D3557;
+        color: white;
+        padding: 1rem;
+        border-radius: .5rem;
+    }
+
+    /*------------- Hamburger Button --------------*/
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 auto;
+    }
+
+    .navigation a {
+        text-align: center;
         padding: .5rem;
-	}
-	.navigation li:first-child {
-		display: none;
-	}
-    
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
+
     /*------------- Towns --------------*/
     .carditem img {
         max-width: 70%;
@@ -57,35 +60,40 @@
     }
 
 
-      /*------------- Gallery --------------*/
-      #thegallery {
+    /*------------- Gallery --------------*/
+    #thegallery {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 
+    /*------------- Footer --------------*/
+    #contactinfo {
+        padding-right: 1rem;
+    }
 
-  /*------------- Footer --------------*/
-  #contactinfo {
-    padding-right: 1rem;
-}  
-.social {
-    padding-right: .1rem;
-}
+    .social {
+        padding-right: .1rem;
+    }
 
-.social h3 {
-    display: inline-block;
+    .social h3 {
+        display: inline-block;
 
-}
-  #map {
-        display:block;
+    }
+
+    #map {
+        display: block;
         float: left;
         padding: 2rem;
-        margin-top: -170px;
-        }
+        margin-top: -180px;
+    }
 
-        
-.social a img {
-    padding-top: .7rem;
-    padding-right: .3rem;
-}
+    .contact {
+        text-align: right;
+
+    }
+
+    .social a img {
+        padding-top: .7rem;
+        padding-right: .3rem;
+    }
 }
