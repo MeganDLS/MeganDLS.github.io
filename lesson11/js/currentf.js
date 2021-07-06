@@ -1,9 +1,7 @@
-// Current Weather Conditions
-// Preston ID: 5604473
-// Soda Springs ID: 5607916
-// Fish Haven ID: 5585010
-const requestURL = 
-'https://api.openweathermap.org/data/2.5/weather?id=5585010&units=imperial&appid=edd40baf43f2b3f80219cb8af5bd05d9';
+// Current Weather Conditions for Fish Haven
+
+const requestURL =
+  'https://api.openweathermap.org/data/2.5/weather?id=5585010&units=imperial&appid=edd40baf43f2b3f80219cb8af5bd05d9';
 
 fetch(requestURL)
   .then((response) => response.json())
@@ -26,4 +24,4 @@ fetch(requestURL)
     } else {
       document.querySelector('#windchill').innerHTML = "N/A";
     }
-});
+  });

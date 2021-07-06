@@ -6,21 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Megan De León">
-    <meta name="description" content="Web Development for BYU Idaho, WDD230-01. Lesson 11">    
+    <meta name="description" content="Web Development for BYU Idaho, WDD230-01. Lesson 11">
     <title>Tut Tut it Looks Like Rain Weather Service for some towns in Idaho.</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="icon" type="image/png" href="favicon.ico">
-    
-    <link href="css/small.css" rel="stylesheet"/>
-	<link href="css/medium.css" rel="stylesheet"/>
-	<link href="css/large.css" rel="stylesheet"/>
+
+    <link href="css/small.css" rel="stylesheet" />
+    <link href="css/medium.css" rel="stylesheet" />
+    <link href="css/large.css" rel="stylesheet" />
 </head>
 
 <body>
     <header>
-        <img id="logo" src="images/logoumbrella.png" alt="a blue umbrella"/>
-		<h1> Tut, tut, it looks like rain</h1>
-		<h2> Get connected with your community</h2> 
+        <img id="logo" src="images/logoumbrella.png" alt="a blue umbrella" />
+        <h1> Tut, tut, it looks like rain</h1>
+        <h2> Get connected with your community</h2>
 
         <nav class="block">
             <ul class="navigation responsive">
@@ -37,33 +37,34 @@
 
     <main>
         <picture>
-			<source media="(min-width: 31.25em) and (max-width: 49.9em)" srcset="images/medcropbanner.jpg">
-			<source srcset="images/lrgbanner.jpg" media="(min-width: 50em)">
-			<img class="hero" src="images/smlcropbanner.jpg"
-				alt="Looking up to a partly cloudy blue sky, shrouded by trees">
-		</picture> 
+            <source media="(min-width: 31.25em) and (max-width: 49.9em)" srcset="images/medcropbanner.jpg">
+            <source srcset="images/lrgbanner.jpg" media="(min-width: 50em)">
+            <img class="hero" src="images/smlcropbanner.jpg"
+                alt="Looking up to a partly cloudy blue sky, shrouded by trees">
+        </picture>
 
         <div class="block">
             <h2>Storm Sighting</h2>
             <form method="get" action="thanks.html">
 
-            <fieldset>
-                <legend>Contact Information</legend>
-                <label>Full Name
-                <input pattern="[A-Za-z ]{4,}" class="required" type="text" name="fname" placeholder="Maria Lopez" required></label>
-                <label>Email &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <input type="email" name="email" placeholder="user@email.com"></label>
-                <label>Number &nbsp;&nbsp;
-                    <input class="required" type="tel" name="phone" placeholder="###-###-####" required></label>
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label>Full Name
+                        <input pattern="[A-Za-z ]{4,}" class="required" type="text" name="fname"
+                            placeholder="Maria Lopez" required></label>
+                    <label>Email &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="email" name="email" placeholder="user@email.com"></label>
+                    <label>Number &nbsp;&nbsp;
+                        <input class="required" type="tel" name="phone" placeholder="###-###-####" required></label>
                     <label>Zipcode &nbsp;&nbsp;
                         <input class="required" type="text" name="zip" required></label>
-            </fieldset>
+                </fieldset>
 
-            <fieldset>
-                <legend>Storm Details</legend>
-                <label>Storm Date<input type="date" name="stormdate"></label>
-                <label>Storm Type
-                    <input list="types" name="type" id="type">
+                <fieldset>
+                    <legend>Storm Details</legend>
+                    <label>Storm Date<input type="date" name="stormdate"></label>
+                    <label>Storm Type
+                        <input list="types" name="type" id="type">
                         <datalist id="types">
                             <option value="Flashflood">Flash Flood</option>
                             <option value="Hail">Hail</option>
@@ -71,96 +72,102 @@
                             <option value="Thunderstorm">Thunderstorm</option>
                             <option value="Tornado">Tornado</option>
                         </datalist>
-                </label>
-                <label>Storm Style
-                    <input type="range" value="5" min="1" max="10" step="1" list="tickmarks"
-                        oninput="adjustRange(this.value)"
-                        onchange="adjustRange(this.value)">
-                    <span id="rangevalue"></span>
-                </label>
-    
-                <datalist id="tickmarks">
-                    <option value="0">
-                    <option value="1">
-                    <option value="2">
-                    <option value="3">
-                    <option value="4">
-                    <option value="5">
-                    <option value="6">
-                    <option value="7">
-                    <option value="8">
-                    <option value="9">
-                    <option value="10">
-                </datalist>
-                <label>Storm Region
-                    <select name="regions" id="selectregion" onchange="selectResponse()">
-                        <option value="" disabled selected>Select Region...</option>
-                        <option value="preston">Preston</option>
-                        <option value="soda-springs">Soda Springs</option>
-                        <option value="fish-haven">Fish Haven</option>
-                    </select>
-                </label>
+                    </label>
+                    <label>Storm Style
+                        <input type="range" value="5" min="1" max="10" step="1" list="tickmarks"
+                            oninput="adjustRange(this.value)" onchange="adjustRange(this.value)">
+                        <span id="rangevalue"></span>
+                    </label>
 
-                <div id="danger">User in danger?
-                    <label><input type=radio name="danger" value="yes"> Yes</label>
-                    <label><input type=radio name="danger" value="maybe"> Maybe</label>
-                    <label><input type=radio name="danger" value="no"> No</label>
-                </div>
-                <label>Comments
-                    <input type="text">
-                </label>
-            </fieldset>
+                    <datalist id="tickmarks">
+                        <option value="0">
+                        <option value="1">
+                        <option value="2">
+                        <option value="3">
+                        <option value="4">
+                        <option value="5">
+                        <option value="6">
+                        <option value="7">
+                        <option value="8">
+                        <option value="9">
+                        <option value="10">
+                    </datalist>
+                    <label>Storm Region
+                        <select name="regions" id="selectregion" onchange="selectResponse()">
+                            <option value="" disabled selected>Select Region...</option>
+                            <option value="preston">Preston</option>
+                            <option value="soda-springs">Soda Springs</option>
+                            <option value="fish-haven">Fish Haven</option>
+                        </select>
+                    </label>
 
-            <input type="submit" value="Create My Storm Sighting" class="sbutton">
+                    <div id="danger">User in danger?
+                        <label><input type=radio name="danger" value="yes"> Yes</label>
+                        <label><input type=radio name="danger" value="maybe"> Maybe</label>
+                        <label><input type=radio name="danger" value="no"> No</label>
+                    </div>
+                    <label>Comments
+                        <input type="text">
+                    </label>
+                </fieldset>
+
+                <input type="submit" value="Create My Storm Sighting" class="sbutton">
             </form>
         </div>
 
-</main>
-<footer>
-    <div class="block contact">
-        <h2>Contact Information</h2>
-        <p id="contactinfo">
-            
-            Tut Tut, LLC<br><br>
-            📪 Address: &ensp; 1st and 3rd, Preston, ID <br>
-            💻 E-mail: &emsp; &ensp;tuttut@pooh.com<br>
-            📞 Phone: &ensp; &ensp; 385-212-8520 <br>
-        </p>
-        <nav> <a href="https://www.google.com/maps/place/Idaho/@45.4064616,-118.6312162,6z/data=!3m1!4b1!4m5!3m4!1s0x5358ffa885e499e9:0xd06b300515f78758!8m2!3d44.0682019!4d-114.7420408"
-            target="_blank"><img id="map" src="images/map.jpg" alt="A map of our location" width="200" height="144"></a>
-    </nav>
-    <div class="social block">
-        <h3>Follow us on social media:</h3>
-        <a href="https://twitter.com/?lang=en">
-            <img src="images/twitter.png" alt="Twitter bird Icon"  width="64" height="64" />
-        </a>
-        <a href="https://www.instagram.com/">
-            <img src="images/instagram.png" alt="Instagram camera Icon" width="64" height="64"/>
-        </a>
-        <a href="https://www.facebook.com">
-            <img src="images/facebook.png" alt="Facebook letter F Icon" width="64" height="64" />
-        </a>
-    </div>
+    </main>
+    <footer>
+        <div class="block contact">
+            <h2>Contact Information</h2>
+            <p id="contactinfo">
 
-    </div>
+                Tut Tut, LLC<br><br>
+                📪 Address: &ensp; 1st and 3rd, Preston, ID <br>
+                💻 E-mail: &emsp; &ensp;tuttut@pooh.com<br>
+                📞 Phone: &ensp; &ensp; 385-212-8520 <br>
+            </p>
+            <nav> <a href="https://www.google.com/maps/place/Idaho/@45.4064616,-118.6312162,6z/data=!3m1!4b1!4m5!3m4!1s0x5358ffa885e499e9:0xd06b300515f78758!8m2!3d44.0682019!4d-114.7420408"
+                    target="_blank"><img id="map" src="images/map.jpg" alt="A map of our location" width="200"
+                        height="144"></a>
+            </nav>
+            <div class="social block">
+                <h3>Follow us on social media:</h3>
+                <a href="https://twitter.com/?lang=en">
+                    <img src="images/twitter.png" alt="Twitter bird Icon" width="64" height="64" />
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img src="images/instagram.png" alt="Instagram camera Icon" width="64" height="64" />
+                </a>
+                <a href="https://www.facebook.com">
+                    <img src="images/facebook.png" alt="Facebook letter F Icon" width="64" height="64" />
+                </a>
+            </div>
 
-    <p>
-        &copy; <span id="copyrightyear"></span> | Megan De Le&oacute;n | Utah |
-        <a href="https://www.byui.edu/">BYUI Online Learning
-        </a> |
-        <span id="updated"></span>
-        <p>Weather information on this page is thanks to
-            <a href="https://openweathermap.org/">
-                Open Weather Map</a> |
+        </div>
 
-        <a href="https://www.termsfeed.com/live/e0e92067-5f2d-491f-bea8-eb3a8b50ed43">Terms of Use</a>
+        <p>
+            &copy; <span id="copyrightyear"></span> | Megan De Le&oacute;n | Utah |
+            <a href="https://www.byui.edu/">BYUI Online Learning
+            </a> |
+            <span id="updated"></span>
+            <p>Weather information on this page is thanks to
+                <a href="https://openweathermap.org/">
+                    Open Weather Map</a> |
 
-    </p>
-</footer>
-<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-<script>WebFont.load({google: {families: ["Montserrat", "Raleway"]}});</script>
-<script src="js/getdate.js"></script>
-<script src="js/forms.js"></script>
+                <a href="https://www.termsfeed.com/live/e0e92067-5f2d-491f-bea8-eb3a8b50ed43">Terms of Use</a>
+
+            </p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ["Montserrat", "Raleway"]
+            }
+        });
+    </script>
+    <script src="js/getdate.js"></script>
+    <script src="js/forms.js"></script>
 </body>
 
 </html>

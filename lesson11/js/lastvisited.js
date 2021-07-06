@@ -1,5 +1,4 @@
-//#daysince in gallery.html
-
+//Gallery 
 let last;
 
 if (localStorage.getItem('date') !== null) {

@@ -10,7 +10,7 @@
         margin-bottom: 1rem;
     }
 
-    /* Navigation Bar */
+    /*---------- Navigation Bar ----------*/
     .navigation {
         font-size: 1.5rem;
     }
@@ -19,18 +19,19 @@
         display: none;
     }
 
-        /*------------- Towns --------------*/
-       .towndata {
-           display: flex;
-           flex-wrap: nowrap;
-       }
-       #townh2 {
-           text-align: center;
-       }
-    
-        .carditem {
-            display: block;
-        }
+    /*------------- Towns --------------*/
+    .towndata {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    #townh2 {
+        text-align: center;
+    }
+
+    .carditem {
+        display: block;
+    }
 
     /*------------- Overlay --------------*/
     .herooverlay {
@@ -48,7 +49,7 @@
     }
 
     /*------------- Forecast --------------*/
-   
+
     .forecast {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
@@ -74,16 +75,11 @@
         box-shadow: 0 0 50px #1D3557;
     }
 
-
-
-
     /*------------- Footer --------------*/
 
     .contact>img {
         padding-left: 2rem;
         border-radius: .5rem;
         float: left;
-
     }
-
 }

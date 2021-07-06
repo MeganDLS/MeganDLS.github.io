@@ -4,10 +4,9 @@
     body {
         margin: 4rem;
         text-align: right;
-
     }
 
-    /* Wayfinder */
+    /*------------ Wayfinder ------------*/
     .active {
         opacity: 0.75;
         background-color: #1D3557;
@@ -16,7 +15,7 @@
         border-radius: .5rem;
     }
 
-    /*------------- Hamburger Button --------------*/
+    /*---------- Hamburger Button ----------*/
     .navigation {
         display: flex;
     }
@@ -44,6 +43,7 @@
     .carditem {
         border: 1px dotted #1E153C;
     }
+
     .carditem div {
         text-align: center;
     }
@@ -61,32 +61,33 @@
         grid-column: 2 / 3;
         grid-row: 1 / 2;
     }
- /*------------- Forecast --------------*/
-   
- .forecast {
-     max-width: 30%;
-     margin: 0 auto;
- }
 
- .table h3, h2 {
-     text-align: center;
- }
+    /*----------- Forecast ------------*/
+    .forecast {
+        max-width: 30%;
+        margin: 0 auto;
+    }
 
- .labels {
-     text-align: center;
- }
+    .table h3,
+    h2 {
+        text-align: center;
+    }
 
- .day {
-     padding-bottom: .4rem;
- }
+    .labels {
+        text-align: center;
+    }
 
-    /*------------- Gallery --------------*/
+    .day {
+        padding-bottom: .4rem;
+    }
+
+    /*----------- Gallery ------------*/
     #thegallery {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 
-    /*------------- Footer --------------*/
+    /*----------- Footer ------------*/
     #contactinfo {
         padding-right: 1rem;
     }
@@ -97,7 +98,6 @@
 
     .social h3 {
         display: inline-block;
-
     }
 
     #map {
@@ -109,7 +109,6 @@
 
     .contact {
         text-align: right;
-
     }
 
     .social a img {

@@ -1,4 +1,4 @@
-//****Lazy Loading****/
+//Gallery for Lazy Loading Images
 
 //Create a list
 let imagesToLoad = document.querySelectorAll('img[data-src]');
@@ -10,6 +10,7 @@ const loadImages = (image) => {
         image.removeAttribute('data-src');
     };
 };
+
 //Loop through each image
 imagesToLoad.forEach((img) => {
     loadImages(img);
@@ -30,11 +31,13 @@ if ('IntersectionObserver' in Window) {
             }
         });
     });
+
     //Load image if necessary
     imagesToLoad.forEach((img) => {
         observer.observe(img);
     });
 } else {
+
     //Load all images if not supported
     imagesToLoad.forEach((img) => {
         loadImages(img);
